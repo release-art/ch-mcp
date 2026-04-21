@@ -5,7 +5,7 @@
 groups = ["default", "build", "dev", "docs", "lint", "user"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:383064e32ff8d3749407a4bcdc465d9b3f45e88d4279a7834756b301e00b9a25"
+content_hash = "sha256:89c615e8c48fe26e008c249850baedabf0df615f954279750403b82db733e4f1"
 
 [[metadata.targets]]
 requires_python = ">=3.13"
@@ -473,6 +473,21 @@ files = [
     {file = "cffi-2.0.0-cp314-cp314t-win_amd64.whl", hash = "sha256:d68b6cef7827e8641e8ef16f4494edda8b36104d79773a334beaa1e3521430f6"},
     {file = "cffi-2.0.0-cp314-cp314t-win_arm64.whl", hash = "sha256:0a1527a803f0a659de1af2e1fd700213caba79377e27e4693648c2923da066f9"},
     {file = "cffi-2.0.0.tar.gz", hash = "sha256:44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529"},
+]
+
+[[package]]
+name = "ch-api"
+version = "1.1.1"
+requires_python = ">=3.11"
+summary = "UK Companies House API"
+groups = ["default"]
+dependencies = [
+    "httpx>=0.28.1",
+    "pydantic>=2.12.5",
+]
+files = [
+    {file = "ch_api-1.1.1-py3-none-any.whl", hash = "sha256:9aaa06744adb4d2812df0f12b1a2f05d769b6b43c26e88cfa3647307a916f424"},
+    {file = "ch_api-1.1.1.tar.gz", hash = "sha256:6d33d3afca1a015b2220fd032358ba4e8efb8c94b2fcd89f584fab23bf923dd7"},
 ]
 
 [[package]]
