@@ -1,0 +1,250 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard LifeStrategy Funds ICVC",
+            "prn": "542758",
+            "status": "authorised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/542758"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard Funds PLC",
+            "prn": "581683",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/581683"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "VANGUARD INVESTMENTS FUNDS ICVC",
+            "prn": "500189",
+            "status": "authorised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/500189"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard LifeStrategy 100% Equity Fund",
+            "prn": "646324",
+            "status": "approved",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/646324"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "VANGUARD FTSE U.K. ALL SHARE INDEX UNIT TRUST",
+            "prn": "509573",
+            "status": "authorised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/509573"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "VANGUARD INVESTMENT SERIES PLC",
+            "prn": "186392",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/186392"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard Common Contractual Fund",
+            "prn": "573213",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/573213"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard FTSE All-World High Dividend Yield UCITS ETF",
+            "prn": "642710",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/642710"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard Investments Common Contractual Fund",
+            "prn": "671717",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/671717"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard Investments Money Market Funds",
+            "prn": "815899",
+            "status": "authorised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/815899"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard USD Emerging Markets Government Bond UCITS ETF",
+            "prn": "736403",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/736403"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard LifeStrategy Global 80% Equity Fund",
+            "prn": "1049789",
+            "status": "approved",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/1049789"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "VANGUARD U.K. LONG DURATION GILT INDEX FUND",
+            "prn": "646009",
+            "status": "approved",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/646009"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "VANGUARD INVESTMENTS III COMMON CONTRACTUAL FUND",
+            "prn": "834259",
+            "status": "de-recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/834259"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard Active U.K. Equity Fund",
+            "prn": "915178",
+            "status": "approved",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/915178"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard Target Retirement 2030 Fund",
+            "prn": "730094",
+            "status": "approved",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/730094"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard S&P 500 UCITS ETF",
+            "prn": "642707",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/642707"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "VANGUARD FTSE U.K. EQUITY INCOME INDEX FUND",
+            "prn": "646004",
+            "status": "approved",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/646004"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "Vanguard FTSE 100 Index Unit Trust",
+            "prn": "758854",
+            "status": "authorised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/758854"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FundSearchResult",
+          "data": {
+            "name": "VANGUARD 20+ YEAR EURO TREASURY INDEX FUND",
+            "prn": "634095",
+            "status": "recognised",
+            "type": "collective investment scheme",
+            "url": "https://register.fca.org.uk/services/V0.1/CIS/634095"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

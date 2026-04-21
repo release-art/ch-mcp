@@ -1,0 +1,166 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "",
+            "name": "Liverpool Victoria Financial Services (Clone of FCA authorised firm) (Postcode: n/a)",
+            "status": "Unauthorised",
+            "type": "Unauthorised firm",
+            "url": null
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "989696",
+            "name": "Victoria Store Liverpool Ltd (Postcode: L2 6QE)",
+            "status": "No Longer Registered as a PSD Agent",
+            "type": "Payment services firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/989696"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "110035",
+            "name": "Liverpool Victoria Financial Services Limited (Postcode: BH1 2NF)",
+            "status": "Authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/110035"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "110423",
+            "name": "Liverpool Victoria Life Company Limited (Postcode: BH1 2NF)",
+            "status": "Authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/110423"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "186890",
+            "name": "Liverpool Victoria Financial Advice Services Limited (Postcode: BH1 2NF)",
+            "status": "Authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/186890"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "185399",
+            "name": "Liverpool Victoria Asset Management Limited (Postcode: EC2V 6EE)",
+            "status": "No longer authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/185399"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "188521",
+            "name": "Liverpool Victoria Portfolio Managers Limited (Postcode: BH1 2NF)",
+            "status": "No longer authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/188521"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "204551",
+            "name": "Liverpool Victoria Banking Services Limited (Postcode: BH1 2NF)",
+            "status": "No longer authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/204551"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "202965",
+            "name": "Liverpool Victoria Insurance Company Limited (Postcode: GU1 1DB)",
+            "status": "Authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/202965"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "306287",
+            "name": "LV Equity Release Limited (Postcode: BH1 2NF)",
+            "status": "Authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/306287"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "423622",
+            "name": "LV Life Services Limited (Postcode: BH1 2NF)",
+            "status": "No longer authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/423622"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "463402",
+            "name": "NM Pensions Trustees Limited (Postcode: BH1 2NF)",
+            "status": "No longer authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/463402"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmSearchResult",
+          "data": {
+            "frn": "611223",
+            "name": "LV Protection Limited (Postcode: BH1 2NF)",
+            "status": "Authorised",
+            "type": "Firm",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/611223"
+          },
+          "module": "fca_api.types.search",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

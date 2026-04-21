@@ -1,0 +1,64 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FirmAppointedRepresentative",
+          "data": {
+            "eea_tied_agent": false,
+            "effective_date": "2018-04-01T00:00:00",
+            "frn": "786625",
+            "name": "Barclays Execution Services Limited",
+            "principal_firm_name": "Barclays Bank UK PLC",
+            "principal_frn": "759676",
+            "subtype": "Full",
+            "termination_date": null,
+            "tied_agent": false,
+            "type": "current",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/786625"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmAppointedRepresentative",
+          "data": {
+            "eea_tied_agent": false,
+            "effective_date": "2018-04-01T00:00:00",
+            "frn": "794617",
+            "name": "Barclays Global Service Centre Private Limited",
+            "principal_firm_name": "Barclays Bank UK PLC",
+            "principal_frn": "759676",
+            "subtype": "Full",
+            "termination_date": null,
+            "tied_agent": false,
+            "type": "current",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/794617"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmAppointedRepresentative",
+          "data": {
+            "eea_tied_agent": false,
+            "effective_date": "2024-10-25T00:00:00",
+            "frn": "201282",
+            "name": "Tesco Stores Limited",
+            "principal_firm_name": "Barclays Bank UK PLC",
+            "principal_frn": "759676",
+            "subtype": "Introducer",
+            "termination_date": null,
+            "tied_agent": false,
+            "type": "current",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/201282"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

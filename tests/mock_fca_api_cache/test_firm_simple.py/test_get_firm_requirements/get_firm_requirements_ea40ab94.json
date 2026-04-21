@@ -1,0 +1,46 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FirmRequirement",
+          "data": {
+            "effective_date": "2024-01-01T00:00:00",
+            "financial_promotions_investment_types": null,
+            "financial_promotions_requirement": false,
+            "reference": "OR-0258031",
+            "rfb sub-group": "TO: Barclays Bank UK Plc (FRN 759676) OF: 1 Churchill Place, London, England, E14 5HP TAKE NOTICE: The Prudential Regulation Authority of 20 Moorgate, London, EC2R 6DA has decided to take the following action. 1. ACTION Following an application received from the firm pursuant to section 55M(5)(a) of FSMA for the imposition of the requirements, the PRA has decided to grant the application. 2. CONSTITUTION OF THE RFB SUB-GROUP The sub-consolidation group comprises the entities within the scope of consolidation referred to in paragraph 3(a) of this notice. 3. REQUIREMENTS UNDER S. 55M FSMA (a) Pursuant to Article 11(6) of the CRR, the firm must comply with Parts Two and Three of CRR, and CRD UK law which implemented Title 7, Chapter 4 of CRD on the basis of the consolidated situation of the firm. (b) The firm must read any reference to sub-consolidation group in data items RFB005, RFB006, RFB007, RFB008, and the accompanying instructions in Supervisory Statement 34/15, as including the other ring-fenced undertaking and the undertakings in the sub-consolidation group. (c) The firm must immediately notify the PRA of: (i) any change proposed by the firm to the composition of the sub-consolidation group or to the composition of entities that are other ring-fenced undertakings; (ii) any sub-consolidation group member or other ring-fenced undertaking carrying on or intending to carry on a new activity or materially changing the nature or extent of an existing activity which, if the entity were a ring-fenced body, would be an excluded activity under section 142D of FSMA and the Excluded Activities Order or would contravene a prohibition under section 142E of FSMA and the Excluded Activities Order; (iii) any failure to meet the requirements; or (iv) any change in circumstances likely to affect the ability of the firm to meet the requirements. (d) The firm must be capable of demonstrating to the PRA that the requirements are met. 4. INTERPRETATION Interpretative provisions (including definitions in the Glossary) of the PRA Rulebook apply to the requirements. 5. EFFECTIVE DATE This written notice takes effect from 1 January 2024 and ceases to have effect on 1 September 2028. 6. DECISION-MAKER The decision to give this notice was made by Simon Dixon on behalf of the PRA. This application has been granted in consultation with the FCA. This notice will be published on the Financial Services Register. ANNEX Definitions Excluded Activities Order means the Financial Services and Markets Act 2000 (Excluded and Prohibited Activities) Order 2014. firm means Barclays Bank UK Plc. other ring-fenced undertaking means Barclays Insurance Services Company Limited. requirements mean the requirements in paragraph 3 of this notice."
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmRequirement",
+          "data": {
+            "effective_date": "2018-05-11T00:00:00",
+            "financial_promotions_investment_types": null,
+            "financial_promotions_requirement": false,
+            "reference": "OR-0157983",
+            "report annually to fca and pra on whistleblowing": "Details of the FCA requirement can be found at this link - https://www.fca.org.uk/publication/requirement-notices/vreq-barclays-bank-uk-plc.pdf Details of the PRA requirement can be found at this link - www.bankofengland.co.uk/-/media/BoE/Files/prudential-regulation/regulatory-action/written-notice-from-the-pra-to-barclays-bank-uk-plc"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmRequirement",
+          "data": {
+            "effective_date": "2023-11-06T00:00:00",
+            "financial promotions for own firm, ars and other members of the group": "This firm can approve its own financial promotions as well as those of members of its wider group and, in certain circumstances, those of its appointed representatives.",
+            "financial_promotions_investment_types": null,
+            "financial_promotions_requirement": true,
+            "reference": "OR-0215096"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

@@ -1,0 +1,50 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FirmAddress",
+          "data": {
+            "address_lines": [
+              "1 Churchill Place"
+            ],
+            "address_url": "https://register.fca.org.uk/services/V0.1/Firm/759676/Address?Type=PPOB",
+            "country": "united kingdom",
+            "county": "",
+            "individual": null,
+            "phone_number": "+442071161000",
+            "postcode": "E14 5HP",
+            "town": "london",
+            "type": "principal place of business",
+            "website_url": "https://www.barclays.com/"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmAddress",
+          "data": {
+            "address_lines": [
+              "Barclays Bank UK PLC",
+              "Dale House",
+              "Wavertree Technology Park"
+            ],
+            "address_url": "https://register.fca.org.uk/services/V0.1/Firm/759676/Address?Type=Complaint",
+            "country": "united kingdom",
+            "county": "",
+            "individual": "Rob Morris",
+            "phone_number": "+4402071161000",
+            "postcode": "L7 9PQ",
+            "town": "liverpool",
+            "type": "complaints contact",
+            "website_url": null
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

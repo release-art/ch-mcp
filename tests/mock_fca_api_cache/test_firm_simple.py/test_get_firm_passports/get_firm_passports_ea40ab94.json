@@ -1,0 +1,20 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FirmPassport",
+          "data": {
+            "country": "GIBRALTAR",
+            "direction": "out",
+            "permissions": "https://register.fca.org.uk/services/v0.1/firm/759676/passports/gibraltar/permission"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

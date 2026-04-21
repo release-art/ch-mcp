@@ -1,0 +1,210 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FirmPassportPermission",
+          "data": {
+            "country": "GIBRALTAR",
+            "direction": "out",
+            "directive": "banking consolidation directive",
+            "permissions": [
+              {
+                "investment_types": [],
+                "name": "*  - additional mifid services and activities subject to mutual recognition under the bcd"
+              },
+              {
+                "investment_types": [],
+                "name": "1 - acceptance of deposits and other repayable funds from the public"
+              },
+              {
+                "investment_types": [],
+                "name": "11 - portfolio management and advice"
+              },
+              {
+                "investment_types": [],
+                "name": "14 - safe custody services"
+              },
+              {
+                "investment_types": [],
+                "name": "15 - issuing electronic money"
+              },
+              {
+                "investment_types": [],
+                "name": "2 - lending including consumer credit, mortgage credit, factoring and financing of commercial transactions"
+              },
+              {
+                "investment_types": [],
+                "name": "3 - financial leasing"
+              },
+              {
+                "investment_types": [],
+                "name": "4 - payment services as defined in article 4(3) of directive 2007/64/ec of the european parliament and of the council of 13 november 2007 on payment services in the internal market(*)"
+              },
+              {
+                "investment_types": [],
+                "name": "5 - issuing and administering other means of payment (e.g. travellers' cheques and bankers' drafts) insofar as this activity is not covered by point 4"
+              },
+              {
+                "investment_types": [],
+                "name": "6 - guarantees and commitments"
+              },
+              {
+                "investment_types": [],
+                "name": "7a - trading for own account or for account of customers - money market instruments (cheques, bills, cds etc)"
+              },
+              {
+                "investment_types": [],
+                "name": "7b - trading for own account or for account of customers - foreign exchange"
+              },
+              {
+                "investment_types": [],
+                "name": "7c - trading for own account or for account of customers - financial futures and options"
+              },
+              {
+                "investment_types": [],
+                "name": "7d - trading for own account or for account of customers - exchange and interest rate instruments"
+              },
+              {
+                "investment_types": [],
+                "name": "7e - trading for own account or for account of customers - transferrable securities"
+              },
+              {
+                "investment_types": [],
+                "name": "8 - participation in securities issues and the provision of services related to such issues"
+              }
+            ],
+            "type": "service"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmPassportPermission",
+          "data": {
+            "country": "GIBRALTAR",
+            "direction": "out",
+            "directive": "markets in financial instruments directive",
+            "permissions": [
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(10) Other contracts",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings",
+                  "C(4) Derivatives in Securities, etc",
+                  "C(5) Commodities Derivatives - Cash Settled",
+                  "C(6) Commodities Derivatives - Physically Settled",
+                  "C(7) Non-Commercial commodity Derivatives",
+                  "C(8) Derivative instruments for the transfer of credit risk",
+                  "C(9) Financial contracts for differences"
+                ],
+                "name": "a(1) reception and transmission of orders in relation to one or more financial instruments"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings"
+                ],
+                "name": "a(2) execution of orders on behalf of clients"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(10) Other contracts",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings",
+                  "C(4) Derivatives in Securities, etc",
+                  "C(5) Commodities Derivatives - Cash Settled",
+                  "C(6) Commodities Derivatives - Physically Settled",
+                  "C(7) Non-Commercial commodity Derivatives",
+                  "C(8) Derivative instruments for the transfer of credit risk",
+                  "C(9) Financial contracts for differences"
+                ],
+                "name": "a(3) dealing on own account"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings"
+                ],
+                "name": "a(4) portfolio management"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings"
+                ],
+                "name": "a(5) investment advice"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings"
+                ],
+                "name": "b(1) safekeeping and administration of financial instruments for the account of clients, including custodianship and related services such as cash/collateral management"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings"
+                ],
+                "name": "b(2) granting credits or loans to an investor to allow him to carry out a transaction in one or more financial  instruments, where the firm granting the credit or loan is involved in the transaction"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings"
+                ],
+                "name": "b(4) foreign exchange services where these are connected to the provision of investment services"
+              },
+              {
+                "investment_types": [
+                  "C(1) Transferable securities",
+                  "C(10) Other contracts",
+                  "C(2) Money-market instruments",
+                  "C(3) Units in collective investment undertakings",
+                  "C(4) Derivatives in Securities, etc",
+                  "C(5) Commodities Derivatives - Cash Settled",
+                  "C(6) Commodities Derivatives - Physically Settled",
+                  "C(7) Non-Commercial commodity Derivatives",
+                  "C(8) Derivative instruments for the transfer of credit risk",
+                  "C(9) Financial contracts for differences"
+                ],
+                "name": "b(5) investment research and financial analysis or other forms of general recommendation relating to transactions in financial instruments"
+              }
+            ],
+            "type": "service"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmPassportPermission",
+          "data": {
+            "country": "GIBRALTAR",
+            "direction": "out",
+            "directive": "insurance distribution",
+            "permissions": [
+              {
+                "investment_types": [],
+                "name": "insurance distribution or reinsurance distribution"
+              }
+            ],
+            "type": "service"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

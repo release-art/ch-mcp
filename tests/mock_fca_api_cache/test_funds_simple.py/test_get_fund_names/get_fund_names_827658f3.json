@@ -1,0 +1,30 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "ProductNameAlias",
+          "data": {
+            "effective_from": "1997-12-23T00:00:00",
+            "effective_to": "2019-08-22T00:00:00",
+            "name": "ABERDEEN INVESTMENT FUNDS ICVC"
+          },
+          "module": "fca_api.types.products",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "ProductNameAlias",
+          "data": {
+            "effective_from": "1997-12-23T00:00:00",
+            "effective_to": "2022-08-01T00:00:00",
+            "name": "Aberdeen Standard OEIC I"
+          },
+          "module": "fca_api.types.products",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

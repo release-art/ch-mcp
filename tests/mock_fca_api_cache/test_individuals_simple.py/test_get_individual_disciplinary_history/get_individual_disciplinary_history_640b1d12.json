@@ -1,0 +1,9 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": []
+    }
+  ],
+  "type": "MultipageList"
+}

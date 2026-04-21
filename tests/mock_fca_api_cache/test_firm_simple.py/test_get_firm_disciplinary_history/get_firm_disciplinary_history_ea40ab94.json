@@ -1,0 +1,43 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "FirmDisciplinaryRecord",
+          "data": {
+            "effective_from": "2020-12-15T00:00:00",
+            "enforcement_type": "FSMA",
+            "type_of_action": "fines",
+            "type_of_description": "On 15 December 2020, the FCA fined Barclays Bank UK PLC, Barclays Bank PLC, Clydesdale Financial Services Limited (Barclays) . The reason for this action is that between 1 April 2014 and 31 December 2018, Barclays breached Principles 6 and 3 of the Authority\u2019s Principles for Businesses and CONC 6.7.2R, 7.2.1R and 7.3.4R from its Consumer Credit sourcebook by failing to show forbearance and due consideration to business and retail customers when they fell into arrears or experienced financial difficulties. The FCA\u2019s action took effect on 15 December 2020 and a copy of the Final Notice is displayed on the FCA's web site here https://www.fca.org.uk/publication/final-notices/barclays-2020.pdf"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmDisciplinaryRecord",
+          "data": {
+            "effective_from": "2024-11-25T00:00:00",
+            "enforcement_type": "FSMA",
+            "type_of_action": "fines",
+            "type_of_description": "Final Notice 2024: Barclays plc and Final Notice 2024: Barclays Bank plc https://www.fca.org.uk/publication/final-notices/barclays-plc-2024.pdf"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "FirmDisciplinaryRecord",
+          "data": {
+            "effective_from": "2025-07-16T00:00:00",
+            "enforcement_type": "FSMA",
+            "type_of_action": "fines",
+            "type_of_description": "A final notice has been issued in relation to Barclays Bank UK PLC because it breached Principle 3 and SYSC 6.1.1R by failing to organise and control its affairs responsibly and effectively with adequate risk management systems in respect of its account opening procedures for client money accounts. https://www.fca.org.uk/publication/final-notices/barclays-bank-uk-plc-2025.pdf"
+          },
+          "module": "fca_api.types.firm",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

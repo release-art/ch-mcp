@@ -1,0 +1,78 @@
+{
+  "calls": [
+    {
+      "call": "local_items",
+      "out": [
+        {
+          "class": "IndividualControlledFunction",
+          "data": {
+            "customer_engagement_method": "",
+            "effective_date": "2020-02-10T00:00:00",
+            "end_date": "2025-02-11T00:00:00",
+            "firm_name": "Barclays Capital Securities Limited",
+            "name": "[FCA CF] Client dealing",
+            "restriction": null,
+            "restriction_end_date": null,
+            "restriction_start_date": null,
+            "type": "previous",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/124431"
+          },
+          "module": "fca_api.types.individual",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "IndividualControlledFunction",
+          "data": {
+            "customer_engagement_method": "",
+            "effective_date": "2020-02-10T00:00:00",
+            "end_date": "2025-02-11T00:00:00",
+            "firm_name": "Barclays Bank Plc",
+            "name": "[FCA CF] Client dealing",
+            "restriction": null,
+            "restriction_end_date": null,
+            "restriction_start_date": null,
+            "type": "previous",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/122702"
+          },
+          "module": "fca_api.types.individual",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "IndividualControlledFunction",
+          "data": {
+            "customer_engagement_method": "",
+            "effective_date": "2025-09-02T00:00:00",
+            "end_date": null,
+            "firm_name": "Barclays Capital Securities Limited",
+            "name": "[FCA CF] Client dealing",
+            "restriction": null,
+            "restriction_end_date": null,
+            "restriction_start_date": null,
+            "type": "current",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/124431"
+          },
+          "module": "fca_api.types.individual",
+          "type": "PydanticModel"
+        },
+        {
+          "class": "IndividualControlledFunction",
+          "data": {
+            "customer_engagement_method": "",
+            "effective_date": "2025-09-02T00:00:00",
+            "end_date": null,
+            "firm_name": "Barclays Bank Plc",
+            "name": "[FCA CF] Client dealing",
+            "restriction": null,
+            "restriction_end_date": null,
+            "restriction_start_date": null,
+            "type": "current",
+            "url": "https://register.fca.org.uk/services/V0.1/Firm/122702"
+          },
+          "module": "fca_api.types.individual",
+          "type": "PydanticModel"
+        }
+      ]
+    }
+  ],
+  "type": "MultipageList"
+}

@@ -1,0 +1,44 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: interactive-work
+    ports:
+      - "8000:8000"
+    depends_on:
+      - azurite
+    environment:
+      - FCA_API_USERNAME
+      - FCA_API_KEY
+      - AUTH0_MODE=remote
+      - AUTH0_DOMAIN
+      - AUTH0_AUDIENCE
+      # - AUTH0_INTERACTIVE_CLIENT_ID
+      # Proxy mode only (AUTH0_MODE=proxy):
+      # - AUTH0_CLIENT_ID
+      # - AUTH0_CLIENT_SECRET
+      # - AUTH0_JWT_SIGNING_KEY
+      # - AUTH0_STORAGE_ENCRYPTION_KEY
+      - SERVER_BASE_URL
+      # - AZURE_STORAGE_CONNECTION_STRING
+      # - AZURE_CREDENTIAL
+      - AZURE_CLIENT_ID=1b1fbed7-775a-400c-8069-ae2edd474728
+      - AZURE_STORAGE_ACCOUNT=14aaf5cbfae82a7
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./src:/app/src
+    command: pdm run python -m fca_mcp serve --reload
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    ports:
+      - "10000:10000"  # Blob
+      - "10001:10001"  # Queue
+      - "10002:10002"  # Table
+    volumes:
+      - azurite_data:/data
+    command: azurite --skipApiVersionCheck --blobHost 0.0.0.0 --queueHost 0.0.0.0 --tableHost 0.0.0.0
+
+volumes:
+  azurite_data:

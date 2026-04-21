@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "fca-mcp": {
+            "command": "./bin/run.sh",
+            "args": [
+                "fca-mcp",
+                "stdio"
+            ]
+        }
+    }
+}

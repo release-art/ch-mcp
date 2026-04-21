@@ -1,0 +1,13 @@
+{
+  "class": "Individual",
+  "data": {
+    "commonly_used_name": null,
+    "current_roles_and_activities": "https://register.fca.org.uk/services/V0.1/Individuals/BXK69703/CF",
+    "disciplinary_history": "https://register.fca.org.uk/services/V0.1/Individuals/BXK69703/DisciplinaryHistory",
+    "full_name": "Bob Keijzers",
+    "irn": "BXK69703",
+    "status": "certified / assessed by firm"
+  },
+  "module": "fca_api.types.individual",
+  "type": "PydanticModel"
+}

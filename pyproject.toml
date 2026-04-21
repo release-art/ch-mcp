@@ -1,0 +1,253 @@
+[project]
+
+# PEP 621 project metadata
+# See https://www.python.org/dev/peps/pep-0621/
+
+# For the standard reference on Python packaging, including using
+# ``pyproject.toml`` for build definition and configuration see:
+#
+#     https://packaging.python.org/en/latest/tutorials/packaging-projects/
+#
+name = "fca-mcp"
+description = "MCP server for the UK Financial Services (FCA) Register RESTful API"
+
+authors = [
+    {name = "I. Orlovs", email = "ilja@release.art"},
+]
+
+maintainers = [
+  {name = "I. Orlovs", email = "ilja@release.art"}
+]
+
+dynamic = ["version"]
+
+requires-python = ">=3.13"
+
+license = "MIT"
+
+dependencies = [
+    "pydantic>=2.12.5",
+    "uvicorn[standard]>=0.32.0",
+    "typer>=0.21.2",
+    "fca-api>=1.2.0",
+    "python-toon>=0.1.3",
+    "fastmcp>=3,<4",
+    "asyncstdlib>=3.13.1",
+    "pydantic-settings>=2.13.1",
+    "azure-data-tables>=12.7.0",
+    "azure-storage-blob>=12.28.0",
+    "py-key-value-aio>=0.4.4",
+    "azure-storage-queue>=12.15.0",
+    "aiohttp>=3.13.3",
+    "azure-identity>=1.25.2",
+    "Jinja2>=3.1.6",
+    "pyjwt>=2.12.1",
+    "opentelemetry-sdk>=1.41.0",
+    "opentelemetry-exporter-otlp-proto-http>=1.41.0",
+    "opentelemetry-instrumentation-starlette>=0.62b0",
+    "opentelemetry-instrumentation-httpx>=0.62b0",
+    "opentelemetry-instrumentation-logging>=0.62b0",
+    "python-json-logger>=4.1.0",
+]
+
+readme = "README.md"
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Office/Business :: Financial",
+    "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+user = [
+]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.urls]
+Homepage = "https://docs.release.art/fca-api/"
+Documentation = "https://docs.release.art/fca-api/"
+Repository = "https://github.com/release-art/fca-api/"
+
+# For working with PDM, including configuration and usage see:
+#
+#     https://pdm.fming.dev/latest/
+#     https://pdm.fming.dev/latest/reference/pep621/
+#     https://pdm.fming.dev/latest/reference/cli/
+#
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+package-dir = "src"
+includes = ["src/fca_mcp"]
+# File patterns to exclude, the paths are relative to the project root.
+excludes = [
+    "docs",
+    "build",
+    "dist",
+    "tests",
+    ".pytest_cache",
+    "*.pyc",
+    "*.env",
+    "*__pycache__*",
+]
+source-includes = [
+    "README.md",
+]
+editable-backend = "path"
+
+[tool.pdm.dev-dependencies]
+build = [
+    "pip>=23.1.2",
+    "twine",
+]
+lint = [
+    "ruff",
+]
+
+[tool.pyright]
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"
+include = ["src/fca_mcp"]
+typeCheckingMode = "standard"
+reportMissingTypeStubs = false
+
+[tool.ruff]
+target-version = "py313"
+lint.select = [
+    # https://beta.ruff.rs/docs/rules/
+    "A", # do not shadow bultins - TODO
+    "B",  # flake8-bugbear
+    "C",
+    "E",
+    "F",
+    "I",  # isort
+    "W",  # pycodestyle
+    "N",  # pep8 naming
+    "C4", # list comprehensions
+    "T20", # print()
+    "PTH", # use-pathlib - todo
+]
+lint.ignore = ["N802", "F841"]
+line-length = 120
+
+[tool.ruff.format]
+line-ending = "lf"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = [
+    # imported but unused
+    "F401",
+    # E402 Module level import not at top of file
+    "E402",
+]
+
+"bin/**/*.py" = [
+    # print()
+    "T201",
+]
+
+"main.py" = [
+    "B008" # the typer.Option() as default arg
+]
+
+[tool.ruff.lint.isort]
+order-by-type = true
+combine-as-imports = true
+force-wrap-aliases = true
+known-first-party = ["fca_mcp"]
+forced-separate = ["tests"]
+
+[tool.pdm.scripts]
+fca-mcp = {shell = "python -m fca_mcp"}
+
+[tool.pdm.version]
+source = "file"
+path = "src/fca_mcp/__version__.py"
+
+# For ``pytest`` configuration, including TOML-specific configuration see:
+#
+#     https://docs.pytest.org/en/7.3.x/reference/customize.html#configuration
+#     https://docs.pytest.org/en/7.3.x/reference/customize.html#pyproject-toml
+#
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = """\
+    --cache-clear \
+    --code-highlight=yes \
+    --color=yes \
+    --cov=src \
+    --cov-config=pyproject.toml \
+    --cov-report=xml \
+    --cov-report=html \
+    -ra \
+    --tb=native \
+    --verbosity=3 \
+"""
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]
+python_files = ["test_*.py",]
+python_classes = ["Test", "Acceptance",]
+python_functions = ["test"]
+testpaths = [
+    "tests/",
+]
+markers = [
+    # Test tags/labels/markers - not using any currently
+]
+
+# For ``coverage`` configuration see the reference from version ``7.4.1``:
+#
+#     https://coverage.readthedocs.io/en/7.4.1/config.html
+#
+[tool.coverage.run]
+branch = true
+omit = [
+    "./build",
+    "./dist",
+    "./docs",
+    "*/tests*",
+    ".pytest_cache",
+    "*.pyc",
+    "*.env",
+    "*__pycache__*",
+    "__version__.py"
+]
+source = ["src"]
+
+[tool.coverage.report]
+precision = 3
+show_missing = true
+skip_covered = true
+skip_empty = true
+sort = "Name"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "virtualenv",
+    "coverage[toml]",
+    "pytest-asyncio>=1.3.0",
+    "pytest-mock>=3.15.1",
+    "pytest-timeout>=2.4.0",
+    "pyright>=1.1.408",
+]
+docs = [
+    "myst-parser>=4.0.1",
+    "sphinx>=7.4.7",
+    "sphinx-autobuild",
+    "sphinx-copybutton",
+    "sphinx-design>=0.6.1",
+    "pydata-sphinx-theme>=0.16.1",
+]
