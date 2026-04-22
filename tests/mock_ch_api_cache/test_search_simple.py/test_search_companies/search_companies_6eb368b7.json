@@ -1,8 +1,8 @@
 {
-  "class": "MultipageList",
-  "data": {
-    "data": [
-      {
+  "data": [
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -35,7 +35,12 @@
         "snippet": "TESCO STORES (HOLDINGS)",
         "title": "TESCO PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "20 Chapel Street",
           "address_line_2": null,
@@ -68,7 +73,12 @@
         "snippet": "TESCO INTERNATIONAL LTD",
         "title": "15680114 LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "More London Place",
           "address_line_2": null,
@@ -101,7 +111,12 @@
         "snippet": "",
         "title": "TESCO AQUA (FINCO2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -134,7 +149,12 @@
         "snippet": "",
         "title": "TESCO AQUA (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -167,7 +187,12 @@
         "snippet": "",
         "title": "TESCO ATRATO DEPOT PROPCO LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -200,7 +225,12 @@
         "snippet": "",
         "title": "TESCO ATRATO (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -233,7 +263,12 @@
         "snippet": "",
         "title": "TESCO ATRATO (NOMINEE HOLDCO) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -266,7 +301,12 @@
         "snippet": "",
         "title": "TESCO ATRATO (NOMINEE 1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -299,7 +339,12 @@
         "snippet": "",
         "title": "TESCO ATRATO (NOMINEE 2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -332,7 +377,12 @@
         "snippet": "",
         "title": "TESCO ATRATO (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -365,7 +415,12 @@
         "snippet": "",
         "title": "TESCO BLUE (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -398,7 +453,12 @@
         "snippet": "",
         "title": "TESCO BLUE (NOMINEE HOLDCO) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -431,7 +491,12 @@
         "snippet": "",
         "title": "TESCO BLUE (NOMINEE 1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -464,7 +529,12 @@
         "snippet": "",
         "title": "TESCO BLUE (NOMINEE 2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -497,7 +567,12 @@
         "snippet": "",
         "title": "TESCO BLUE (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -530,7 +605,12 @@
         "snippet": "",
         "title": "TESCO BLUE (3LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "More London Place",
           "address_line_2": null,
@@ -564,7 +644,12 @@
         "snippet": "",
         "title": "TESCO BRISLINGTON LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "More London Place",
           "address_line_2": null,
@@ -598,7 +683,12 @@
         "snippet": "",
         "title": "TESCO BURY LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Ifc 1",
           "address_line_2": "Esplanade",
@@ -631,7 +721,12 @@
         "snippet": "",
         "title": "TESCO CAPITAL NO. 1 LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -664,7 +759,12 @@
         "snippet": "",
         "title": "TESCO CAPITAL NO. 1 LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -697,7 +797,12 @@
         "snippet": "",
         "title": "TESCO CAPITAL NO.2 LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -730,7 +835,12 @@
         "snippet": "",
         "title": "TESCO CORAL (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -763,7 +873,12 @@
         "snippet": "",
         "title": "TESCO CORAL (NOMINEE) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -796,7 +911,12 @@
         "snippet": "",
         "title": "TESCO CORPORATE TREASURY SERVICES PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Queen's Road",
           "address_line_2": null,
@@ -829,7 +949,12 @@
         "snippet": "TESCO DRILLING TECHNOLOGY (UK) \u00b7 TESCO DRILLING TECHNOLOGY",
         "title": "TESCO CORPORATION (UK) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -862,7 +987,12 @@
         "snippet": "",
         "title": "TESCO DEPOT PROPCO LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -895,7 +1025,12 @@
         "snippet": "",
         "title": "TESCO DISTRIBUTION LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -928,7 +1063,12 @@
         "snippet": "",
         "title": "TESCO DISTRIBUTION HOLDINGS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -961,7 +1101,12 @@
         "snippet": "",
         "title": "TESCO DORNEY (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -994,7 +1139,12 @@
         "snippet": "",
         "title": "TESCO DORNEY (NOMINEE HOLDCO) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1027,7 +1177,12 @@
         "snippet": "",
         "title": "TESCO DORNEY (NOMINEE 1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1060,7 +1215,12 @@
         "snippet": "",
         "title": "TESCO DORNEY (NOMINEE 2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1093,7 +1253,12 @@
         "snippet": "",
         "title": "TESCO DORNEY (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1126,7 +1291,12 @@
         "snippet": "",
         "title": "TESCO EMPLOYEES' SHARE SCHEME TRUSTEES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1159,7 +1329,12 @@
         "snippet": "",
         "title": "TESCO FAMILY DINING LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "More London Place",
           "address_line_2": null,
@@ -1193,7 +1368,12 @@
         "snippet": "",
         "title": "TESCO FOOD SOURCING LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1226,7 +1406,12 @@
         "snippet": "",
         "title": "TESCO FREETIME LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -1259,7 +1444,12 @@
         "snippet": "",
         "title": "TESCO FUCHSIA (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1292,7 +1482,12 @@
         "snippet": "",
         "title": "TESCO FUCHSIA (3LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -1325,7 +1520,12 @@
         "snippet": "",
         "title": "TESCO FUCHSIA (2LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1358,7 +1558,12 @@
         "snippet": "",
         "title": "TESCO GATESHEAD PROPERTY LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -1391,7 +1596,12 @@
         "snippet": "",
         "title": "TESCO GREY (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -1424,7 +1634,12 @@
         "snippet": "",
         "title": "TESCO GREY (2LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1457,7 +1672,12 @@
         "snippet": "",
         "title": "TESCO HOLDINGS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1490,7 +1710,12 @@
         "snippet": "",
         "title": "TESCO INTERNATIONAL SERVICES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "144 Morrison Street",
           "address_line_2": null,
@@ -1523,7 +1748,12 @@
         "snippet": "",
         "title": "TESCO LAGOON GP LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Broadway Parade",
           "address_line_2": "Station Road",
@@ -1556,7 +1786,12 @@
         "snippet": "",
         "title": "TESCO LONDON LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1589,7 +1824,12 @@
         "snippet": "",
         "title": "TESCO MAINTENANCE LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -1622,7 +1862,12 @@
         "snippet": "TESCO MOBILE COMMUNICATIONS LIMITED",
         "title": "TESCO MOBILE LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1655,7 +1900,12 @@
         "snippet": "",
         "title": "TESCO MOBILE COMMUNICATIONS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1688,7 +1938,12 @@
         "snippet": "",
         "title": "TESCO MOBILE SERVICES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1721,7 +1976,12 @@
         "snippet": "",
         "title": "TESCO NAVONA (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1754,7 +2014,12 @@
         "snippet": "",
         "title": "TESCO NAVONA (NOMINEE HOLDCO) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1787,7 +2052,12 @@
         "snippet": "",
         "title": "TESCO NAVONA (NOMINEE 1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1820,7 +2090,12 @@
         "snippet": "",
         "title": "TESCO NAVONA (NOMINEE 2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1853,7 +2128,12 @@
         "snippet": "",
         "title": "TESCO NAVONA (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1886,7 +2166,12 @@
         "snippet": "",
         "title": "TESCO NAVONA PL PROPCO LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Shire Park, Kestrel Way",
           "address_line_2": null,
@@ -1919,7 +2204,12 @@
         "snippet": "",
         "title": "TESCO NEWMARKET LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -1952,7 +2242,12 @@
         "snippet": "",
         "title": "TESCO NEWRY LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "More London Place",
           "address_line_2": null,
@@ -1986,7 +2281,12 @@
         "snippet": "TESCO (COMPUTER SERVICES) INTERNATIONAL LIMITED",
         "title": "TESCO (OVERSEAS) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2019,7 +2319,12 @@
         "snippet": "",
         "title": "TESCO OVERSEAS INVESTMENTS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2052,7 +2357,12 @@
         "snippet": "",
         "title": "TESCO PASSAIC (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2085,7 +2395,12 @@
         "snippet": "",
         "title": "TESCO PASSAIC (NOMINEE HOLDCO) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2118,7 +2433,12 @@
         "snippet": "",
         "title": "TESCO PASSAIC (NOMINEE 1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2151,7 +2471,12 @@
         "snippet": "",
         "title": "TESCO PASSAIC (NOMINEE 2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2184,7 +2509,12 @@
         "snippet": "",
         "title": "TESCO PASSAIC (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2217,7 +2547,12 @@
         "snippet": "",
         "title": "TESCO PASSAIC PL PROPCO LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2250,7 +2585,12 @@
         "snippet": "",
         "title": "TESCO PENSION INVESTMENT LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2283,7 +2623,12 @@
         "snippet": "",
         "title": "TESCO PENSION TRUSTEES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "South Gyle Crescent",
           "address_line_2": null,
@@ -2316,7 +2661,12 @@
         "snippet": "",
         "title": "TESCO PERSONAL FINANCE LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "South Gyle Crescent",
           "address_line_2": null,
@@ -2349,7 +2699,12 @@
         "snippet": "",
         "title": "TESCO PERSONAL FINANCE GROUP LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -2382,7 +2737,12 @@
         "snippet": "",
         "title": "TESCO PERSONAL FINANCE LIFE LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -2415,7 +2775,12 @@
         "snippet": "",
         "title": "TESCO PINK (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -2448,7 +2813,12 @@
         "snippet": "",
         "title": "TESCO PINK (2LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2481,7 +2851,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY FINANCE 5 PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2514,7 +2889,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY FINANCE 4 PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2547,7 +2927,12 @@
         "snippet": "TESCO BLUE (FINCO1)",
         "title": "TESCO PROPERTY FINANCE 1 PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2580,7 +2965,12 @@
         "snippet": "TESCO FINCO HOLDCO \u00b7 TESCO WHITE (GP)",
         "title": "TESCO PROPERTY FINANCE 1 HOLDCO LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2613,7 +3003,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY FINANCE 6 PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2646,7 +3041,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY FINANCE 3 PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2679,7 +3079,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY FINANCE 2 PLC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2712,7 +3117,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY HOLDINGS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2745,7 +3155,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY HOLDINGS (NO.2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2778,7 +3193,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY (NOMINEES) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2811,7 +3231,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY NOMINEES (NO.5) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2844,7 +3269,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY (NOMINEES) (NO.1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2877,7 +3307,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY NOMINEES (NO.6) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Churchill Place",
           "address_line_2": "10th Floor",
@@ -2910,7 +3345,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY (NOMINEES) (NO.2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2943,7 +3383,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY PARTNER (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -2976,7 +3421,12 @@
         "snippet": "",
         "title": "TESCO PROPERTY PARTNER (NO.1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -3009,7 +3459,12 @@
         "snippet": "",
         "title": "TESCO PURPLE (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -3042,7 +3497,12 @@
         "snippet": "",
         "title": "TESCO PURPLE (2LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": null,
           "address_line_2": null,
@@ -3075,7 +3535,12 @@
         "snippet": "",
         "title": "TESCO RED (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -3108,7 +3573,12 @@
         "snippet": "",
         "title": "TESCO SARUM (GP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -3141,7 +3611,12 @@
         "snippet": "",
         "title": "TESCO SARUM (NOMINEE HOLDCO) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -3174,7 +3649,12 @@
         "snippet": "",
         "title": "TESCO SARUM (NOMINEE 1) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -3207,7 +3687,12 @@
         "snippet": "",
         "title": "TESCO SARUM (NOMINEE 2) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -3240,7 +3725,12 @@
         "snippet": "",
         "title": "TESCO SARUM (1LP) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -3273,7 +3763,12 @@
         "snippet": "",
         "title": "TESCO SEACROFT LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
         "address": {
           "address_line_1": "Kestrel Way",
           "address_line_2": null,
@@ -3305,14 +3800,15 @@
         },
         "snippet": "",
         "title": "TESCO SECRETARIES LIMITED"
-      }
-    ],
-    "pagination": {
-      "has_next": true,
-      "next_page": "{\"start_index\": 100}",
-      "size": 356
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
     }
+  ],
+  "pagination": {
+    "has_next": true,
+    "next_page": "{\"start_index\": 100}",
+    "size": 356
   },
-  "module": "ch_api.types.pagination.types",
-  "type": "PydanticModel"
+  "type": "MultipageList"
 }

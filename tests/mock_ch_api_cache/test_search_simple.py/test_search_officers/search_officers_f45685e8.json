@@ -1,8 +1,8 @@
 {
-  "class": "MultipageList",
-  "data": {
-    "data": [
-      {
+  "data": [
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "1 Albert Avenue",
           "address_line_2": "Sileby",
@@ -33,7 +33,12 @@
         "snippet": "",
         "title": "SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Maismore Ave",
           "address_line_2": "Stoke Lodge Patchway",
@@ -64,7 +69,12 @@
         "snippet": "",
         "title": "SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Halifax Rise",
           "address_line_2": null,
@@ -95,7 +105,12 @@
         "snippet": "SMITH",
         "title": "ABACUS COMPANY FORMATION AGENTS LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Clophill Road",
           "address_line_2": null,
@@ -126,7 +141,12 @@
         "snippet": "",
         "title": "SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Ashpole Furlong",
           "address_line_2": "Loughton",
@@ -157,255 +177,12 @@
         "snippet": "",
         "title": "SMITH"
       },
-      {
-        "address": {
-          "address_line_1": "King Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "England",
-          "locality": "Derby",
-          "po_box": null,
-          "postal_code": "DE1 3EE",
-          "premises": "St Helen's House",
-          "region": null
-        },
-        "address_snippet": "St Helen's House, King Street, Derby, England, DE1 3EE",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/ac4vjut_JVMA8bMFzIluA1iUICQ/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH COOPER HOLDINGS LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Adam Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "Uk",
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "WC2N 6LA",
-          "premises": "15",
-          "region": null
-        },
-        "address_snippet": "15 Adam Street, London, Uk, WC2N 6LA",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/afwSwBeLUMZn4bfoIVedXtw-2qk/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH & NEPHEW USD LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Dereham Road",
-          "address_line_2": "Honingham",
-          "care_of": null,
-          "country": null,
-          "locality": "Norwich",
-          "po_box": null,
-          "postal_code": "NR9 5AP",
-          "premises": "Quarry Works",
-          "region": null
-        },
-        "address_snippet": "Quarry Works, Dereham Road, Honingham, Norwich, NR9 5AP",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/8glUvbd6Nl16UqhQp49eis5s5T8/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH OF HONINGHAM (DEVELOPMENTS) LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Stanton Harcourt Road",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "Uk",
-          "locality": "Witney",
-          "po_box": null,
-          "postal_code": "OX28 3LD",
-          "premises": "14",
-          "region": null
-        },
-        "address_snippet": "14 Stanton Harcourt Road, Witney, Uk, OX28 3LD",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/Ck95yHamuGZyG-x_BhAJk-4x3NI/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH KENNEDY LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Haywards Place",
-          "address_line_2": "Easterton",
-          "care_of": null,
-          "country": "United Kingdom",
-          "locality": "Devizes",
-          "po_box": null,
-          "postal_code": "SN10 4PP",
-          "premises": "26",
-          "region": "Wiltshire"
-        },
-        "address_snippet": "26 Haywards Place, Easterton, Devizes, Wiltshire, United Kingdom, SN10 4PP",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/D967U0qplfmxo4Qcz3TBEw_WJm0/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH HOLDINGS CORPORATION LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Shore Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "Scotland",
-          "locality": "Fraserburgh",
-          "po_box": null,
-          "postal_code": "AB42 3EZ",
-          "premises": "141",
-          "region": "Aberdeenshire"
-        },
-        "address_snippet": "141 Shore Street, Fraserburgh, Aberdeenshire, Scotland, AB42 3EZ",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/f6a5aamwATEGGlzg3zgZDI51mJU/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH ESTATES PETERHEAD LTD"
-      },
-      {
-        "address": {
-          "address_line_1": "382 Gloucester Road",
-          "address_line_2": null,
-          "care_of": null,
-          "country": null,
-          "locality": "Cheltenham",
-          "po_box": null,
-          "postal_code": "GL51 7AY",
-          "premises": "Brent House",
-          "region": "Gloucestershire"
-        },
-        "address_snippet": "Brent House, 382 Gloucester Road, Cheltenham, Gloucestershire, GL51 7AY",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/iTQL6FWDugYEFpgg8MPdbSMU6C8/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH HEATH LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "113 Barksdale Professional Center",
-          "address_line_2": "Newark",
-          "care_of": null,
-          "country": "U.S.A.",
-          "locality": "New Castle",
-          "po_box": null,
-          "postal_code": "19711",
-          "premises": null,
-          "region": "Delaware"
-        },
-        "address_snippet": "113 Barksdale Professional Center, Newark, New Castle, Delaware, U.S.A., 19711",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/mIW5xGBAXHvYWMD5Jx4VQVsUA8Y/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH CONTRACTING AND DESIGN LLC"
-      },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Dillard Drive",
           "address_line_2": null,
@@ -436,19 +213,24 @@
         "snippet": "",
         "title": "SMITH MOUNTAIN INDUSTRIES, INC"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
-          "address_line_1": "Blackburn Road",
-          "address_line_2": "Ribchester",
+          "address_line_1": "Shore Street",
+          "address_line_2": null,
           "care_of": null,
-          "country": "United Kingdom",
-          "locality": "Preston",
+          "country": "Scotland",
+          "locality": "Fraserburgh",
           "po_box": null,
-          "postal_code": "PR3 3YP",
-          "premises": "6a",
-          "region": null
+          "postal_code": "AB42 3EZ",
+          "premises": "141",
+          "region": "Aberdeenshire"
         },
-        "address_snippet": "6a, Blackburn Road, Ribchester, Preston, United Kingdom, PR3 3YP",
+        "address_snippet": "141 Shore Street, Fraserburgh, Aberdeenshire, Scotland, AB42 3EZ",
         "appointment_count": 1,
         "date_of_birth": null,
         "description": "Total number of appointments 1",
@@ -457,7 +239,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/zDXiquiEZCndreBI3xAdnVW9c1o/appointments"
+          "self": "/officers/f6a5aamwATEGGlzg3zgZDI51mJU/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -465,21 +247,26 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITHS ACCOUNTANTS HOLDINGS LIMITED"
+        "title": "SMITH ESTATES PETERHEAD LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
-          "address_line_1": "Dethick",
+          "address_line_1": "382 Gloucester Road",
           "address_line_2": null,
           "care_of": null,
           "country": null,
-          "locality": "Matlock",
+          "locality": "Cheltenham",
           "po_box": null,
-          "postal_code": "DE4 5QF",
-          "premises": "The Stackyard",
-          "region": null
+          "postal_code": "GL51 7AY",
+          "premises": "Brent House",
+          "region": "Gloucestershire"
         },
-        "address_snippet": "The Stackyard, Dethick, Matlock, DE4 5QF",
+        "address_snippet": "Brent House, 382 Gloucester Road, Cheltenham, Gloucestershire, GL51 7AY",
         "appointment_count": 1,
         "date_of_birth": null,
         "description": "Total number of appointments 1",
@@ -488,7 +275,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/TgJIyyV4I48PK03eMv0C8bftIhk/appointments"
+          "self": "/officers/iTQL6FWDugYEFpgg8MPdbSMU6C8/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -496,52 +283,26 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITH & SONS BUILDING & CONSERVATION LTD"
+        "title": "SMITH HEATH LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
-          "address_line_1": null,
+          "address_line_1": "King Street",
           "address_line_2": null,
           "care_of": null,
-          "country": "United Kingdom",
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "WC2A 2JR",
-          "premises": "7 Bell Yard",
-          "region": null
-        },
-        "address_snippet": "7 Bell Yard, London, United Kingdom, WC2A 2JR",
-        "appointment_count": 2,
-        "date_of_birth": null,
-        "description": "Total number of appointments 2",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/7mW2F5dIvYRIyDLWB_jhhsdXEBs/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH & JOHNSON LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Panton Street",
-          "address_line_2": "Haymarket",
-          "care_of": null,
           "country": "England",
-          "locality": "London",
+          "locality": "Derby",
           "po_box": null,
-          "postal_code": "SW1Y 4SW",
-          "premises": "4",
+          "postal_code": "DE1 3EE",
+          "premises": "St Helen's House",
           "region": null
         },
-        "address_snippet": "4 Panton Street, Haymarket, London, England, SW1Y 4SW",
+        "address_snippet": "St Helen's House, King Street, Derby, England, DE1 3EE",
         "appointment_count": 1,
         "date_of_birth": null,
         "description": "Total number of appointments 1",
@@ -550,7 +311,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/AiOPJlsUATLHhFC5XXOAG1u8lgM/appointments"
+          "self": "/officers/ac4vjut_JVMA8bMFzIluA1iUICQ/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -558,9 +319,194 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITH WATERS LLP"
+        "title": "SMITH COOPER HOLDINGS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Adam Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "Uk",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "WC2N 6LA",
+          "premises": "15",
+          "region": null
+        },
+        "address_snippet": "15 Adam Street, London, Uk, WC2N 6LA",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/afwSwBeLUMZn4bfoIVedXtw-2qk/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH & NEPHEW USD LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Stanton Harcourt Road",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "Uk",
+          "locality": "Witney",
+          "po_box": null,
+          "postal_code": "OX28 3LD",
+          "premises": "14",
+          "region": null
+        },
+        "address_snippet": "14 Stanton Harcourt Road, Witney, Uk, OX28 3LD",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/Ck95yHamuGZyG-x_BhAJk-4x3NI/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH KENNEDY LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Haywards Place",
+          "address_line_2": "Easterton",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Devizes",
+          "po_box": null,
+          "postal_code": "SN10 4PP",
+          "premises": "26",
+          "region": "Wiltshire"
+        },
+        "address_snippet": "26 Haywards Place, Easterton, Devizes, Wiltshire, United Kingdom, SN10 4PP",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/D967U0qplfmxo4Qcz3TBEw_WJm0/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH HOLDINGS CORPORATION LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "113 Barksdale Professional Center",
+          "address_line_2": "Newark",
+          "care_of": null,
+          "country": "U.S.A.",
+          "locality": "New Castle",
+          "po_box": null,
+          "postal_code": "19711",
+          "premises": null,
+          "region": "Delaware"
+        },
+        "address_snippet": "113 Barksdale Professional Center, Newark, New Castle, Delaware, U.S.A., 19711",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/mIW5xGBAXHvYWMD5Jx4VQVsUA8Y/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH CONTRACTING AND DESIGN LLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Dereham Road",
+          "address_line_2": "Honingham",
+          "care_of": null,
+          "country": null,
+          "locality": "Norwich",
+          "po_box": null,
+          "postal_code": "NR9 5AP",
+          "premises": "Quarry Works",
+          "region": null
+        },
+        "address_snippet": "Quarry Works, Dereham Road, Honingham, Norwich, NR9 5AP",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/8glUvbd6Nl16UqhQp49eis5s5T8/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH OF HONINGHAM (DEVELOPMENTS) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": "Ripley",
@@ -591,7 +537,12 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Bank Street",
           "address_line_2": "Level 18",
@@ -622,7 +573,12 @@
         "snippet": "",
         "title": "SMITH AND PARKER SECURITIES LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Aylestone Road",
           "address_line_2": null,
@@ -653,38 +609,12 @@
         "snippet": "",
         "title": "SMITH BROTHERS STORES LIMITED"
       },
-      {
-        "address": {
-          "address_line_1": "Hope Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "Scotland",
-          "locality": "Glasgow",
-          "po_box": null,
-          "postal_code": "G2 6AE",
-          "premises": "45",
-          "region": null
-        },
-        "address_snippet": "45 Hope Street, Glasgow, Scotland, G2 6AE",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/3GFfiXlNhIfh8JRQS7CREWynLGg/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH INGLIS & CO"
-      },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": "Ripley",
@@ -715,19 +645,24 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
-          "address_line_1": "Dethick",
-          "address_line_2": null,
+          "address_line_1": "Blackburn Road",
+          "address_line_2": "Ribchester",
           "care_of": null,
-          "country": "England",
-          "locality": "Matlock",
+          "country": "United Kingdom",
+          "locality": "Preston",
           "po_box": null,
-          "postal_code": "DE4 5QF",
-          "premises": "The Stackyard",
-          "region": "Derbyshire"
+          "postal_code": "PR3 3YP",
+          "premises": "6a",
+          "region": null
         },
-        "address_snippet": "The Stackyard, Dethick, Matlock, Derbyshire, England, DE4 5QF",
+        "address_snippet": "6a, Blackburn Road, Ribchester, Preston, United Kingdom, PR3 3YP",
         "appointment_count": 1,
         "date_of_birth": null,
         "description": "Total number of appointments 1",
@@ -736,7 +671,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/rlsfJj4Co_xB7tlACUX4JPirwW4/appointments"
+          "self": "/officers/zDXiquiEZCndreBI3xAdnVW9c1o/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -744,9 +679,158 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITHS AND SONS BUILDING AND CONSERVATION LTD"
+        "title": "SMITHS ACCOUNTANTS HOLDINGS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Hope Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "Scotland",
+          "locality": "Glasgow",
+          "po_box": null,
+          "postal_code": "G2 6AE",
+          "premises": "45",
+          "region": null
+        },
+        "address_snippet": "45 Hope Street, Glasgow, Scotland, G2 6AE",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/3GFfiXlNhIfh8JRQS7CREWynLGg/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH INGLIS & CO"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Dethick",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Matlock",
+          "po_box": null,
+          "postal_code": "DE4 5QF",
+          "premises": "The Stackyard",
+          "region": null
+        },
+        "address_snippet": "The Stackyard, Dethick, Matlock, DE4 5QF",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/TgJIyyV4I48PK03eMv0C8bftIhk/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH & SONS BUILDING & CONSERVATION LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "WC2A 2JR",
+          "premises": "7 Bell Yard",
+          "region": null
+        },
+        "address_snippet": "7 Bell Yard, London, United Kingdom, WC2A 2JR",
+        "appointment_count": 2,
+        "date_of_birth": null,
+        "description": "Total number of appointments 2",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/7mW2F5dIvYRIyDLWB_jhhsdXEBs/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH & JOHNSON LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Panton Street",
+          "address_line_2": "Haymarket",
+          "care_of": null,
+          "country": "England",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "SW1Y 4SW",
+          "premises": "4",
+          "region": null
+        },
+        "address_snippet": "4 Panton Street, Haymarket, London, England, SW1Y 4SW",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/AiOPJlsUATLHhFC5XXOAG1u8lgM/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH WATERS LLP"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": "Ripley",
@@ -777,224 +861,12 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
       },
-      {
-        "address": {
-          "address_line_1": "Aylestone Road",
-          "address_line_2": null,
-          "care_of": null,
-          "country": null,
-          "locality": "Leicester",
-          "po_box": null,
-          "postal_code": "LE2 7PB",
-          "premises": "Batten Street",
-          "region": null
-        },
-        "address_snippet": "Batten Street, Aylestone Road, Leicester, LE2 7PB",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/BcIGyDPH3_9nI2AxZYk6O7OUsT8/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH BROTHERS STORES LTD"
-      },
-      {
-        "address": {
-          "address_line_1": "Adam Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "Uk",
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "WC2N 6LA",
-          "premises": "15",
-          "region": null
-        },
-        "address_snippet": "15 Adam Street, London, Uk, WC2N 6LA",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/ZrAVsZdTGFtCvda1AFW85qffZGc/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH & NEPHEW (OVERSEAS) LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Moorgate",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "United Kingdom",
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "EC2R 6AY",
-          "premises": "25",
-          "region": null
-        },
-        "address_snippet": "25 Moorgate, London, United Kingdom, EC2R 6AY",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/eyvKg7bbZHUwU7UOHgOZtvDQvE4/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH & WILLIAMSON LTD"
-      },
-      {
-        "address": {
-          "address_line_1": "Blackburn Road",
-          "address_line_2": "Haslingden",
-          "care_of": null,
-          "country": "England",
-          "locality": "Rossendale",
-          "po_box": null,
-          "postal_code": "BB4 5HN",
-          "premises": "129",
-          "region": null
-        },
-        "address_snippet": "129 Blackburn Road, Haslingden, Rossendale, England, BB4 5HN",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/0Hip0qI7FHqPvP5vrUmDB3wlNb8/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH TAYLOR ASSOCIATES LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "High Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "United Kingdom",
-          "locality": "Ripley",
-          "po_box": null,
-          "postal_code": "GU23 6AY",
-          "premises": "Hurst House",
-          "region": "Surrey"
-        },
-        "address_snippet": "Hurst House, High Street, Ripley, Surrey, United Kingdom, GU23 6AY",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/18iYGITQKYtHU6kgm4jRrG39lPg/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH PEARMAN COMPANY SECRETARIES LTD"
-      },
-      {
-        "address": {
-          "address_line_1": "Adam Street",
-          "address_line_2": null,
-          "care_of": "Smith & Nephew Plc",
-          "country": "England",
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "WC2N 6LA",
-          "premises": "15",
-          "region": null
-        },
-        "address_snippet": "Smith & Nephew Plc, 15 Adam Street, London, England, WC2N 6LA",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/uK2LOB-_MmwfwpXOiWBnnw83uoM/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH & NEPHEW NOMINEE SERVICES LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "1 The Oasis",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "England",
-          "locality": "Sheffield",
-          "po_box": null,
-          "postal_code": "S9 1EP",
-          "premises": "The Management Suite",
-          "region": null
-        },
-        "address_snippet": "The Management Suite, 1 The Oasis, Sheffield, England, S9 1EP",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/mXrArwbEm38RoOmJ0ER8os3z1ZE/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH YOUNG LIMITED"
-      },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Mellors Way, Nottingham Business Park",
           "address_line_2": null,
@@ -1025,7 +897,12 @@
         "snippet": "",
         "title": "SMITH EMMERSON ACCOUNTANTS LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "1 Fitzroy House",
           "address_line_2": null,
@@ -1056,19 +933,24 @@
         "snippet": "",
         "title": "SMITH MEDICAL LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
-          "address_line_1": "Moorgate",
+          "address_line_1": "Adam Street",
           "address_line_2": null,
           "care_of": null,
-          "country": null,
+          "country": "Uk",
           "locality": "London",
           "po_box": null,
-          "postal_code": "EC2R 6AY",
-          "premises": "25",
-          "region": "Uk"
+          "postal_code": "WC2N 6LA",
+          "premises": "15",
+          "region": null
         },
-        "address_snippet": "25 Moorgate, London, Uk, EC2R 6AY",
+        "address_snippet": "15 Adam Street, London, Uk, WC2N 6LA",
         "appointment_count": 1,
         "date_of_birth": null,
         "description": "Total number of appointments 1",
@@ -1077,7 +959,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/87LlvjXIVW4OcVvlOMPRxY6LOBQ/appointments"
+          "self": "/officers/ZrAVsZdTGFtCvda1AFW85qffZGc/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -1085,9 +967,14 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITH & WILLIAMSON GROUP HOLDINGS LIMITED"
+        "title": "SMITH & NEPHEW (OVERSEAS) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": null,
@@ -1118,19 +1005,24 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
-          "address_line_1": "High Street",
-          "address_line_2": "Ripley",
+          "address_line_1": "Moorgate",
+          "address_line_2": null,
           "care_of": null,
           "country": "United Kingdom",
-          "locality": "Woking",
+          "locality": "London",
           "po_box": null,
-          "postal_code": "GU23 6AY",
-          "premises": "Hurst House",
+          "postal_code": "EC2R 6AY",
+          "premises": "25",
           "region": null
         },
-        "address_snippet": "Hurst House, High Street, Ripley, Woking, United Kingdom, GU23 6AY",
+        "address_snippet": "25 Moorgate, London, United Kingdom, EC2R 6AY",
         "appointment_count": 1,
         "date_of_birth": null,
         "description": "Total number of appointments 1",
@@ -1139,7 +1031,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/DfW50gcjXz15hrlTxpMYvhPCqPo/appointments"
+          "self": "/officers/eyvKg7bbZHUwU7UOHgOZtvDQvE4/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -1147,9 +1039,194 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
+        "title": "SMITH & WILLIAMSON LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "1 The Oasis",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "England",
+          "locality": "Sheffield",
+          "po_box": null,
+          "postal_code": "S9 1EP",
+          "premises": "The Management Suite",
+          "region": null
+        },
+        "address_snippet": "The Management Suite, 1 The Oasis, Sheffield, England, S9 1EP",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/mXrArwbEm38RoOmJ0ER8os3z1ZE/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH YOUNG LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Dethick",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "England",
+          "locality": "Matlock",
+          "po_box": null,
+          "postal_code": "DE4 5QF",
+          "premises": "The Stackyard",
+          "region": "Derbyshire"
+        },
+        "address_snippet": "The Stackyard, Dethick, Matlock, Derbyshire, England, DE4 5QF",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/rlsfJj4Co_xB7tlACUX4JPirwW4/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITHS AND SONS BUILDING AND CONSERVATION LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Adam Street",
+          "address_line_2": null,
+          "care_of": "Smith & Nephew Plc",
+          "country": "England",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "WC2N 6LA",
+          "premises": "15",
+          "region": null
+        },
+        "address_snippet": "Smith & Nephew Plc, 15 Adam Street, London, England, WC2N 6LA",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/uK2LOB-_MmwfwpXOiWBnnw83uoM/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH & NEPHEW NOMINEE SERVICES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Blackburn Road",
+          "address_line_2": "Haslingden",
+          "care_of": null,
+          "country": "England",
+          "locality": "Rossendale",
+          "po_box": null,
+          "postal_code": "BB4 5HN",
+          "premises": "129",
+          "region": null
+        },
+        "address_snippet": "129 Blackburn Road, Haslingden, Rossendale, England, BB4 5HN",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/0Hip0qI7FHqPvP5vrUmDB3wlNb8/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH TAYLOR ASSOCIATES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "High Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Ripley",
+          "po_box": null,
+          "postal_code": "GU23 6AY",
+          "premises": "Hurst House",
+          "region": "Surrey"
+        },
+        "address_snippet": "Hurst House, High Street, Ripley, Surrey, United Kingdom, GU23 6AY",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/18iYGITQKYtHU6kgm4jRrG39lPg/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH PEARMAN COMPANY SECRETARIES LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moorgate",
           "address_line_2": null,
@@ -1170,7 +1247,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/_md4MB5_MAtXhsKDMN0j9xsmu5w/appointments"
+          "self": "/officers/87LlvjXIVW4OcVvlOMPRxY6LOBQ/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -1178,83 +1255,26 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITH & WILLIAMSON SERVICES LIMITED"
+        "title": "SMITH & WILLIAMSON GROUP HOLDINGS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
-          "address_line_1": "High Street",
-          "address_line_2": "Unit 120213",
-          "care_of": null,
-          "country": "United Kingdom",
-          "locality": "Margate",
-          "po_box": null,
-          "postal_code": "CT9 1JT",
-          "premises": "119a",
-          "region": "Kent"
-        },
-        "address_snippet": "119a, High Street, Unit 120213, Margate, Kent, United Kingdom, CT9 1JT",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/cytDbMRJFFHHe0wbN4Qb1uRprso/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH LAWYERS LTD"
-      },
-      {
-        "address": {
-          "address_line_1": "Moorgate",
+          "address_line_1": "Aylestone Road",
           "address_line_2": null,
           "care_of": null,
           "country": null,
-          "locality": "London",
+          "locality": "Leicester",
           "po_box": null,
-          "postal_code": "EC2R 6AY",
-          "premises": "25",
+          "postal_code": "LE2 7PB",
+          "premises": "Batten Street",
           "region": null
         },
-        "address_snippet": "25 Moorgate, London, EC2R 6AY",
-        "appointment_count": 2,
-        "date_of_birth": null,
-        "description": "Total number of appointments 2",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/211vA4_rCKSWnJy08UxmGddBjsA/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH & WILLIAMSON LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "Skipper Way",
-          "address_line_2": "Little Paxton",
-          "care_of": null,
-          "country": "United Kingdom",
-          "locality": "St. Neots",
-          "po_box": null,
-          "postal_code": "PE19 6LT",
-          "premises": "81",
-          "region": "Cambridgeshire"
-        },
-        "address_snippet": "81 Skipper Way, Little Paxton, St. Neots, Cambridgeshire, United Kingdom, PE19 6LT",
+        "address_snippet": "Batten Street, Aylestone Road, Leicester, LE2 7PB",
         "appointment_count": 1,
         "date_of_birth": null,
         "description": "Total number of appointments 1",
@@ -1263,7 +1283,7 @@
         ],
         "kind": "searchresults#officer",
         "links": {
-          "self": "/officers/2G-NcR6Vvfy8Xipbs9lDebjpnu8/appointments"
+          "self": "/officers/BcIGyDPH3_9nI2AxZYk6O7OUsT8/appointments"
         },
         "matches": {
           "address_snippet": null,
@@ -1271,9 +1291,14 @@
           "title": null
         },
         "snippet": "",
-        "title": "SMITH BARCLAY LLP"
+        "title": "SMITH BROTHERS STORES LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Hamilton Square",
           "address_line_2": null,
@@ -1304,7 +1329,12 @@
         "snippet": "",
         "title": "SMITH & SONS"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Wenlock Road",
           "address_line_2": null,
@@ -1335,7 +1365,156 @@
         "snippet": "",
         "title": "SMITH & SMITH GLOBAL ADVISORY LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "High Street",
+          "address_line_2": "Unit 120213",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Margate",
+          "po_box": null,
+          "postal_code": "CT9 1JT",
+          "premises": "119a",
+          "region": "Kent"
+        },
+        "address_snippet": "119a, High Street, Unit 120213, Margate, Kent, United Kingdom, CT9 1JT",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/cytDbMRJFFHHe0wbN4Qb1uRprso/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH LAWYERS LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Moorgate",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "EC2R 6AY",
+          "premises": "25",
+          "region": null
+        },
+        "address_snippet": "25 Moorgate, London, EC2R 6AY",
+        "appointment_count": 2,
+        "date_of_birth": null,
+        "description": "Total number of appointments 2",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/211vA4_rCKSWnJy08UxmGddBjsA/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH & WILLIAMSON LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Skipper Way",
+          "address_line_2": "Little Paxton",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "St. Neots",
+          "po_box": null,
+          "postal_code": "PE19 6LT",
+          "premises": "81",
+          "region": "Cambridgeshire"
+        },
+        "address_snippet": "81 Skipper Way, Little Paxton, St. Neots, Cambridgeshire, United Kingdom, PE19 6LT",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/2G-NcR6Vvfy8Xipbs9lDebjpnu8/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH BARCLAY LLP"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Moorgate",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "EC2R 6AY",
+          "premises": "25",
+          "region": "Uk"
+        },
+        "address_snippet": "25 Moorgate, London, Uk, EC2R 6AY",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/_md4MB5_MAtXhsKDMN0j9xsmu5w/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH & WILLIAMSON SERVICES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Ford Lane Business Park",
           "address_line_2": null,
@@ -1366,7 +1545,48 @@
         "snippet": "",
         "title": "SMITH PARTNERSHIP (UK) LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "High Street",
+          "address_line_2": "Ripley",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Woking",
+          "po_box": null,
+          "postal_code": "GU23 6AY",
+          "premises": "Hurst House",
+          "region": null
+        },
+        "address_snippet": "Hurst House, High Street, Ripley, Woking, United Kingdom, GU23 6AY",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/DfW50gcjXz15hrlTxpMYvhPCqPo/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": null,
@@ -1397,7 +1617,12 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Woodlands Avenue",
           "address_line_2": null,
@@ -1428,7 +1653,12 @@
         "snippet": "",
         "title": "SMITH ASSOCIATES (TADCASTER) & CO"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Gresham Street",
           "address_line_2": null,
@@ -1459,100 +1689,12 @@
         "snippet": "SMITH & WILLIAMSON HOLDINGS LIMITED",
         "title": "S&W PARTNERS GROUP LIMITED"
       },
-      {
-        "address": {
-          "address_line_1": "Dorlcote Road",
-          "address_line_2": null,
-          "care_of": null,
-          "country": null,
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "SW18 3RT",
-          "premises": "16",
-          "region": null
-        },
-        "address_snippet": "16 Dorlcote Road, London, SW18 3RT",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/tOxfB54ykgfyWMD8OObBNATvTz8/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH EQUITY LIMITED"
-      },
-      {
-        "address": {
-          "address_line_1": "1 Ashley Road",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "United Kingdom",
-          "locality": "Altrincham",
-          "po_box": null,
-          "postal_code": "WA14 2DT",
-          "premises": "3rd Floor",
-          "region": "Cheshire"
-        },
-        "address_snippet": "3rd Floor, 1 Ashley Road, Altrincham, Cheshire, United Kingdom, WA14 2DT",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/vyN7-j4obeS4laR8GgyWIOLFp50/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH COVE CAPITAL UK LTD"
-      },
-      {
-        "address": {
-          "address_line_1": "King Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": "England",
-          "locality": "Derby",
-          "po_box": null,
-          "postal_code": "DE1 3EE",
-          "premises": "St Helen's House",
-          "region": null
-        },
-        "address_snippet": "St Helen's House, King Street, Derby, England, DE1 3EE",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/x_YovnkwVMGrelc1RzTdD_b-Lvc/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH COOPER LIMITED"
-      },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Gresham Street",
           "address_line_2": null,
@@ -1583,7 +1725,120 @@
         "snippet": "",
         "title": "SMITH & WILLIAMSON SERVICES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Dorlcote Road",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "SW18 3RT",
+          "premises": "16",
+          "region": null
+        },
+        "address_snippet": "16 Dorlcote Road, London, SW18 3RT",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/tOxfB54ykgfyWMD8OObBNATvTz8/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH EQUITY LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "1 Ashley Road",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Altrincham",
+          "po_box": null,
+          "postal_code": "WA14 2DT",
+          "premises": "3rd Floor",
+          "region": "Cheshire"
+        },
+        "address_snippet": "3rd Floor, 1 Ashley Road, Altrincham, Cheshire, United Kingdom, WA14 2DT",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/vyN7-j4obeS4laR8GgyWIOLFp50/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH COVE CAPITAL UK LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "King Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "England",
+          "locality": "Derby",
+          "po_box": null,
+          "postal_code": "DE1 3EE",
+          "premises": "St Helen's House",
+          "region": null
+        },
+        "address_snippet": "St Helen's House, King Street, Derby, England, DE1 3EE",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/x_YovnkwVMGrelc1RzTdD_b-Lvc/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH COOPER LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Southport Road",
           "address_line_2": null,
@@ -1614,7 +1869,12 @@
         "snippet": "",
         "title": "SMITH & GOULDING LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Hamilton Square",
           "address_line_2": null,
@@ -1645,7 +1905,12 @@
         "snippet": "",
         "title": "SMITH & SONS"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Burnthill Farm",
           "address_line_2": null,
@@ -1676,7 +1941,12 @@
         "snippet": "",
         "title": "SMITH ESTATES PETERHEAD LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Bradway Road",
           "address_line_2": null,
@@ -1707,7 +1977,12 @@
         "snippet": "",
         "title": "SMITH PEEVOR LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Panton Street",
           "address_line_2": null,
@@ -1738,7 +2013,12 @@
         "snippet": "",
         "title": "SMITH WATERS LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Skipper Way",
           "address_line_2": "Little Paxton",
@@ -1769,7 +2049,12 @@
         "snippet": "",
         "title": "SMITH BARCLAY LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Southport Road",
           "address_line_2": null,
@@ -1800,7 +2085,12 @@
         "snippet": "SMITH & GOULDING LIMITED",
         "title": "JOHN GOULDING & CO. LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Burnthill Farm",
           "address_line_2": null,
@@ -1831,7 +2121,12 @@
         "snippet": "",
         "title": "SMITH ESTATES PETERHEAD LTD."
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moorgate",
           "address_line_2": null,
@@ -1862,7 +2157,12 @@
         "snippet": "",
         "title": "SMITH AND WILLIAMSON NOMINEES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Prospect House, 1 Prospect Place",
           "address_line_2": "Pride Park",
@@ -1893,7 +2193,12 @@
         "snippet": "",
         "title": "SMITH COOPER LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Panton Street",
           "address_line_2": null,
@@ -1924,7 +2229,12 @@
         "snippet": "",
         "title": "SMITH WATERS LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Frithside Street",
           "address_line_2": null,
@@ -1955,7 +2265,12 @@
         "snippet": "",
         "title": "SMITH ESTATES PETERHEAD LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Ocean Street",
           "address_line_2": null,
@@ -1986,7 +2301,12 @@
         "snippet": "",
         "title": "SMITH & ABBOTT LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Bickington",
           "address_line_2": null,
@@ -2017,7 +2337,12 @@
         "snippet": "",
         "title": "SMITH & CO"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": null,
@@ -2048,7 +2373,12 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Bickington",
           "address_line_2": null,
@@ -2079,7 +2409,12 @@
         "snippet": "",
         "title": "SMITH & CO (BUSINESS SERVICES) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Allerton Hill",
           "address_line_2": "Chapel Allerton",
@@ -2110,7 +2445,12 @@
         "snippet": "",
         "title": "SMITH ANAESTHESIA SERVICES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Hemdean Road",
           "address_line_2": "Caversham",
@@ -2141,7 +2481,12 @@
         "snippet": "",
         "title": "SMITH BARLOW & COMPANY (1953) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": null,
@@ -2172,38 +2517,12 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
       },
-      {
-        "address": {
-          "address_line_1": "High Street",
-          "address_line_2": null,
-          "care_of": null,
-          "country": null,
-          "locality": "Ripley",
-          "po_box": null,
-          "postal_code": "GU23 6AY",
-          "premises": "Hurst House",
-          "region": "Surrey"
-        },
-        "address_snippet": "Hurst House, High Street, Ripley, Surrey, GU23 6AY",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/DlMPC4IctQZ4Zq2Qfp2uNZcM6_g/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
-      },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": null,
@@ -2234,7 +2553,48 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "High Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Ripley",
+          "po_box": null,
+          "postal_code": "GU23 6AY",
+          "premises": "Hurst House",
+          "region": "Surrey"
+        },
+        "address_snippet": "Hurst House, High Street, Ripley, Surrey, GU23 6AY",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/DlMPC4IctQZ4Zq2Qfp2uNZcM6_g/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH PEARMAN COMPANY SECRETARIES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "New Bridge Street",
           "address_line_2": null,
@@ -2265,7 +2625,12 @@
         "snippet": "",
         "title": "SMITH (U-K) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Stone Road",
           "address_line_2": "Blackbrook",
@@ -2296,7 +2661,12 @@
         "snippet": "",
         "title": "SMITH AND MORRIS RETAIL LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "338 Euston Road",
           "address_line_2": null,
@@ -2327,7 +2697,12 @@
         "snippet": "",
         "title": "SMITH LINDA DEVELOPMENTS LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Heritage Gate",
           "address_line_2": "Friary Street",
@@ -2358,7 +2733,12 @@
         "snippet": "",
         "title": "SMITH PARTNERSHIP SOLICITORS"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moorgate",
           "address_line_2": null,
@@ -2389,7 +2769,12 @@
         "snippet": "SMITH & WILLIAMSON INVESTMENT SERVICES LIMITED",
         "title": "SMITH & WILLIAMSON INVESTMENT MANAGEMENT LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "City Road",
           "address_line_2": null,
@@ -2420,7 +2805,12 @@
         "snippet": "",
         "title": "SMITHS GORE COMMERCIAL PROPERTY LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Adam Street",
           "address_line_2": null,
@@ -2451,7 +2841,12 @@
         "snippet": "",
         "title": "SMITH & NEPHEW NOMINEE SERVICES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Belgrave Street",
           "address_line_2": null,
@@ -2482,7 +2877,12 @@
         "snippet": "",
         "title": "SMITH IP LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Adam Street",
           "address_line_2": null,
@@ -2513,7 +2913,12 @@
         "snippet": "",
         "title": "SMITH & NEPHEW NOMINEE SERVICES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Adam Street",
           "address_line_2": null,
@@ -2544,38 +2949,12 @@
         "snippet": "",
         "title": "SMITH & NEPHEW NOMINEE SERVICES LIMITED"
       },
-      {
-        "address": {
-          "address_line_1": "Adam Street",
-          "address_line_2": null,
-          "care_of": "Smith & Nephew Plc",
-          "country": "England",
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "WC2N 6LA",
-          "premises": "15",
-          "region": null
-        },
-        "address_snippet": "Smith & Nephew Plc, 15 Adam Street, London, England, WC2N 6LA",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/P9MDXOFSPex4JDmtQFSNfHEiJ00/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITH & NEPHEW NOMINEE SERVICES LIMITED"
-      },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Adam Street",
           "address_line_2": null,
@@ -2606,7 +2985,48 @@
         "snippet": "",
         "title": "SMITH & NEPHEW NOMINEE SERVICES LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Adam Street",
+          "address_line_2": null,
+          "care_of": "Smith & Nephew Plc",
+          "country": "England",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "WC2N 6LA",
+          "premises": "15",
+          "region": null
+        },
+        "address_snippet": "Smith & Nephew Plc, 15 Adam Street, London, England, WC2N 6LA",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/P9MDXOFSPex4JDmtQFSNfHEiJ00/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITH & NEPHEW NOMINEE SERVICES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "The Oasis Meadowhall Centre",
           "address_line_2": null,
@@ -2637,7 +3057,12 @@
         "snippet": "",
         "title": "SMITH YOUNG PARTNERSHIP LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Rue Du Kiem",
           "address_line_2": null,
@@ -2668,7 +3093,12 @@
         "snippet": "",
         "title": "SMITH & NEPHEW FIANCE SARL"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Rue Du Kiem",
           "address_line_2": null,
@@ -2699,7 +3129,12 @@
         "snippet": "",
         "title": "SMITH & NEPHEW INTERNATIONAL SA"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": null,
@@ -2730,7 +3165,12 @@
         "snippet": "",
         "title": "SMITH PEARMAN COMPANY SECRETARIES LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Windsor Street",
           "address_line_2": null,
@@ -2761,7 +3201,12 @@
         "snippet": "",
         "title": "SMITH LAURA 0886 LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Royal Terrace",
           "address_line_2": null,
@@ -2792,7 +3237,12 @@
         "snippet": "",
         "title": "SMITH DOWNS LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Lord North Street",
           "address_line_2": null,
@@ -2823,7 +3273,12 @@
         "snippet": "",
         "title": "SMITH SQUARE PARTNERS (UK) LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Gresham Street",
           "address_line_2": null,
@@ -2854,7 +3309,12 @@
         "snippet": "SMITH & WILLIAMSON I M LIMITED",
         "title": "EVELYN PARTNERS I M LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moorgate",
           "address_line_2": null,
@@ -2885,7 +3345,12 @@
         "snippet": "",
         "title": "SMITH & WILLIAMSON SERVICES LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moorgate",
           "address_line_2": null,
@@ -2916,7 +3381,12 @@
         "snippet": "",
         "title": "SMITH & WILLIAMSON TAX LLP"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moorgate",
           "address_line_2": null,
@@ -2947,7 +3417,12 @@
         "snippet": "",
         "title": "SMITH & WILLIAMSON LIMITED"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Sydenham Road",
           "address_line_2": "Sydenham",
@@ -2978,38 +3453,12 @@
         "snippet": "",
         "title": "SMITHFIELD ADVISORY LIMITED"
       },
-      {
-        "address": {
-          "address_line_1": "Bss Associates",
-          "address_line_2": "Hanger Lane",
-          "care_of": null,
-          "country": "England",
-          "locality": "London",
-          "po_box": null,
-          "postal_code": "W5 3HJ",
-          "premises": "Ealing House",
-          "region": null
-        },
-        "address_snippet": "Ealing House, Bss Associates, Hanger Lane, London, England, W5 3HJ",
-        "appointment_count": 1,
-        "date_of_birth": null,
-        "description": "Total number of appointments 1",
-        "description_identifiers": [
-          "appointment-count"
-        ],
-        "kind": "searchresults#officer",
-        "links": {
-          "self": "/officers/9X9I0PsqNUeteezpZTBfB8KRzLk/appointments"
-        },
-        "matches": {
-          "address_snippet": null,
-          "snippet": [],
-          "title": null
-        },
-        "snippet": "",
-        "title": "SMITHFIELD CORPORATE FINANCE"
-      },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "5-7 Market Street",
           "address_line_2": null,
@@ -3040,7 +3489,48 @@
         "snippet": "",
         "title": "SMITHSON CLARKE SECRETARY LIMITED CO NO 05420231"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Bss Associates",
+          "address_line_2": "Hanger Lane",
+          "care_of": null,
+          "country": "England",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "W5 3HJ",
+          "premises": "Ealing House",
+          "region": null
+        },
+        "address_snippet": "Ealing House, Bss Associates, Hanger Lane, London, England, W5 3HJ",
+        "appointment_count": 1,
+        "date_of_birth": null,
+        "description": "Total number of appointments 1",
+        "description_identifiers": [
+          "appointment-count"
+        ],
+        "kind": "searchresults#officer",
+        "links": {
+          "self": "/officers/9X9I0PsqNUeteezpZTBfB8KRzLk/appointments"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "SMITHFIELD CORPORATE FINANCE"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Wenlock Road",
           "address_line_2": null,
@@ -3071,7 +3561,12 @@
         "snippet": "",
         "title": "SMITHCOMM GROUP HOLDINGS LTD"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "OfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Stanley Road",
           "address_line_2": null,
@@ -3101,14 +3596,15 @@
         },
         "snippet": "",
         "title": "SMITH-HUGHES CONSULTING LIMITED"
-      }
-    ],
-    "pagination": {
-      "has_next": true,
-      "next_page": "{\"start_index\": 100}",
-      "size": 10000
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
     }
+  ],
+  "pagination": {
+    "has_next": true,
+    "next_page": "{\"start_index\": 100}",
+    "size": 10000
   },
-  "module": "ch_api.types.pagination.types",
-  "type": "PydanticModel"
+  "type": "MultipageList"
 }

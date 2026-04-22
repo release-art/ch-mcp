@@ -1,8 +1,8 @@
 {
-  "class": "MultipageList",
-  "data": {
-    "data": [
-      {
+  "data": [
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XESX0WN6",
@@ -20,7 +20,12 @@
         "transaction_id": "MzQ5NzM4OTk2OGFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XEBK7FII",
@@ -38,7 +43,12 @@
         "transaction_id": "MzQ4MjA2NTEwOWFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XDU3NKLF",
@@ -56,7 +66,12 @@
         "transaction_id": "MzQ1MDY4MjgwOWFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XDBUVVCP",
@@ -74,7 +89,12 @@
         "transaction_id": "MzQzNjIzNDQ4MGFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XCW6YIZN",
@@ -92,7 +112,12 @@
         "transaction_id": "MzQwOTg2ODEyN2FkaXF6a2N4",
         "type": "AD01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XCUMIWEA",
@@ -110,7 +135,12 @@
         "transaction_id": "MzQwNzQzNzU1MGFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XCCBQAZZ",
@@ -128,7 +158,12 @@
         "transaction_id": "MzM5MzQ5NjQ0NWFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XBUS73A3",
@@ -146,7 +181,12 @@
         "transaction_id": "MzM2NDk2OTg3NWFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XBCAY296",
@@ -164,7 +204,12 @@
         "transaction_id": "MzM1MTUzNTE4MmFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XAV6AI7D",
@@ -182,7 +227,12 @@
         "transaction_id": "MzMyNjAxNzY4NGFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "XADTBLSI",
@@ -200,7 +250,12 @@
         "transaction_id": "MzMxNTAwNzkwM2FkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X9XUWDKW",
@@ -218,7 +273,12 @@
         "transaction_id": "MzI5MDc4ODg0M2FkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X9XUWDEZ",
@@ -236,7 +296,12 @@
         "transaction_id": "MzI5MDc4ODc5MGFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X8WNR3KR",
@@ -254,7 +319,12 @@
         "transaction_id": "MzI1NDU2MjQzNGFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X8DWQDCB",
@@ -272,7 +342,12 @@
         "transaction_id": "MzI0NDIyMTY1NmFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X7WJR6RV",
@@ -290,7 +365,12 @@
         "transaction_id": "MzIyMzc3MTQ3NGFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X7DVM67S",
@@ -308,7 +388,12 @@
         "transaction_id": "MzIxMzc4MjY2M2FkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X6WWFFW9",
@@ -326,7 +411,12 @@
         "transaction_id": "MzE5NDQ3NTUyMmFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X6FB747U",
@@ -344,7 +434,12 @@
         "transaction_id": "MzE4NTY4MDE4MGFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X5XY92GI",
@@ -362,7 +457,12 @@
         "transaction_id": "MzE2NjU0OTMxOGFkaXF6a2N4",
         "type": "CS01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": null,
         "barcode": "X5IKOUAB",
@@ -380,7 +480,12 @@
         "transaction_id": "MzE2MDc1NTM4MGFkaXF6a2N4",
         "type": "AA"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": [
           {
@@ -404,7 +509,12 @@
         "transaction_id": "MzE0MTY2NDQwNmFkaXF6a2N4",
         "type": "AR01"
       },
-      {
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "FilingHistoryItem",
+      "data": {
         "annotations": null,
         "associated_filings": [
           {
@@ -432,14 +542,15 @@
         "subcategory": null,
         "transaction_id": "MzExNDQ5OTUyNWFkaXF6a2N4",
         "type": "NEWINC"
-      }
-    ],
-    "pagination": {
-      "has_next": false,
-      "next_page": null,
-      "size": 23
+      },
+      "module": "ch_api.types.public_data.filing_history",
+      "type": "PydanticModel"
     }
+  ],
+  "pagination": {
+    "has_next": false,
+    "next_page": null,
+    "size": 23
   },
-  "module": "ch_api.types.pagination.types",
-  "type": "PydanticModel"
+  "type": "MultipageList"
 }

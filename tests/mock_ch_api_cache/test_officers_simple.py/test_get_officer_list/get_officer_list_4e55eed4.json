@@ -1,8 +1,8 @@
 {
-  "class": "MultipageList",
-  "data": {
-    "data": [
-      {
+  "data": [
+    {
+      "class": "OfficerSummary",
+      "data": {
         "address": {
           "address_line_1": "High Street",
           "address_line_2": null,
@@ -49,14 +49,15 @@
         "principal_office_address": null,
         "resigned_on": null,
         "responsibilities": null
-      }
-    ],
-    "pagination": {
-      "has_next": false,
-      "next_page": null,
-      "size": 1
+      },
+      "module": "ch_api.types.public_data.company_officers",
+      "type": "PydanticModel"
     }
+  ],
+  "pagination": {
+    "has_next": false,
+    "next_page": null,
+    "size": 1
   },
-  "module": "ch_api.types.pagination.types",
-  "type": "PydanticModel"
+  "type": "MultipageList"
 }

@@ -1,13 +1,9 @@
 {
-  "class": "MultipageList",
-  "data": {
-    "data": [],
-    "pagination": {
-      "has_next": false,
-      "next_page": null,
-      "size": null
-    }
+  "data": [],
+  "pagination": {
+    "has_next": false,
+    "next_page": null,
+    "size": null
   },
-  "module": "ch_api.types.pagination.types",
-  "type": "PydanticModel"
+  "type": "MultipageList"
 }

@@ -1,8 +1,8 @@
 {
-  "class": "MultipageList",
-  "data": {
-    "data": [
-      {
+  "data": [
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "26 Seaforth Road",
           "address_line_2": null,
@@ -30,7 +30,12 @@
         "snippet": "",
         "title": "Aaron Donald SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "St. Christophers Gardens",
           "address_line_2": null,
@@ -58,7 +63,12 @@
         "snippet": "",
         "title": "Adam John SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Barn Croft Drive",
           "address_line_2": "Lower Earley",
@@ -86,7 +96,12 @@
         "snippet": "",
         "title": "Alister Edward SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "93 Middle Lane",
           "address_line_2": null,
@@ -114,7 +129,12 @@
         "snippet": "",
         "title": "Andrea Ashleigh SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "3 Harrogate House",
           "address_line_2": "29 Sloane Square",
@@ -142,7 +162,12 @@
         "snippet": "",
         "title": "Andrew James SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Holmes Road",
           "address_line_2": null,
@@ -170,7 +195,12 @@
         "snippet": "",
         "title": "Andrew Peter SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Reins Croft",
           "address_line_2": null,
@@ -198,7 +228,12 @@
         "snippet": "",
         "title": "Andrew Stephen SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Old Road",
           "address_line_2": "East Peckham",
@@ -226,7 +261,12 @@
         "snippet": "",
         "title": "Billy Aaron SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "87a West Street",
           "address_line_2": null,
@@ -252,7 +292,12 @@
         "snippet": "",
         "title": "Brandon Paul SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "The Crescent",
           "address_line_2": "Colchester Business Park",
@@ -280,7 +325,12 @@
         "snippet": "",
         "title": "Carl Darren SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Wren Way",
           "address_line_2": null,
@@ -308,7 +358,12 @@
         "snippet": "",
         "title": "Cheryl SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Cowbrook Avenue",
           "address_line_2": null,
@@ -336,7 +391,12 @@
         "snippet": "",
         "title": "Craig Anthony SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Address Unknown",
           "address_line_2": null,
@@ -364,7 +424,12 @@
         "snippet": "",
         "title": "Daniel SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "110 Walderslade Road",
           "address_line_2": null,
@@ -392,7 +457,12 @@
         "snippet": "",
         "title": "Darren SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Airyhillock Cottage",
           "address_line_2": "Kirkton Of Bourtie",
@@ -420,7 +490,12 @@
         "snippet": "",
         "title": "David Alexander SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Sedgley Road",
           "address_line_2": null,
@@ -448,7 +523,12 @@
         "snippet": "",
         "title": "David Allan SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Duck End Lane",
           "address_line_2": "Maulden",
@@ -476,7 +556,12 @@
         "snippet": "",
         "title": "David John SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Buick Drive",
           "address_line_2": null,
@@ -504,7 +589,12 @@
         "snippet": "",
         "title": "David Pattinson SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Buick Drive",
           "address_line_2": null,
@@ -532,7 +622,12 @@
         "snippet": "",
         "title": "David Pattison SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Crossfield Street",
           "address_line_2": null,
@@ -560,7 +655,12 @@
         "snippet": "",
         "title": "David Thomas SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Sherbourne Way",
           "address_line_2": null,
@@ -588,7 +688,12 @@
         "snippet": "",
         "title": "David William SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "North Road",
           "address_line_2": null,
@@ -616,7 +721,12 @@
         "snippet": "",
         "title": "David SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Roman Pavement",
           "address_line_2": null,
@@ -644,7 +754,12 @@
         "snippet": "",
         "title": "Dean SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Cooks Hill",
           "address_line_2": "Rudgwick",
@@ -672,7 +787,12 @@
         "snippet": "",
         "title": "Georgia SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Eastwell Close",
           "address_line_2": null,
@@ -700,7 +820,12 @@
         "snippet": "",
         "title": "Guy SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Yarm Road",
           "address_line_2": null,
@@ -728,7 +853,12 @@
         "snippet": "",
         "title": "Henry SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Tunnel Road",
           "address_line_2": "Wrawby",
@@ -756,7 +886,12 @@
         "snippet": "",
         "title": "James Stuart SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Lydia Park",
           "address_line_2": "Stovolds Hill",
@@ -784,7 +919,12 @@
         "snippet": "",
         "title": "James SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Omrod Road",
           "address_line_2": null,
@@ -812,7 +952,12 @@
         "snippet": "",
         "title": "Jonathan SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moor Lane",
           "address_line_2": null,
@@ -840,7 +985,12 @@
         "snippet": "",
         "title": "Joshua SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Moss Lane",
           "address_line_2": null,
@@ -868,7 +1018,12 @@
         "snippet": "",
         "title": "Lee Henry SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Station Industrial Estate",
           "address_line_2": "Oxford Road",
@@ -896,7 +1051,12 @@
         "snippet": "",
         "title": "Luke Kieran SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "15 Neville Drive",
           "address_line_2": null,
@@ -924,7 +1084,12 @@
         "snippet": "",
         "title": "Luke Thomas SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Croftlands Avenue",
           "address_line_2": "Stubbington",
@@ -952,7 +1117,12 @@
         "snippet": "",
         "title": "Marc Ashton SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Station Road",
           "address_line_2": "Quorn",
@@ -980,7 +1150,12 @@
         "snippet": "",
         "title": "Mark Anthony SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "The Arcade",
           "address_line_2": "Tynemouth",
@@ -1008,7 +1183,12 @@
         "snippet": "",
         "title": "Martin SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Meadow Street",
           "address_line_2": "Great Harwood",
@@ -1036,7 +1216,12 @@
         "snippet": "",
         "title": "Mary Louise SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Manor Orchard, The Street",
           "address_line_2": "Charmouth",
@@ -1064,7 +1249,12 @@
         "snippet": "",
         "title": "Matthew James SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Grosvenor Way",
           "address_line_2": "Horwich",
@@ -1092,7 +1282,12 @@
         "snippet": "",
         "title": "Michael Andrew SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Standedge",
           "address_line_2": "Wilnecote",
@@ -1120,7 +1315,12 @@
         "snippet": "",
         "title": "Michael John SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Border Close",
           "address_line_2": "Clowne",
@@ -1148,7 +1348,12 @@
         "snippet": "",
         "title": "Michael Philip SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Westbourne Drive",
           "address_line_2": "Rhostyllen",
@@ -1176,7 +1381,12 @@
         "snippet": "",
         "title": "Michael Terrence SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Old Park Road",
           "address_line_2": null,
@@ -1204,7 +1414,12 @@
         "snippet": "",
         "title": "Mitchell James SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Cardiff Road",
           "address_line_2": null,
@@ -1232,7 +1447,12 @@
         "snippet": "",
         "title": "Nicholas SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Nutbourne Road",
           "address_line_2": null,
@@ -1258,7 +1478,12 @@
         "snippet": "",
         "title": "Paul Andrew SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Elm Place",
           "address_line_2": null,
@@ -1286,7 +1511,12 @@
         "snippet": "",
         "title": "Richard Darren SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Wellbrow Drive",
           "address_line_2": null,
@@ -1314,7 +1544,12 @@
         "snippet": "",
         "title": "Richard Paul SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Tudor Close",
           "address_line_2": "Bramley",
@@ -1342,7 +1577,12 @@
         "snippet": "",
         "title": "Richard Stuart SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Heywood Manor, Hall Road",
           "address_line_2": "Winfarthing",
@@ -1368,7 +1608,12 @@
         "snippet": "",
         "title": "Richard SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Sunrise Meadow",
           "address_line_2": "Needingworth Road",
@@ -1396,7 +1641,12 @@
         "snippet": "",
         "title": "Riley SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Silverdale Road",
           "address_line_2": null,
@@ -1424,7 +1674,12 @@
         "snippet": "",
         "title": "Robert James SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Oxcliffe Avenue",
           "address_line_2": null,
@@ -1452,7 +1707,12 @@
         "snippet": "",
         "title": "Samuel SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Silverlands Road",
           "address_line_2": null,
@@ -1480,7 +1740,12 @@
         "snippet": "",
         "title": "Shane David SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Tabor Court",
           "address_line_2": null,
@@ -1508,7 +1773,12 @@
         "snippet": "",
         "title": "Stacey SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "38 Vance Road",
           "address_line_2": null,
@@ -1536,7 +1806,12 @@
         "snippet": "",
         "title": "Stephen Brian SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "93 Middle Lane",
           "address_line_2": null,
@@ -1564,7 +1839,12 @@
         "snippet": "",
         "title": "Stewart Christopher SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Meadow Street",
           "address_line_2": "Great Harwood",
@@ -1592,7 +1872,12 @@
         "snippet": "",
         "title": "Thomas Henry SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Chertsey Lane",
           "address_line_2": null,
@@ -1620,7 +1905,12 @@
         "snippet": "",
         "title": "Timothy Draper SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Upper Bridge Road",
           "address_line_2": null,
@@ -1648,7 +1938,12 @@
         "snippet": "",
         "title": "Toby James SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Flat 2",
           "address_line_2": "2 Tweedie Lane",
@@ -1676,7 +1971,12 @@
         "snippet": "",
         "title": "Tracy SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Gorse Lane",
           "address_line_2": "South Milford",
@@ -1704,7 +2004,12 @@
         "snippet": "",
         "title": "Warren SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Monument Drive",
           "address_line_2": "Brierley",
@@ -1732,7 +2037,12 @@
         "snippet": "",
         "title": "Wayne Mark SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "27 Lime Tree Avenue",
           "address_line_2": "Thurcroft",
@@ -1760,7 +2070,12 @@
         "snippet": "",
         "title": "Wesley Bryn SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Gainsborough Road",
           "address_line_2": "Winthorpe",
@@ -1788,7 +2103,12 @@
         "snippet": "",
         "title": "Wesley Grainger SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "Station Walk",
           "address_line_2": null,
@@ -1816,7 +2136,12 @@
         "snippet": "",
         "title": "William SMITH"
       },
-      {
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
         "address": {
           "address_line_1": "27 Magnolia Way",
           "address_line_2": "Costessey",
@@ -1843,14 +2168,15 @@
         },
         "snippet": "",
         "title": "Smith Emmanuel HONDORA"
-      }
-    ],
-    "pagination": {
-      "has_next": false,
-      "next_page": null,
-      "size": 66
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
     }
+  ],
+  "pagination": {
+    "has_next": false,
+    "next_page": null,
+    "size": 66
   },
-  "module": "ch_api.types.pagination.types",
-  "type": "PydanticModel"
+  "type": "MultipageList"
 }

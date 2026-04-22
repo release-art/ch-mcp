@@ -13,12 +13,16 @@ from pydantic_core import PydanticUndefined
 ModelT = typing.TypeVar("ModelT", bound=pydantic.BaseModel)
 
 
-class ReflectedChApiModelT(pydantic.BaseModel, typing.Generic[ModelT]):
+class ReflectedChApiModel(pydantic.BaseModel):
     """Base class for reflected Companies House API models with conversion support."""
 
     @classmethod
-    def from_api_t(cls, data: ModelT) -> Self:
-        return cls.model_validate(data.model_dump(mode="python"))  # type: ignore[return-value]
+    def from_api_t(cls, data: pydantic.BaseModel) -> Self:
+        return cls.model_validate(data.model_dump(mode="python"))
+
+
+# Backwards-compatible alias retained in case downstream code still imports it.
+ReflectedChApiModelT = ReflectedChApiModel
 
 
 def _annotation_contains_type(annotation: typing.Any, excluded: tuple[type, ...]) -> bool:
@@ -42,7 +46,7 @@ def _annotation_contains_type(annotation: typing.Any, excluded: tuple[type, ...]
 def reflect_ch_api_t(
     model_cls: typing.Type[ModelT],
     exclude_types: tuple[type, ...] = (ch_api.types.shared.LinksSection,),
-) -> typing.Type[ReflectedChApiModelT[ModelT]]:
+) -> typing.Type[ReflectedChApiModel]:
     """Dynamically create a Pydantic model mirroring ``model_cls``.
 
     Fields whose annotation is (or includes) a type in ``exclude_types`` are
@@ -65,5 +69,5 @@ def reflect_ch_api_t(
     return pydantic.create_model(
         f"{model_cls.__name__}Reflected",
         **fields,
-        __base__=ReflectedChApiModelT[ModelT],
+        __base__=ReflectedChApiModel,
     )

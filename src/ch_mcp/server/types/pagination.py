@@ -28,7 +28,7 @@ class PaginationInfo(pydantic.BaseModel):
 
 
 class MultipageList(pydantic.BaseModel, typing.Generic[T]):
-    model_config = pydantic.ConfigDict(frozen=True, arbitrary_types_allowed=True)
+    model_config = pydantic.ConfigDict(frozen=True)
 
     items: typing.List[T] = pydantic.Field(description="The result items for this page.")
     pagination: PaginationInfo = pydantic.Field(

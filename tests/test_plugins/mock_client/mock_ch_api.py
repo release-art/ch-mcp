@@ -60,14 +60,16 @@ class MockChApi:
                 # No cached response, call the real API implementation if available
                 if self.api_implementation:
                     out = await getattr(self.api_implementation, method_name)(*args, **kwargs)
-                    if isinstance(out, pydantic.BaseModel):
-                        cached_value = mock_data.PydanticModel.to_dict(out)
-                    elif isinstance(out, _ch_pagination.MultipageList):
+                    # IMPORTANT: check MultipageList before BaseModel — MultipageList IS a BaseModel,
+                    # but re-validating it via PydanticModel would go through the generic's mock validator.
+                    if isinstance(out, _ch_pagination.MultipageList):
                         out = mock_data.MockMultipageListSource(
                             cached_file=cache_filename,
                             src=out,
                         )
                         cached_value = out.get_state()
+                    elif isinstance(out, pydantic.BaseModel):
+                        cached_value = mock_data.PydanticModel.to_dict(out)
                     elif out is None:
                         cached_value = out
                     else:
