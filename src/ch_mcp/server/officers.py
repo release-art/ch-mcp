@@ -9,7 +9,7 @@ import fastmcp
 import pydantic
 from mcp.types import ToolAnnotations
 
-from . import deps, types
+from . import auth, deps, types
 from .companies import CompanyNumberParam
 
 logger = logging.getLogger(__name__)
@@ -18,8 +18,9 @@ OfficerIdParam = Annotated[
     str,
     pydantic.Field(
         description=(
-            "Companies House officer identifier (the opaque ID shown in search_officers"
-            " results and in officer_list entries)."
+            "Opaque Companies House officer identifier (a URL-safe base64 string)."
+            " Obtain from the ``officer_id`` field of ``search_officers`` results or"
+            " from the officer list of a specific company."
         ),
         min_length=1,
     ),
@@ -28,32 +29,50 @@ OfficerIdParam = Annotated[
 AppointmentIdParam = Annotated[
     str,
     pydantic.Field(
-        description="Companies House appointment identifier for a specific officer appointment at a company.",
+        description=(
+            "Opaque appointment identifier scoped to a single company. Obtain from"
+            " the ``appointment_id`` field of ``get_officer_list`` items."
+        ),
         min_length=1,
     ),
 ]
 
 officers_mcp = fastmcp.FastMCP("officers", on_duplicate="error")
 
-_TOOL_ANNOTATIONS = ToolAnnotations(
-    readOnlyHint=True,
-    destructiveHint=False,
-    idempotentHint=True,
-    openWorldHint=True,
-)
+_TOOL_KW = {
+    "annotations": ToolAnnotations(
+        readOnlyHint=True,
+        destructiveHint=False,
+        idempotentHint=True,
+        openWorldHint=True,
+    ),
+    "tags": {auth.tags.CH_API_RO},
+}
+
+_NextPageParam = Annotated[
+    _ch_pagination.NextPageToken | None,
+    pydantic.Field(
+        default=None,
+        description=(
+            "Opaque cursor from a previous page's pagination.next_page. Omit on the"
+            " first call; pass the previous response's token to fetch the next page."
+        ),
+    ),
+]
 
 
-@officers_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@officers_mcp.tool(**_TOOL_KW)
 async def get_officer_list(
     company_number: CompanyNumberParam,
-    next_page_token: _ch_pagination.NextPageToken | None = None,
+    next_page_token: _NextPageParam = None,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.pagination.MultipageList[types.officer.OfficerSummary]:
-    """List the officers (directors, secretaries, LLP members) appointed at a company.
+    """List the officers currently or formerly appointed at a specific company.
 
-    Use this to discover who runs a company. Each entry carries an officer identifier
-    that can be passed to ``get_officer_appointments`` to see every company that
-    person is on the board of.
+    Covers directors, secretaries, and LLP members. Each entry carries an
+    ``appointment_id`` (scoped to this company) and an ``officer_id`` (the person's
+    global identifier) that can be passed to ``get_officer_appointments`` to see
+    every company the same person serves.
     """
     out = await ch_client.get_officer_list(company_number, next_page=next_page_token)
     return types.pagination.MultipageList[types.officer.OfficerSummary](
@@ -62,29 +81,35 @@ async def get_officer_list(
     )
 
 
-@officers_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@officers_mcp.tool(**_TOOL_KW)
 async def get_officer_appointment(
     company_number: CompanyNumberParam,
     appointment_id: AppointmentIdParam,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.officer.OfficerSummary | None:
-    """Retrieve a single officer appointment at a specific company by appointment ID."""
+    """Fetch a single officer appointment at a specific company.
+
+    ``appointment_id`` is the per-company appointment key returned by
+    ``get_officer_list``. Use this to refresh a single appointment when you
+    already have its id; otherwise start from ``get_officer_list``.
+    """
     result = await ch_client.get_officer_appointment(company_number, appointment_id)
     if result is None:
         return None
     return types.officer.OfficerSummary.from_api_t(result)
 
 
-@officers_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@officers_mcp.tool(**_TOOL_KW)
 async def get_officer_appointments(
     officer_id: OfficerIdParam,
-    next_page_token: _ch_pagination.NextPageToken | None = None,
+    next_page_token: _NextPageParam = None,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.pagination.MultipageList[types.officer.OfficerAppointmentSummary]:
-    """List every company appointment held (current and past) by a given officer.
+    """List every company appointment (current and past) held by a given officer.
 
-    Use this after ``search_officers`` or ``get_officer_list`` to see the full career
-    of a director or secretary across the register.
+    Use this after ``search_officers`` or ``get_officer_list`` to see the full
+    directorship history of a person across the entire UK register. Each entry
+    includes the company number, the role, and appointment/resignation dates.
     """
     out = await ch_client.get_officer_appointments(officer_id, next_page=next_page_token)
     return types.pagination.MultipageList[types.officer.OfficerAppointmentSummary](
@@ -93,14 +118,18 @@ async def get_officer_appointments(
     )
 
 
-@officers_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@officers_mcp.tool(**_TOOL_KW)
 async def get_natural_officer_disqualification(
     officer_id: OfficerIdParam,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.officer.NaturalDisqualification | None:
-    """Retrieve the full disqualification record for a natural-person officer.
+    """Fetch the full disqualification order for a natural-person (human) officer.
 
-    Use after ``search_disqualified_officers`` with a natural (human) officer ID.
+    Returns reasons, date ranges, any permission-to-act grants, and prior
+    variations. Use after ``search_disqualified_officers`` with an officer_id
+    for a human director. Returns ``None`` if the officer is corporate or not
+    disqualified — in the corporate case call
+    ``get_corporate_officer_disqualification`` instead.
     """
     result = await ch_client.get_natural_officer_disqualification(officer_id)
     if result is None:
@@ -108,14 +137,17 @@ async def get_natural_officer_disqualification(
     return types.officer.NaturalDisqualification.from_api_t(result)
 
 
-@officers_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@officers_mcp.tool(**_TOOL_KW)
 async def get_corporate_officer_disqualification(
     officer_id: OfficerIdParam,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.officer.CorporateDisqualification | None:
-    """Retrieve the full disqualification record for a corporate officer (a company acting as a director).
+    """Fetch the full disqualification order for a corporate officer (a company acting as director).
 
-    Use after ``search_disqualified_officers`` with a corporate officer ID.
+    Returns reasons, date ranges, and the corporate entity's identifying details.
+    Use after ``search_disqualified_officers`` when the hit represents a company
+    rather than an individual. For natural-person disqualifications call
+    ``get_natural_officer_disqualification`` instead.
     """
     result = await ch_client.get_corporate_officer_disqualification(officer_id)
     if result is None:

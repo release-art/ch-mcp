@@ -6,7 +6,8 @@ A [Model Context Protocol](https://modelcontextprotocol.io/) server that exposes
 
 - **~28 read-only tools** across five domains: search, companies, officers, PSCs (persons with significant control), and filings.
 - **Two transports**: HTTP (Starlette/uvicorn) for remote MCP clients, and stdio for local integrations.
-- **OAuth2 via Auth0**, with two modes:
+- **OAuth2 via Auth0**, with three modes:
+  - `none` — no authentication (local dev / trusted-ingress only).
   - `remote` — JWT verification only (the MCP server trusts an upstream Auth0 tenant).
   - `proxy` — full OAuth proxy with dynamic client registration; tokens are persisted to Azure Blob Storage, encrypted with Fernet.
 - **Scope-based authorization**: tools tagged `ch_api:read` require the `ch-api:read` scope in the access token. Enforcement is per-tool, so `initialize` and `tools/list` remain reachable by unauthenticated clients.
@@ -128,7 +129,7 @@ Note the hyphen-vs-underscore distinction:
 - **Scope** ([`auth/scopes.py`](src/ch_mcp/server/auth/scopes.py)): `CH_API_RO = "ch-api:read"` — the OAuth scope claimed in access tokens.
 - **Tag** ([`auth/tags.py`](src/ch_mcp/server/auth/tags.py)): `CH_API_RO = "ch_api:read"` — the tag applied to tool decorators.
 
-`AuthMiddleware` calls `restrict_tag(CH_API_RO, scopes=[CH_API_RO])` — any tool tagged with `ch_api:read` requires the `ch-api:read` scope to execute. Untagged tools are allowed through without scope checks. On `stdio`, the middleware short-circuits.
+`AuthMiddleware` calls `restrict_tag(CH_API_RO, scopes=[CH_API_RO])` — any tool tagged with `ch_api:read` requires the `ch-api:read` scope to execute. Every tool in every sub-server is tagged, so in practice every tool call requires the scope. `initialize` and `tools/list` remain reachable without it. On `stdio`, the middleware short-circuits.
 
 ## Configuration
 
@@ -140,8 +141,8 @@ The most important variables:
 |----------|----------|---------|
 | `CH_API_API_KEY` | Yes | Companies House API key |
 | `CH_API_USE_SANDBOX` | No (default `false`) | Use the CH sandbox environment |
-| `AUTH0_MODE` | No (`remote` default) | `remote` for JWT-only, `proxy` for OAuth proxy |
-| `AUTH0_DOMAIN` / `AUTH0_AUDIENCE` | Yes | Auth0 tenant identifiers |
+| `AUTH0_MODE` | No (`remote` default) | `none`, `remote`, or `proxy` |
+| `AUTH0_DOMAIN` / `AUTH0_AUDIENCE` | `remote`/`proxy` only | Auth0 tenant identifiers |
 | `AUTH0_CLIENT_ID` / `AUTH0_CLIENT_SECRET` / `AUTH0_JWT_SIGNING_KEY` / `AUTH0_STORAGE_ENCRYPTION_KEY` | `proxy` mode only | OAuth proxy secrets |
 | `AUTH0_INTERACTIVE_CLIENT_ID` | No | When set, exposes the interactive `/interactive` web UI |
 | `AZURE_CREDENTIAL` | `proxy` mode | `none` (connection string / Azurite) or `default` (DefaultAzureCredential) |

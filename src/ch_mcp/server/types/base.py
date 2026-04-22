@@ -21,10 +21,6 @@ class ReflectedChApiModel(pydantic.BaseModel):
         return cls.model_validate(data.model_dump(mode="python"))
 
 
-# Backwards-compatible alias retained in case downstream code still imports it.
-ReflectedChApiModelT = ReflectedChApiModel
-
-
 def _annotation_contains_type(annotation: typing.Any, excluded: tuple[type, ...]) -> bool:
     """Return True if the given annotation resolves to (or includes) one of the excluded types.
 

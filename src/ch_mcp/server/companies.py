@@ -8,7 +8,7 @@ import fastmcp
 import pydantic
 from mcp.types import ToolAnnotations
 
-from . import deps, types
+from . import auth, deps, types
 
 logger = logging.getLogger(__name__)
 
@@ -16,10 +16,11 @@ CompanyNumberParam = Annotated[
     str,
     pydantic.Field(
         description=(
-            "The 8-character UK company number assigned by Companies House."
-            " May include alpha prefixes (e.g. 'SC', 'NI', 'OC')."
-            " Obtain this by calling search_companies first."
-            " Example: '09370755'."
+            "UK company number assigned by Companies House. 1-10 alphanumeric"
+            " characters, typically 8 digits, possibly with an alpha prefix"
+            " (e.g. 'SC' for Scotland, 'NI' for Northern Ireland, 'OC' for an LLP)."
+            " Obtain via ``search_companies`` if you do not already have it."
+            " Examples: '09370755', 'SC123456', 'OC301550'."
         ),
         min_length=1,
         max_length=10,
@@ -29,25 +30,29 @@ CompanyNumberParam = Annotated[
 
 companies_mcp = fastmcp.FastMCP("companies", on_duplicate="error")
 
-_TOOL_ANNOTATIONS = ToolAnnotations(
-    readOnlyHint=True,
-    destructiveHint=False,
-    idempotentHint=True,
-    openWorldHint=True,
-)
+_TOOL_KW = {
+    "annotations": ToolAnnotations(
+        readOnlyHint=True,
+        destructiveHint=False,
+        idempotentHint=True,
+        openWorldHint=True,
+    ),
+    "tags": {auth.tags.CH_API_RO},
+}
 
 
-@companies_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@companies_mcp.tool(**_TOOL_KW)
 async def get_company_profile(
     company_number: CompanyNumberParam,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.company.CompanyProfile | None:
-    """Retrieve the full Companies House profile for a UK company.
+    """Fetch the full Companies House profile for a UK company.
 
-    Use this when you have a company number and need the company's registered name,
-    status, incorporation date, accounting reference dates, SIC codes, and core
-    registered details. If you do not have a company number, call search_companies
-    first. Returns ``None`` if no company exists for the given number.
+    Returns registered name, status, company type, incorporation/dissolution dates,
+    registered office, accounting reference dates, SIC codes, and previous names.
+    This is usually the first call after you have a company_number — it gives the
+    broadest single view of the company. Returns ``None`` if the number does not
+    resolve to a known company.
     """
     result = await ch_client.get_company_profile(company_number)
     if result is None:
@@ -55,16 +60,16 @@ async def get_company_profile(
     return types.company.CompanyProfile.from_api_t(result)
 
 
-@companies_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@companies_mcp.tool(**_TOOL_KW)
 async def registered_office_address(
     company_number: CompanyNumberParam,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.company.RegisteredOfficeAddress | None:
-    """Retrieve the current registered office address for a UK company.
+    """Fetch only the registered office address for a company.
 
-    Use this when the user specifically asks for the address on record — the full
-    profile (``get_company_profile``) already contains this as a sub-field, so prefer
-    that when a broader picture is needed.
+    Returns the current registered office address. Prefer
+    ``get_company_profile`` when the user wants a broader view — that response
+    already includes this address alongside everything else.
     """
     result = await ch_client.registered_office_address(company_number)
     if result is None:
@@ -72,15 +77,18 @@ async def registered_office_address(
     return types.company.RegisteredOfficeAddress.from_api_t(result)
 
 
-@companies_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@companies_mcp.tool(**_TOOL_KW)
 async def get_company_registers(
     company_number: CompanyNumberParam,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.company.CompanyRegister | None:
-    """Retrieve metadata about a company's statutory registers (directors, secretaries, PSC, etc.).
+    """Report where a company holds each of its statutory registers.
 
-    Indicates whether each register is held at Companies House or on the company's
-    single alternative inspection location.
+    Indicates, per register type (directors, secretaries, members, PSCs, LLP
+    members, usual residential addresses), whether the register is kept at
+    Companies House or at the company's Single Alternative Inspection Location
+    (SAIL). Use this when investigating where to formally inspect a register;
+    most users will not need this.
     """
     result = await ch_client.get_company_registers(company_number)
     if result is None:
@@ -88,15 +96,16 @@ async def get_company_registers(
     return types.company.CompanyRegister.from_api_t(result)
 
 
-@companies_mcp.tool(annotations=_TOOL_ANNOTATIONS)
+@companies_mcp.tool(**_TOOL_KW)
 async def get_company_uk_establishments(
     company_number: CompanyNumberParam,
     ch_client: ch_api.Client = deps.ChApiDep,
 ) -> types.company.CompanyUKEstablishments | None:
-    """Retrieve UK establishments (branches) registered under an overseas company.
+    """List UK establishments (branches) of an overseas-incorporated company.
 
-    Only applicable to overseas companies that have registered a UK establishment;
-    returns ``None`` for most domestic UK companies.
+    Only applies to overseas companies (``company_type`` = ``oversea-company``)
+    that have registered one or more establishments in the UK. Returns ``None``
+    for purely UK-incorporated companies.
     """
     result = await ch_client.get_company_uk_establishments(company_number)
     if result is None:

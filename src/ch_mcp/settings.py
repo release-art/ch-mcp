@@ -46,6 +46,7 @@ class AzureTableName(str):
 class AuthMode(enum.StrEnum):
     """Authentication mode selection."""
 
+    NONE = "none"
     REMOTE = "remote"
     PROXY = "proxy"
 
@@ -210,6 +211,11 @@ class _BaseAuth0Settings(BaseSettings):
         ),
     ]
 
+class NoneAuth0Settings(BaseSettings):
+    """Auth0 settings for no authentication mode."""
+
+    mode: Literal[AuthMode.NONE] = AuthMode.NONE
+    interactive_client_id: None = None # interactive_client_id is not applicable in none mode
 
 class RemoteAuth0Settings(_BaseAuth0Settings):
     """Auth0 settings for remote/JWT-only verification mode."""
@@ -220,7 +226,7 @@ class RemoteAuth0Settings(_BaseAuth0Settings):
 class ProxyAuth0Settings(_BaseAuth0Settings):
     """Auth0 settings for full OAuth proxy mode."""
 
-    mode: Literal[AuthMode.PROXY]
+    mode: Literal[AuthMode.PROXY]  = AuthMode.PROXY
     client_id: Annotated[
         str,
         Field(
@@ -264,7 +270,7 @@ class ProxyAuth0Settings(_BaseAuth0Settings):
 
 
 Auth0Settings = Annotated[
-    Union[RemoteAuth0Settings, ProxyAuth0Settings],
+    Union[NoneAuth0Settings, RemoteAuth0Settings, ProxyAuth0Settings],
     Field(discriminator="mode"),
 ]
 
@@ -296,22 +302,6 @@ class ChApiSettings(BaseSettings):
         Field(
             default=None,
             description="Companies House API base URL (optional override; takes precedence over use_sandbox)",
-        ),
-    ]
-    timeout: Annotated[
-        float,
-        Field(
-            default=30.0,
-            gt=0,
-            description="API request timeout in seconds",
-        ),
-    ]
-    max_retries: Annotated[
-        int,
-        Field(
-            default=3,
-            ge=0,
-            description="Maximum number of retries for failed requests",
         ),
     ]
 
@@ -431,7 +421,15 @@ class Settings(BaseSettings):
     def _build_auth0(cls, data: Any) -> Any:
         if isinstance(data, dict) and "auth0" not in data:
             mode = os.environ.get("AUTH0_MODE", AuthMode.REMOTE)
-            data["auth0"] = ProxyAuth0Settings() if mode == AuthMode.PROXY else RemoteAuth0Settings()  # type: ignore[call-arg]
+            if mode == AuthMode.NONE:
+                mode_obj = NoneAuth0Settings()
+            elif mode == AuthMode.PROXY:
+                mode_obj = ProxyAuth0Settings()
+            elif mode == AuthMode.REMOTE:
+                mode_obj = RemoteAuth0Settings()
+            else:
+                raise ValueError(f"Invalid AUTH0_MODE '{mode}'; must be one of {[m.value for m in AuthMode]}")
+            data["auth0"] = mode_obj  # type: ignore[call-arg]
         return data
 
     server: Annotated[ServerSettings, Field(default_factory=lambda: ServerSettings())]  # type: ignore[call-arg]

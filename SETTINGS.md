@@ -32,7 +32,7 @@ settings.server.base_url
 | `api_version` | `API_VERSION` | `str` | `"v1"` | |
 | `azure` | `AZURE_*` | `AzureSettings` | (factory) | |
 | `blob_store_names` | `BLOB_STORE_NAME_*` | `BlobStoreNamesSettings` | (factory) | Blob container names per internal store. |
-| `auth0` | `AUTH0_*` | `RemoteAuth0Settings` \| `ProxyAuth0Settings` | mode selected via `AUTH0_MODE` | |
+| `auth0` | `AUTH0_*` | `NoneAuth0Settings` \| `RemoteAuth0Settings` \| `ProxyAuth0Settings` | mode selected via `AUTH0_MODE` | |
 | `ch_api` | `CH_API_*` | `ChApiSettings` | (factory) | |
 | `server` | `SERVER_*` | `ServerSettings` | (factory) | |
 | `logging` | `LOG_*` | `LoggingSettings` | (factory) | |
@@ -41,6 +41,7 @@ settings.server.base_url
 
 The `auth0` block is a tagged union discriminated by `mode`. Choose the mode by setting `AUTH0_MODE`:
 
+- `none` — no authentication; the MCP server accepts all requests. Use only for local development or behind a trusted ingress.
 - `remote` (default) — the MCP server only **verifies** access tokens issued by an upstream Auth0 tenant. No client registration, no token storage.
 - `proxy` — the MCP server runs a full OAuth proxy via `fastmcp`'s `Auth0Provider`, persists client registrations in Azure Blob Storage (Fernet-encrypted), and issues its own tokens signed with `AUTH0_JWT_SIGNING_KEY`.
 
@@ -48,9 +49,9 @@ The `auth0` block is a tagged union discriminated by `mode`. Choose the mode by 
 
 | Env var | Required | Description |
 |---------|----------|-------------|
-| `AUTH0_MODE` | No (default `remote`) | `remote` or `proxy`. |
-| `AUTH0_DOMAIN` | Yes | e.g. `tenant.auth0.com`. |
-| `AUTH0_AUDIENCE` | Yes | API identifier configured in Auth0. |
+| `AUTH0_MODE` | No (default `remote`) | `none`, `remote`, or `proxy`. |
+| `AUTH0_DOMAIN` | Required in `remote`/`proxy` modes | e.g. `tenant.auth0.com`. |
+| `AUTH0_AUDIENCE` | Required in `remote`/`proxy` modes | API identifier configured in Auth0. |
 | `AUTH0_INTERACTIVE_CLIENT_ID` | No | SPA client ID that enables the `/interactive` web UI. When unset, interactive routes are not mounted. |
 
 ### Proxy mode only
@@ -106,8 +107,6 @@ AZURE_STORAGE_ACCOUNT=mycompanystorage
 | `CH_API_API_KEY` | `str` | — (required) | Companies House API key. Obtain from <https://developer.company-information.service.gov.uk/>. |
 | `CH_API_USE_SANDBOX` | `bool` | `false` | When `true`, use the Companies House sandbox environment. |
 | `CH_API_BASE_URL` | `HttpUrl` | unset | Optional override (takes precedence over `use_sandbox`). |
-| `CH_API_TIMEOUT` | `float > 0` | `30.0` | Request timeout, seconds. |
-| `CH_API_MAX_RETRIES` | `int >= 0` | `3` | Retry count for transient failures. |
 
 ## `server` — HTTP server
 
