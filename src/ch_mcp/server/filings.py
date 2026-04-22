@@ -26,17 +26,6 @@ ChargeIdParam = Annotated[
     ),
 ]
 
-FilingHistoryIdParam = Annotated[
-    str,
-    pydantic.Field(
-        description=(
-            "Companies House filing history transaction identifier. Obtain from"
-            " the ``transaction_id`` field of ``get_company_filing_history`` items."
-        ),
-        min_length=1,
-    ),
-]
-
 filings_mcp = fastmcp.FastMCP("filings", on_duplicate="error")
 
 _TOOL_KW = {
@@ -117,24 +106,6 @@ async def get_company_filing_history(
         items=[types.filings.FilingHistoryItem.from_api_t(el) for el in out.data],
         pagination=types.pagination.PaginationInfo.from_api_t(out.pagination),
     )
-
-
-@filings_mcp.tool(**_TOOL_KW)
-async def get_filing_history_item(
-    company_number: CompanyNumberParam,
-    filing_history_id: FilingHistoryIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.filings.FilingHistoryItem | None:
-    """Fetch a single filing history transaction by its transaction_id.
-
-    Equivalent to finding the matching entry in ``get_company_filing_history``,
-    but issued as a direct lookup. Use when you already have a specific
-    transaction_id and want to refresh it without paging through the history.
-    """
-    result = await ch_client.get_filing_history_item(company_number, filing_history_id)
-    if result is None:
-        return None
-    return types.filings.FilingHistoryItem.from_api_t(result)
 
 
 @filings_mcp.tool(**_TOOL_KW)

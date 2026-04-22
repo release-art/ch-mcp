@@ -61,23 +61,6 @@ async def get_company_profile(
 
 
 @companies_mcp.tool(**_TOOL_KW)
-async def registered_office_address(
-    company_number: CompanyNumberParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.company.RegisteredOfficeAddress | None:
-    """Fetch only the registered office address for a company.
-
-    Returns the current registered office address. Prefer
-    ``get_company_profile`` when the user wants a broader view — that response
-    already includes this address alongside everything else.
-    """
-    result = await ch_client.registered_office_address(company_number)
-    if result is None:
-        return None
-    return types.company.RegisteredOfficeAddress.from_api_t(result)
-
-
-@companies_mcp.tool(**_TOOL_KW)
 async def get_company_registers(
     company_number: CompanyNumberParam,
     ch_client: ch_api.Client = deps.ChApiDep,

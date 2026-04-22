@@ -1,6 +1,9 @@
 """Reflected Persons-with-Significant-Control (PSC) types."""
 
+from typing import Annotated, Union
+
 import ch_api.types.public_data.psc as _psc
+import pydantic
 
 from . import base
 
@@ -43,3 +46,21 @@ class SuperSecure(base.reflect_ch_api_t(_psc.SuperSecure)):
 
 class SuperSecureBeneficialOwner(base.reflect_ch_api_t(_psc.SuperSecureBeneficialOwner)):
     """Super-secure registrable beneficial owner."""
+
+
+#: Discriminated union of every concrete PSC record type. Each variant declares
+#: a distinct ``kind`` literal, so pydantic can statically narrow responses and
+#: MCP clients see a tagged union in the output schema.
+PscRecord = Annotated[
+    Union[
+        Individual,
+        IndividualBeneficialOwner,
+        CorporateEntity,
+        CorporateEntityBeneficialOwner,
+        LegalPerson,
+        LegalPersonBeneficialOwner,
+        SuperSecure,
+        SuperSecureBeneficialOwner,
+    ],
+    pydantic.Field(discriminator="kind"),
+]

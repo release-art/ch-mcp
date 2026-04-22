@@ -80,6 +80,20 @@ def get_server() -> fastmcp.FastMCP:
     wires up the middleware stack, and installs the configured auth provider.
     """
     settings = ch_mcp.settings.get_settings()
+    auth_provider = auth.provider.get_auth_provider()
+    middleware_stack = [
+        ErrorHandlingMiddleware(include_traceback=settings.debug),
+        RateLimitingMiddleware(),
+        LoggingMiddleware(),
+        middleware.cache.ChCachingMiddleware(ttl_seconds=settings.cache.ttl_seconds),
+    ]
+    # Only gate tools on the ch-api:read scope when an auth provider is configured.
+    # With AUTH0_MODE=none there is no access token, and restrict_tag would reject
+    # every tagged tool — which is all of them — hiding them from tools/list.
+    if auth_provider is not None:
+        middleware_stack.insert(
+            0, AuthMiddleware(auth=restrict_tag(auth.tags.CH_API_RO, scopes=[auth.scopes.CH_API_RO]))
+        )
     main = fastmcp.FastMCP(
         f"Release.art public MCP v{ch_mcp.__version__.__version__}",
         lifespan=mcp_lifespan,
@@ -93,14 +107,8 @@ def get_server() -> fastmcp.FastMCP:
         ],
         on_duplicate="error",
         strict_input_validation=True,
-        auth=auth.provider.get_auth_provider(),
-        middleware=[
-            AuthMiddleware(auth=restrict_tag(auth.tags.CH_API_RO, scopes=[auth.scopes.CH_API_RO])),
-            ErrorHandlingMiddleware(include_traceback=settings.debug),
-            RateLimitingMiddleware(),
-            LoggingMiddleware(),
-            middleware.cache.ChCachingMiddleware(ttl_seconds=settings.cache.ttl_seconds),
-        ],
+        auth=auth_provider,
+        middleware=middleware_stack,
     )
     main.mount(search.get_server())
     main.mount(companies.get_server())

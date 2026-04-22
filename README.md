@@ -4,7 +4,7 @@ A [Model Context Protocol](https://modelcontextprotocol.io/) server that exposes
 
 ## Overview
 
-- **~28 read-only tools** across five domains: search, companies, officers, PSCs (persons with significant control), and filings.
+- **20 read-only tools** across five domains: search, companies, officers, PSCs (persons with significant control), and filings.
 - **Two transports**: HTTP (Starlette/uvicorn) for remote MCP clients, and stdio for local integrations.
 - **OAuth2 via Auth0**, with three modes:
   - `none` — no authentication (local dev / trusted-ingress only).
@@ -18,12 +18,28 @@ A [Model Context Protocol](https://modelcontextprotocol.io/) server that exposes
 | Module | Tools |
 |--------|-------|
 | [`search.py`](src/ch_mcp/server/search.py) | `search_companies`, `search_officers`, `search_disqualified_officers`, `alphabetical_companies_search`, `search_dissolved_companies`, `advanced_company_search` |
-| [`companies.py`](src/ch_mcp/server/companies.py) | `get_company_profile`, `registered_office_address`, `get_company_registers`, `get_company_uk_establishments` |
-| [`officers.py`](src/ch_mcp/server/officers.py) | `get_officer_list`, `get_officer_appointment`, `get_officer_appointments`, `get_natural_officer_disqualification`, `get_corporate_officer_disqualification` |
-| [`psc.py`](src/ch_mcp/server/psc.py) | `get_company_psc_list`, `get_company_psc_statements`, `get_company_individual_psc`, `get_company_individual_psc_beneficial_owner`, `get_company_corporate_psc`, `get_company_corporate_psc_beneficial_owner`, `get_company_legal_person_psc`, `get_company_legal_person_psc_beneficial_owner`, `get_company_super_secure_psc`, `get_company_super_secure_beneficial_owner_psc` |
-| [`filings.py`](src/ch_mcp/server/filings.py) | `get_company_charges`, `get_company_charge_details`, `get_company_filing_history`, `get_filing_history_item`, `get_company_insolvency`, `get_company_exemptions` |
+| [`companies.py`](src/ch_mcp/server/companies.py) | `get_company_profile`, `get_company_registers`, `get_company_uk_establishments` |
+| [`officers.py`](src/ch_mcp/server/officers.py) | `get_officer_list`, `get_officer_appointments`, `get_officer_disqualification` |
+| [`psc.py`](src/ch_mcp/server/psc.py) | `get_company_psc_list`, `get_company_psc_statements`, `get_company_psc` |
+| [`filings.py`](src/ch_mcp/server/filings.py) | `get_company_charges`, `get_company_charge_details`, `get_company_filing_history`, `get_company_insolvency`, `get_company_exemptions` |
 
 All tools are decorated with `ToolAnnotations(readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=True)`.
+
+### Discriminated tools
+
+Two tools dispatch across several underlying Companies House endpoints via a
+required ``kind`` parameter:
+
+- **`get_company_psc`** — one of eight PSC variants (individual / corporate
+  entity / legal person / super-secure, each with a beneficial-owner
+  counterpart). Copy the ``kind`` straight from the corresponding
+  `get_company_psc_list` item.
+- **`get_officer_disqualification`** — ``natural-disqualification`` (human
+  director) or ``corporate-disqualification`` (company acting as director).
+  Determined from `search_disqualified_officers` results.
+
+Both return a pydantic discriminated union keyed on the same ``kind`` field so
+MCP clients can statically narrow the response to the correct variant.
 
 ## Quick start
 

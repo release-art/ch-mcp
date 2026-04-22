@@ -7,13 +7,15 @@ Companies House records five kinds of PSC, each with a "beneficial owner" varian
 - **legal-person** — a non-company legal entity (e.g. a trust, foundation).
 - **super-secure** — a person whose details are withheld for safety.
 
-Call ``get_company_psc_list`` first to enumerate a company's PSCs; each entry's
-``kind`` tells you which ``get_company_{kind}_psc`` tool to use for the full
-record.
+Call ``get_company_psc_list`` first to enumerate a company's PSCs. Each item
+carries a ``kind`` discriminator literal — pass that value straight into
+``get_company_psc`` to fetch the full record. The response's own ``kind``
+field lets MCP clients statically pick the right variant from the returned
+discriminated union.
 """
 
 import logging
-from typing import Annotated
+from typing import Annotated, Literal
 
 import ch_api
 import ch_api.types.pagination.types as _ch_pagination
@@ -35,6 +37,26 @@ PscIdParam = Annotated[
             " segment of the item's ``self`` link."
         ),
         min_length=1,
+    ),
+]
+
+PscKindParam = Annotated[
+    Literal[
+        "individual-person-with-significant-control",
+        "individual-beneficial-owner",
+        "corporate-entity-person-with-significant-control",
+        "corporate-entity-beneficial-owner",
+        "legal-person-person-with-significant-control",
+        "legal-person-beneficial-owner",
+        "super-secure-person-with-significant-control",
+        "super-secure-beneficial-owner",
+    ],
+    pydantic.Field(
+        description=(
+            "The kind of PSC to fetch. Copy the value straight from the ``kind``"
+            " field of the corresponding ``get_company_psc_list`` item — it is"
+            " one of the eight literal values listed."
+        ),
     ),
 ]
 
@@ -62,6 +84,43 @@ _NextPageParam = Annotated[
 ]
 
 
+# Dispatch table: maps each ``kind`` literal to (ch_api method name, reflected response type).
+_PSC_DISPATCH: dict[str, tuple[str, type[types.base.ReflectedChApiModel]]] = {
+    "individual-person-with-significant-control": (
+        "get_company_individual_psc",
+        types.psc.Individual,
+    ),
+    "individual-beneficial-owner": (
+        "get_company_individual_psc_beneficial_owner",
+        types.psc.IndividualBeneficialOwner,
+    ),
+    "corporate-entity-person-with-significant-control": (
+        "get_company_corporate_psc",
+        types.psc.CorporateEntity,
+    ),
+    "corporate-entity-beneficial-owner": (
+        "get_company_corporate_psc_beneficial_owner",
+        types.psc.CorporateEntityBeneficialOwner,
+    ),
+    "legal-person-person-with-significant-control": (
+        "get_company_legal_person_psc",
+        types.psc.LegalPerson,
+    ),
+    "legal-person-beneficial-owner": (
+        "get_company_legal_person_psc_beneficial_owner",
+        types.psc.LegalPersonBeneficialOwner,
+    ),
+    "super-secure-person-with-significant-control": (
+        "get_company_super_secure_psc",
+        types.psc.SuperSecure,
+    ),
+    "super-secure-beneficial-owner": (
+        "get_company_super_secure_beneficial_owner_psc",
+        types.psc.SuperSecureBeneficialOwner,
+    ),
+}
+
+
 @psc_mcp.tool(**_TOOL_KW)
 async def get_company_psc_list(
     company_number: CompanyNumberParam,
@@ -72,8 +131,9 @@ async def get_company_psc_list(
 
     PSCs are the individuals or entities that ultimately own or control the
     company (typically >25% of shares, >25% of voting rights, or right to appoint
-    directors). Each entry's ``kind`` field indicates which specific
-    ``get_company_{kind}_psc`` tool to call for the full record.
+    directors). Each entry's ``kind`` field indicates the PSC variant — pass
+    that exact value as the ``kind`` argument to ``get_company_psc`` to fetch
+    the full record.
     """
     out = await ch_client.get_company_psc_list(company_number, next_page=next_page_token)
     return types.pagination.MultipageList[types.psc.ListSummary](
@@ -103,144 +163,37 @@ async def get_company_psc_statements(
 
 
 @psc_mcp.tool(**_TOOL_KW)
-async def get_company_individual_psc(
+async def get_company_psc(
     company_number: CompanyNumberParam,
     psc_id: PscIdParam,
+    kind: PscKindParam,
     ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.Individual | None:
-    """Fetch the full record for an individual (natural-person) PSC.
+) -> types.psc.PscRecord | None:
+    """Fetch the full record for a single person with significant control (PSC).
 
-    Use when the ``get_company_psc_list`` entry has ``kind`` =
-    ``individual-person-with-significant-control``. Returns name, date of birth
-    (partial, per PSC protection rules), nationality, country of residence, and
-    the nature of control held.
+    This single tool covers every PSC variant (individual, corporate-entity,
+    legal-person, super-secure, plus their beneficial-owner counterparts).
+    Dispatch is driven by the ``kind`` argument — **copy it straight from the**
+    ``kind`` **field of the corresponding** ``get_company_psc_list`` **item**;
+    do not invent or translate the value.
+
+    The response is a discriminated union keyed on the same ``kind`` field, so
+    MCP clients can statically narrow to the right concrete variant. Returns
+    ``None`` if no PSC exists at the given ``(company_number, psc_id)`` pair
+    for that ``kind``.
+
+    Notes on specific kinds:
+
+    - ``super-secure-*`` — details are suppressed for safety; only the minimal
+      publishable metadata is returned.
+    - ``*-beneficial-owner`` — used for overseas entities under the UK Register
+      of Overseas Entities regime.
     """
-    result = await ch_client.get_company_individual_psc(company_number, psc_id)
+    method_name, result_type = _PSC_DISPATCH[kind]
+    result = await getattr(ch_client, method_name)(company_number, psc_id)
     if result is None:
         return None
-    return types.psc.Individual.from_api_t(result)
-
-
-@psc_mcp.tool(**_TOOL_KW)
-async def get_company_individual_psc_beneficial_owner(
-    company_number: CompanyNumberParam,
-    psc_id: PscIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.IndividualBeneficialOwner | None:
-    """Fetch the full record for an individual registrable beneficial owner (RBO).
-
-    RBO entries apply to overseas entities within scope of the UK Register of
-    Overseas Entities regime. Use when the list kind is
-    ``individual-beneficial-owner``.
-    """
-    result = await ch_client.get_company_individual_psc_beneficial_owner(company_number, psc_id)
-    if result is None:
-        return None
-    return types.psc.IndividualBeneficialOwner.from_api_t(result)
-
-
-@psc_mcp.tool(**_TOOL_KW)
-async def get_company_corporate_psc(
-    company_number: CompanyNumberParam,
-    psc_id: PscIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.CorporateEntity | None:
-    """Fetch the full record for a corporate-entity PSC (a company exercising control).
-
-    Use when the list kind is ``corporate-entity-person-with-significant-control``.
-    Returns the controlling entity's registered name, registration number,
-    jurisdiction, and nature of control.
-    """
-    result = await ch_client.get_company_corporate_psc(company_number, psc_id)
-    if result is None:
-        return None
-    return types.psc.CorporateEntity.from_api_t(result)
-
-
-@psc_mcp.tool(**_TOOL_KW)
-async def get_company_corporate_psc_beneficial_owner(
-    company_number: CompanyNumberParam,
-    psc_id: PscIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.CorporateEntityBeneficialOwner | None:
-    """Fetch the full record for a corporate registrable beneficial owner.
-
-    Use when the list kind is ``corporate-entity-beneficial-owner``.
-    """
-    result = await ch_client.get_company_corporate_psc_beneficial_owner(company_number, psc_id)
-    if result is None:
-        return None
-    return types.psc.CorporateEntityBeneficialOwner.from_api_t(result)
-
-
-@psc_mcp.tool(**_TOOL_KW)
-async def get_company_legal_person_psc(
-    company_number: CompanyNumberParam,
-    psc_id: PscIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.LegalPerson | None:
-    """Fetch the full record for a legal-person PSC (a non-company legal entity).
-
-    Covers entities such as trusts, foundations, or unincorporated associations
-    with legal personality. Use when the list kind is
-    ``legal-person-person-with-significant-control``.
-    """
-    result = await ch_client.get_company_legal_person_psc(company_number, psc_id)
-    if result is None:
-        return None
-    return types.psc.LegalPerson.from_api_t(result)
-
-
-@psc_mcp.tool(**_TOOL_KW)
-async def get_company_legal_person_psc_beneficial_owner(
-    company_number: CompanyNumberParam,
-    psc_id: PscIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.LegalPersonBeneficialOwner | None:
-    """Fetch the full record for a legal-person registrable beneficial owner.
-
-    Use when the list kind is ``legal-person-beneficial-owner``.
-    """
-    result = await ch_client.get_company_legal_person_psc_beneficial_owner(company_number, psc_id)
-    if result is None:
-        return None
-    return types.psc.LegalPersonBeneficialOwner.from_api_t(result)
-
-
-@psc_mcp.tool(**_TOOL_KW)
-async def get_company_super_secure_psc(
-    company_number: CompanyNumberParam,
-    psc_id: PscIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.SuperSecure | None:
-    """Fetch the record for a super-secure PSC.
-
-    "Super-secure" means the PSC's personal details are withheld from the public
-    register because disclosure would put them at serious risk (domestic abuse,
-    terrorism, etc.). Returns only the minimal publishable metadata. Use when
-    the list kind is ``super-secure-person-with-significant-control``.
-    """
-    result = await ch_client.get_company_super_secure_psc(company_number, psc_id)
-    if result is None:
-        return None
-    return types.psc.SuperSecure.from_api_t(result)
-
-
-@psc_mcp.tool(**_TOOL_KW)
-async def get_company_super_secure_beneficial_owner_psc(
-    company_number: CompanyNumberParam,
-    psc_id: PscIdParam,
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> types.psc.SuperSecureBeneficialOwner | None:
-    """Fetch the record for a super-secure registrable beneficial owner.
-
-    Use when the list kind is ``super-secure-beneficial-owner``. See
-    ``get_company_super_secure_psc`` for notes on why details are withheld.
-    """
-    result = await ch_client.get_company_super_secure_beneficial_owner_psc(company_number, psc_id)
-    if result is None:
-        return None
-    return types.psc.SuperSecureBeneficialOwner.from_api_t(result)
+    return result_type.from_api_t(result)
 
 
 def get_server() -> fastmcp.FastMCP:
