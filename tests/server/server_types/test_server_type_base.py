@@ -1,12 +1,12 @@
-"""Test for server type base"""
+"""Tests for the ch_mcp type reflection layer."""
 # ruff: noqa: N806
 
 import typing
 
-import fca_api.types as fca_api_types
+import ch_api.types.shared
 import pydantic
 
-import fca_mcp.server.types.base as server_type_base
+import ch_mcp.server.types.base as server_type_base
 
 
 class TestReflect:
@@ -15,73 +15,57 @@ class TestReflect:
             a: int
             b: str
 
-        ModelB = server_type_base.reflect_fca_api_t(ModelA)
+        ModelB = server_type_base.reflect_ch_api_t(ModelA)
         assert ModelA.model_json_schema() == (ModelB.model_json_schema() | {"title": "ModelA"})
 
-    def test_exclude_with_pydantic_field(self):
+    def test_exclude_links_section(self):
         class ModelA(pydantic.BaseModel):
             a: int
             b: str
-            c: typing.Annotated[
-                str,
-                pydantic.Field(),
-                fca_api_types.annotations.FcaApiFieldInfo(marks={fca_api_types.annotations.FcaApiField.InternalUrl}),
-            ]
+            links: ch_api.types.shared.LinksSection
 
-        ModelB = server_type_base.reflect_fca_api_t(ModelA)
+        ModelB = server_type_base.reflect_ch_api_t(ModelA)
         assert "a" in ModelB.model_fields
         assert "b" in ModelB.model_fields
-        assert "c" not in ModelB.model_fields
+        assert "links" not in ModelB.model_fields
 
-    def test_exclude_nullable_with_pydantic_field(self):
+    def test_exclude_optional_links_section(self):
         class ModelA(pydantic.BaseModel):
             a: int
             b: str
-            c: typing.Annotated[
-                pydantic.HttpUrl | None,
-                pydantic.Field(
-                    description="The URL of the firm's record in the FCA register.",
-                ),
-                fca_api_types.annotations.FcaApiFieldInfo(marks=[fca_api_types.annotations.FcaApiField.InternalUrl]),
-            ]
+            links: ch_api.types.shared.LinksSection | None = None
 
-        ModelB = server_type_base.reflect_fca_api_t(ModelA)
+        ModelB = server_type_base.reflect_ch_api_t(ModelA)
         assert "a" in ModelB.model_fields
         assert "b" in ModelB.model_fields
-        assert "c" not in ModelB.model_fields
+        assert "links" not in ModelB.model_fields
 
-    def test_exclude_without_pydantic_field(self):
+    def test_exclude_annotated_links_section(self):
         class ModelA(pydantic.BaseModel):
             a: int
             b: str
-            c: typing.Annotated[
-                str,
-                # pydantic.Field(),
-                fca_api_types.annotations.FcaApiFieldInfo(marks={fca_api_types.annotations.FcaApiField.InternalUrl}),
+            links: typing.Annotated[
+                ch_api.types.shared.LinksSection,
+                pydantic.Field(description="HATEOAS links to related resources."),
             ]
 
-        ModelB = server_type_base.reflect_fca_api_t(ModelA)
+        ModelB = server_type_base.reflect_ch_api_t(ModelA)
         assert "a" in ModelB.model_fields
         assert "b" in ModelB.model_fields
-        assert "c" not in ModelB.model_fields
+        assert "links" not in ModelB.model_fields
 
     def test_exclude_in_children(self):
         class ModelA(pydantic.BaseModel):
             a: int
-            b: str
-            c: typing.Annotated[
-                str,
-                pydantic.Field(),
-                fca_api_types.annotations.FcaApiFieldInfo(marks={fca_api_types.annotations.FcaApiField.InternalUrl}),
-            ]
+            links: ch_api.types.shared.LinksSection | None = None
 
         class ModelC(pydantic.BaseModel):
             x: int
             y: ModelA
 
-        ModelD = server_type_base.reflect_fca_api_t(ModelC)
+        ModelD = server_type_base.reflect_ch_api_t(ModelC)
         assert "x" in ModelD.model_fields
         assert "y" in ModelD.model_fields
-        assert "a" in ModelD.model_fields["y"].annotation.model_fields
-        assert "b" in ModelD.model_fields["y"].annotation.model_fields
-        assert "c" not in ModelD.model_fields["y"].annotation.model_fields
+        reflected_y = ModelD.model_fields["y"].annotation
+        assert "a" in reflected_y.model_fields
+        assert "links" not in reflected_y.model_fields

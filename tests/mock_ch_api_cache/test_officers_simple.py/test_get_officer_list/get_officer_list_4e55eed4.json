@@ -1,0 +1,62 @@
+{
+  "class": "MultipageList",
+  "data": {
+    "data": [
+      {
+        "address": {
+          "address_line_1": "High Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "England",
+          "locality": "Manchester",
+          "po_box": null,
+          "postal_code": "M4 1BF",
+          "premises": "Apt 222, 87 High Street, Manchester",
+          "region": null
+        },
+        "appointed_before": null,
+        "appointed_on": "2014-12-31",
+        "contact_details": null,
+        "country_of_residence": "Italy",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1976
+        },
+        "etag": "57f8dec84a793101fea7f25decd6347caa05c3b0",
+        "former_names": null,
+        "identification": null,
+        "identity_verification_details": {
+          "anti_money_laundering_supervisory_bodies": null,
+          "appointment_verification_end_on": "9999-12-31",
+          "appointment_verification_start_on": "2026-01-02",
+          "appointment_verification_statement_due_on": null,
+          "authorised_corporate_service_provider_name": null,
+          "identity_verified_on": null,
+          "preferred_name": null
+        },
+        "is_pre_1992_appointment": false,
+        "links": {
+          "officer": {
+            "appointments": "/officers/dFhozYasRKZCflRy6Rz4jlG-QDo/appointments"
+          },
+          "self": "/company/09370755/appointments/OZCfb3D_Lhqy301HO8s0bZ6riPQ"
+        },
+        "name": "PERUGIA, Uriel",
+        "nationality": "Italian",
+        "occupation": null,
+        "officer_role": "director",
+        "person_number": "193765050001",
+        "principal_office_address": null,
+        "resigned_on": null,
+        "responsibilities": null
+      }
+    ],
+    "pagination": {
+      "has_next": false,
+      "next_page": null,
+      "size": 1
+    }
+  },
+  "module": "ch_api.types.pagination.types",
+  "type": "PydanticModel"
+}

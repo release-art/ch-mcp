@@ -1,0 +1,83 @@
+{
+  "class": "CompanyProfile",
+  "data": {
+    "accounts": {
+      "accounting_reference_date": {
+        "day": 31,
+        "month": 12
+      },
+      "last_accounts": {
+        "made_up_to": "2024-12-31",
+        "period_end_on": "2024-12-31",
+        "period_start_on": "2024-01-01",
+        "type": "dormant"
+      },
+      "next_accounts": {
+        "due_on": "2026-09-30",
+        "overdue": false,
+        "period_end_on": "2025-12-31",
+        "period_start_on": "2025-01-01"
+      },
+      "next_due": "2026-09-30",
+      "next_made_up_to": "2025-12-31",
+      "overdue": false
+    },
+    "annual_return": null,
+    "branch_company_details": null,
+    "can_file": true,
+    "company_name": "NES ITALIA LTD",
+    "company_number": "09370755",
+    "company_status": "active",
+    "company_status_detail": null,
+    "confirmation_statement": {
+      "last_made_up_to": "2025-12-31",
+      "next_due": "2027-01-14",
+      "next_made_up_to": "2026-12-31",
+      "overdue": false
+    },
+    "corporate_annotation": null,
+    "date_of_cessation": null,
+    "date_of_creation": "2014-12-31",
+    "etag": "949c1935266749b89a6f2354992dfe0298edec4e",
+    "external_registration_number": null,
+    "foreign_company_details": null,
+    "has_been_liquidated": null,
+    "has_charges": false,
+    "has_insolvency_history": false,
+    "has_super_secure_pscs": false,
+    "is_community_interest_company": null,
+    "jurisdiction": "england-wales",
+    "last_full_members_list_date": "2015-12-31",
+    "links": {
+      "filing_history": "/company/09370755/filing-history",
+      "officers": "/company/09370755/officers",
+      "persons_with_significant_control": "/company/09370755/persons-with-significant-control",
+      "self": "/company/09370755"
+    },
+    "partial_data_available": null,
+    "previous_company_names": null,
+    "registered_office_address": {
+      "address_line_1": "Apt 222, 87 High Street, Manchester High Street",
+      "address_line_2": null,
+      "care_of": null,
+      "country": "England",
+      "locality": "Manchester",
+      "po_box": null,
+      "postal_code": "M4 1BF",
+      "premises": null,
+      "region": null
+    },
+    "registered_office_is_in_dispute": false,
+    "service_address": null,
+    "sic_codes": [
+      "26400",
+      "46520"
+    ],
+    "subtype": null,
+    "super_secure_managing_officer_count": null,
+    "type": "ltd",
+    "undeliverable_registered_office_address": false
+  },
+  "module": "ch_api.types.public_data.company_profile",
+  "type": "PydanticModel"
+}

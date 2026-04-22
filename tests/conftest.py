@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import os
+
 import pytest
 
-import fca_mcp
+import ch_mcp
 
 pytest_plugins = [
     "tests.test_plugins.mock_client",
@@ -12,39 +14,38 @@ pytest_plugins = [
 
 
 @pytest.fixture
-def test_settings() -> fca_mcp.settings.Settings:
+def test_settings() -> ch_mcp.settings.Settings:
     """Test settings fixture."""
-    return fca_mcp.settings.Settings(
+    return ch_mcp.settings.Settings(
         environment="development",
         debug=True,
-        azure=fca_mcp.settings.AzureSettings(
+        azure=ch_mcp.settings.AzureSettings(
             credential="none",
             storage_connection_string="DefaultEndpointsProtocol=https;AccountName=testaccount;AccountKey=dGVzdGtleQ==;EndpointSuffix=core.windows.net",
         ),
-        blob_store_names=fca_mcp.settings.BlobStoreNamesSettings(
+        blob_store_names=ch_mcp.settings.BlobStoreNamesSettings(
             auth0_clients="test-auth0-clients",
         ),
-        table_store_names=fca_mcp.settings.TableStoreNamesSettings(
+        table_store_names=ch_mcp.settings.TableStoreNamesSettings(
             api_cache="apicache",
         ),
-        cache=fca_mcp.settings.CacheSettings(
+        cache=ch_mcp.settings.CacheSettings(
             ttl_seconds=3600,
         ),
-        auth0=fca_mcp.settings.RemoteAuth0Settings(
+        auth0=ch_mcp.settings.RemoteAuth0Settings(
             domain="test.auth0.com",
             audience="https://test-api.example.com",
         ),
-        fca_api=fca_mcp.settings.FcaApiSettings(
-            username="test.user@example.com",
-            key="test_fca_api_key_12345",
+        ch_api=ch_mcp.settings.ChApiSettings(
+            api_key=os.environ.get("CH_API_API_KEY", "test_ch_api_key_12345"),
         ),
-        server=fca_mcp.settings.ServerSettings(
+        server=ch_mcp.settings.ServerSettings(
             host="127.0.0.1",
             port=8000,
             base_url="http://localhost:8000",
             jwt_secret_key="test-jwt-secret",
         ),
-        logging=fca_mcp.settings.LoggingSettings(
+        logging=ch_mcp.settings.LoggingSettings(
             level="DEBUG",
             format="text",
         ),
@@ -54,6 +55,6 @@ def test_settings() -> fca_mcp.settings.Settings:
 
 
 @pytest.fixture(autouse=True)
-def get_test_settings(mocker, test_settings: fca_mcp.settings.Settings):
+def get_test_settings(mocker, test_settings: ch_mcp.settings.Settings):
     """Fixture to get test settings."""
-    mocker.patch("fca_mcp.settings.get_settings", return_value=test_settings)
+    mocker.patch("ch_mcp.settings.get_settings", return_value=test_settings)

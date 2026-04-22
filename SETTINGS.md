@@ -1,8 +1,8 @@
 # Settings Reference
 
-Configuration for the FCA MCP server, built on [Pydantic v2](https://docs.pydantic.dev/) and [pydantic-settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/). All values are loaded from environment variables (or a `.env` file); extra variables are rejected (`extra="forbid"`).
+Configuration for the Companies House MCP server, built on [Pydantic v2](https://docs.pydantic.dev/) and [pydantic-settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/). All values are loaded from environment variables (or a `.env` file); extra variables are rejected (`extra="forbid"`).
 
-Source of truth: [`src/fca_mcp/settings.py`](src/fca_mcp/settings.py).
+Source of truth: [`src/ch_mcp/settings.py`](src/ch_mcp/settings.py).
 
 ## Quick start
 
@@ -12,11 +12,11 @@ cp .env.example .env
 ```
 
 ```python
-from fca_mcp.settings import get_settings
+from ch_mcp.settings import get_settings
 
 settings = get_settings()          # cached singleton via @functools.lru_cache
 settings.auth0.domain
-settings.fca_api.username
+settings.ch_api.api_key
 settings.server.base_url
 ```
 
@@ -33,7 +33,7 @@ settings.server.base_url
 | `azure` | `AZURE_*` | `AzureSettings` | (factory) | |
 | `blob_store_names` | `BLOB_STORE_NAME_*` | `BlobStoreNamesSettings` | (factory) | Blob container names per internal store. |
 | `auth0` | `AUTH0_*` | `RemoteAuth0Settings` \| `ProxyAuth0Settings` | mode selected via `AUTH0_MODE` | |
-| `fca_api` | `FCA_API_*` | `FcaApiSettings` | (factory) | |
+| `ch_api` | `CH_API_*` | `ChApiSettings` | (factory) | |
 | `server` | `SERVER_*` | `ServerSettings` | (factory) | |
 | `logging` | `LOG_*` | `LoggingSettings` | (factory) | |
 
@@ -99,15 +99,15 @@ AZURE_CREDENTIAL=default
 AZURE_STORAGE_ACCOUNT=mycompanystorage
 ```
 
-## `fca_api` — FCA Register credentials
+## `ch_api` — Companies House API credentials
 
 | Env var | Type | Default | Description |
 |---------|------|---------|-------------|
-| `FCA_API_USERNAME` | `str` | — (required) | FCA Register email. |
-| `FCA_API_KEY` | `str` | — (required) | FCA Register API key. |
-| `FCA_API_BASE_URL` | `HttpUrl` | unset | Optional override. |
-| `FCA_API_TIMEOUT` | `float > 0` | `30.0` | Request timeout, seconds. |
-| `FCA_API_MAX_RETRIES` | `int >= 0` | `3` | Retry count for transient failures. |
+| `CH_API_API_KEY` | `str` | — (required) | Companies House API key. Obtain from <https://developer.company-information.service.gov.uk/>. |
+| `CH_API_USE_SANDBOX` | `bool` | `false` | When `true`, use the Companies House sandbox environment. |
+| `CH_API_BASE_URL` | `HttpUrl` | unset | Optional override (takes precedence over `use_sandbox`). |
+| `CH_API_TIMEOUT` | `float > 0` | `30.0` | Request timeout, seconds. |
+| `CH_API_MAX_RETRIES` | `int >= 0` | `3` | Retry count for transient failures. |
 
 ## `server` — HTTP server
 
@@ -120,7 +120,7 @@ AZURE_STORAGE_ACCOUNT=mycompanystorage
 
 `SERVER_BASE_URL` is required because `RemoteAuthProvider` / `Auth0Provider` include it in the OAuth protected resource metadata. Use `http://localhost:8000` locally.
 
-The `--reload` flag on `python -m fca_mcp serve` is passed through to uvicorn directly and is independent of this settings block.
+The `--reload` flag on `python -m ch_mcp serve` is passed through to uvicorn directly and is independent of this settings block.
 
 ## `logging`
 
@@ -130,7 +130,7 @@ The `--reload` flag on `python -m fca_mcp serve` is passed through to uvicorn di
 | `LOG_FORMAT` | `text` \| `json` | `text` | |
 | `LOG_FILE` | `str` | unset | When set, log to file in addition to stdout. |
 
-Runtime logging config is assembled by [`fca_mcp.logging.get_config()`](src/fca_mcp/logging.py).
+Runtime logging config is assembled by [`ch_mcp.logging.get_config()`](src/ch_mcp/logging.py).
 
 ## Usage patterns
 
@@ -139,7 +139,7 @@ Runtime logging config is assembled by [`fca_mcp.logging.get_config()`](src/fca_
 ```python
 from typing import Annotated
 from fastapi import Depends
-from fca_mcp.settings import Settings, get_settings
+from ch_mcp.settings import Settings, get_settings
 
 SettingsDep = Annotated[Settings, Depends(get_settings)]
 

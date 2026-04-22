@@ -1,8 +1,8 @@
 import pathlib
 
-import fca_api
+import ch_api.types.pagination.types as _ch_pagination
 import pydantic
-from fca_api.types.pagination import PaginationInfo
+from ch_api.types.pagination.types import PaginationInfo
 
 
 class PydanticModel:
@@ -26,7 +26,6 @@ class PydanticModel:
 class MockMultipageListReadOnly:
     def __init__(self, cached_data: dict):
         if "data" in cached_data:
-            # New format
             self._data = [PydanticModel.from_dict(el) for el in cached_data["data"]]
             p = cached_data["pagination"]
             self._pagination = PaginationInfo(
@@ -35,7 +34,6 @@ class MockMultipageListReadOnly:
                 size=p.get("size"),
             )
         else:
-            # Legacy format: {"calls": [{"call": "local_items", "out": [...]}]}
             calls = cached_data.get("calls", [])
             items_raw = calls[0]["out"] if calls and calls[0]["call"] == "local_items" else []
             self._data = [PydanticModel.from_dict(el) for el in items_raw]
@@ -51,7 +49,7 @@ class MockMultipageListReadOnly:
 
 
 class MockMultipageListSource:
-    def __init__(self, cached_file: pathlib.Path, src: fca_api.types.pagination.MultipageList):
+    def __init__(self, cached_file: pathlib.Path, src: _ch_pagination.MultipageList):
         self.cached_file = cached_file
         self._data = src.data
         self._pagination = src.pagination

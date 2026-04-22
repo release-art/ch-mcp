@@ -60,4 +60,4 @@ HEALTHCHECK --interval=30s --timeout=10s --retries=3 --start-period=10s \
     CMD curl -f http://localhost:8000//.container/health || exit 1
 
 # Run HTTP server by default
-CMD ["/app/.venv/bin/python", "-m", "fca_mcp", "serve", "--port", "8000", "--no-reload"]
+CMD ["/app/.venv/bin/python", "-m", "ch_mcp", "serve", "--port", "8000", "--no-reload"]

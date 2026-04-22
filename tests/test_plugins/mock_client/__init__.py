@@ -1,10 +1,10 @@
-"""Mock session module for testing the Financial Services Register API without network requests."""
+"""Mock session module for testing the Companies House API without network requests."""
 
 import pathlib
 
 import pytest
 
-from . import cache_filename, mock_fca_api
+from . import cache_filename, mock_ch_api
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
@@ -23,4 +23,4 @@ def pytest_runtest_setup(item):
 
 @pytest.fixture
 def caching_mock_api():
-    return mock_fca_api.MockFcaApi
+    return mock_ch_api.MockChApi

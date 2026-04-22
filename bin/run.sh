@@ -12,8 +12,7 @@ esac
 
 export SERVER_BASE_URL="${SERVER_BASE_URL:-http://localhost:8000}"
 
-export FCA_API_USERNAME="${FCA_API_USERNAME:-op://Employee/d5fon4y2ftqt6cb3bww4bizoza/username}"
-export FCA_API_KEY="${FCA_API_KEY:-op://Employee/d5fon4y2ftqt6cb3bww4bizoza/api key}"
+export CH_API_API_KEY="${CH_API_API_KEY:-op://Employee/d5fon4y2ftqt6cb3bww4bizoza/api key}"
 
 export AUTH0_MODE=proxy
 export AUTH0_DOMAIN="${AUTH0_DOMAIN:-op://Auth0 - dev/MCP Auth0 App/OAuth Domain}"
@@ -36,7 +35,7 @@ export DEBUG="true"
 if [ -n "$*" ]; then
     ARGS=("$@")
 else
-    ARGS=(python -m fca_mcp serve --reload)
+    ARGS=(python -m ch_mcp serve --reload)
 fi
 
 cd "${THIS_DIR}/.."

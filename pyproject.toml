@@ -8,8 +8,8 @@
 #
 #     https://packaging.python.org/en/latest/tutorials/packaging-projects/
 #
-name = "fca-mcp"
-description = "MCP server for the UK Financial Services (FCA) Register RESTful API"
+name = "ch-mcp"
+description = "MCP server for the UK Companies House RESTful API"
 
 authors = [
     {name = "I. Orlovs", email = "ilja@release.art"},
@@ -29,7 +29,6 @@ dependencies = [
     "pydantic>=2.12.5",
     "uvicorn[standard]>=0.32.0",
     "typer>=0.21.2",
-    "fca-api>=1.2.0",
     "python-toon>=0.1.3",
     "fastmcp>=3,<4",
     "asyncstdlib>=3.13.1",
@@ -72,9 +71,9 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project.urls]
-Homepage = "https://docs.release.art/fca-api/"
-Documentation = "https://docs.release.art/fca-api/"
-Repository = "https://github.com/release-art/fca-api/"
+Homepage = "https://docs.release.art/ch-api/"
+Documentation = "https://docs.release.art/ch-api/"
+Repository = "https://github.com/release-art/ch-api/"
 
 # For working with PDM, including configuration and usage see:
 #
@@ -87,7 +86,7 @@ distribution = true
 
 [tool.pdm.build]
 package-dir = "src"
-includes = ["src/fca_mcp"]
+includes = ["src/ch_mcp"]
 # File patterns to exclude, the paths are relative to the project root.
 excludes = [
     "docs",
@@ -117,7 +116,7 @@ lint = [
 pythonVersion = "3.13"
 venvPath = "."
 venv = ".venv"
-include = ["src/fca_mcp"]
+include = ["src/ch_mcp"]
 typeCheckingMode = "standard"
 reportMissingTypeStubs = false
 
@@ -164,15 +163,15 @@ line-ending = "lf"
 order-by-type = true
 combine-as-imports = true
 force-wrap-aliases = true
-known-first-party = ["fca_mcp"]
+known-first-party = ["ch_mcp"]
 forced-separate = ["tests"]
 
 [tool.pdm.scripts]
-fca-mcp = {shell = "python -m fca_mcp"}
+ch-mcp = {shell = "python -m ch_mcp"}
 
 [tool.pdm.version]
 source = "file"
-path = "src/fca_mcp/__version__.py"
+path = "src/ch_mcp/__version__.py"
 
 # For ``pytest`` configuration, including TOML-specific configuration see:
 #
