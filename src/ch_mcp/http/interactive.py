@@ -31,11 +31,15 @@ _jinja_env = Environment(
 async def interactive_config(request: Request) -> JSONResponse:
     """Return Auth0 config for the SPA SDK (public, non-secret values only)."""
     settings = ch_mcp.settings.get_settings()
+    auth0 = settings.auth0
+    assert not isinstance(auth0, ch_mcp.settings.NoneAuth0Settings), (
+        "Interactive UI requires AUTH0_MODE=remote or proxy"
+    )
     return JSONResponse(
         {
-            "auth0_domain": settings.auth0.domain,
-            "auth0_audience": settings.auth0.audience,
-            "auth0_client_id": settings.auth0.interactive_client_id,
+            "auth0_domain": auth0.domain,
+            "auth0_audience": auth0.audience,
+            "auth0_client_id": auth0.interactive_client_id,
         }
     )
 
@@ -44,13 +48,17 @@ async def interactive_config(request: Request) -> JSONResponse:
 async def interactive_ui(request: Request) -> HTMLResponse:
     """Serve the interactive MCP tool explorer."""
     settings = ch_mcp.settings.get_settings()
+    auth0 = settings.auth0
+    assert not isinstance(auth0, ch_mcp.settings.NoneAuth0Settings), (
+        "Interactive UI requires AUTH0_MODE=remote or proxy"
+    )
     base_url = str(request.base_url).rstrip("/")
 
     template = _jinja_env.get_template("interactive.html")
     content = template.render(
-        domain=settings.auth0.domain,
-        audience=settings.auth0.audience,
-        client_id=settings.auth0.interactive_client_id or "",
+        domain=auth0.domain,
+        audience=auth0.audience,
+        client_id=auth0.interactive_client_id or "",
         mcp_url=f"{base_url}",
     )
 

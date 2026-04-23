@@ -51,7 +51,7 @@ def reflect_ch_api_t(
     ``shared.LinksSection`` field \u2014 those hold internal API resource URLs
     that are not useful to MCP clients.
     """
-    fields: dict[str, tuple[typing.Any, typing.Any]] = {}
+    fields: dict[str, typing.Any] = {}
     for name, field in model_cls.model_fields.items():
         if _annotation_contains_type(field.annotation, exclude_types):
             continue
@@ -62,8 +62,8 @@ def reflect_ch_api_t(
             fields[name] = (field_t, ...)
         else:
             fields[name] = (field_t, field.default)
-    return pydantic.create_model(
+    return pydantic.create_model(  # type: ignore[call-overload]
         f"{model_cls.__name__}Reflected",
-        **fields,
         __base__=ReflectedChApiModel,
+        **fields,
     )

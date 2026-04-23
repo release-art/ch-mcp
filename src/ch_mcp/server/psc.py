@@ -15,6 +15,7 @@ discriminated union.
 """
 
 import logging
+import typing
 from typing import Annotated, Literal
 
 import ch_api
@@ -193,7 +194,7 @@ async def get_company_psc(
     result = await getattr(ch_client, method_name)(company_number, psc_id)
     if result is None:
         return None
-    return result_type.from_api_t(result)
+    return typing.cast(types.psc.PscRecord, result_type.from_api_t(result))
 
 
 def get_server() -> fastmcp.FastMCP:

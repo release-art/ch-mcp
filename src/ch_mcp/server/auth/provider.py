@@ -22,6 +22,7 @@ def _get_remote_auth_provider() -> AuthProvider:
 
     settings = ch_mcp.settings.get_settings()
     auth0 = settings.auth0
+    assert isinstance(auth0, ch_mcp.settings.RemoteAuth0Settings)
     domain = auth0.domain
 
     # NOTE: required_scopes is intentionally omitted here. Scope enforcement

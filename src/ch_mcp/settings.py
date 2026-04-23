@@ -424,12 +424,12 @@ class Settings(BaseSettings):
             if mode == AuthMode.NONE:
                 mode_obj = NoneAuth0Settings()
             elif mode == AuthMode.PROXY:
-                mode_obj = ProxyAuth0Settings()
+                mode_obj = ProxyAuth0Settings()  # type: ignore[call-arg]
             elif mode == AuthMode.REMOTE:
-                mode_obj = RemoteAuth0Settings()
+                mode_obj = RemoteAuth0Settings()  # type: ignore[call-arg]
             else:
                 raise ValueError(f"Invalid AUTH0_MODE '{mode}'; must be one of {[m.value for m in AuthMode]}")
-            data["auth0"] = mode_obj  # type: ignore[call-arg]
+            data["auth0"] = mode_obj
         return data
 
     server: Annotated[ServerSettings, Field(default_factory=lambda: ServerSettings())]  # type: ignore[call-arg]
