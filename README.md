@@ -41,6 +41,22 @@ required ``kind`` parameter:
 Both return a pydantic discriminated union keyed on the same ``kind`` field so
 MCP clients can statically narrow the response to the correct variant.
 
+### Intentionally omitted endpoints
+
+Three Companies House endpoints are deliberately **not** surfaced as MCP tools
+because their response is a strict subset of data already available via another
+tool. Omitting them keeps the total tool count down (better model-selection
+accuracy) without losing any retrievable field.
+
+| Upstream endpoint | Supplied by instead | Notes |
+|---|---|---|
+| `GET /company/{number}/registered-office-address` | `get_company_profile` | The profile's `registered_office_address` sub-field is a **superset**: it additionally exposes `care_of` and `po_box`. The standalone endpoint's unique fields are `etag`, `kind`, `links` (pure metadata — `links` is stripped anyway by the LinksSection exclusion) and `accept_appropriate_office_address_statement` (a write-only PUT flag irrelevant to a read-only client). |
+| `GET /company/{number}/filing-history/{id}` | `get_company_filing_history` | Both endpoints deserialise into the same `FilingHistoryItem` pydantic class — field set is identical. |
+| `GET /company/{number}/appointments/{appointment_id}` | `get_officer_list` | Both endpoints deserialise into the same `OfficerSummary` pydantic class — field set is identical. |
+
+If a new CH API version ever changes these endpoints so the single-item call
+returns richer data than the collection item, these tools should be restored.
+
 ## Quick start
 
 ### Prerequisites

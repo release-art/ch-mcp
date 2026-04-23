@@ -69,3 +69,27 @@ class TestReflect:
         reflected_y = ModelD.model_fields["y"].annotation
         assert "a" in reflected_y.model_fields
         assert "links" not in reflected_y.model_fields
+
+    def test_exclude_etag_by_name(self):
+        class ModelA(pydantic.BaseModel):
+            a: int
+            etag: str
+
+        ModelB = server_type_base.reflect_ch_api_t(ModelA)
+        assert "a" in ModelB.model_fields
+        assert "etag" not in ModelB.model_fields
+
+    def test_exclude_etag_in_nested(self):
+        class Inner(pydantic.BaseModel):
+            b: int
+            etag: str | None = None
+
+        class Outer(pydantic.BaseModel):
+            etag: str | None = None
+            inner: Inner
+
+        Reflected = server_type_base.reflect_ch_api_t(Outer)
+        assert "etag" not in Reflected.model_fields
+        assert "inner" in Reflected.model_fields
+        assert "etag" not in Reflected.model_fields["inner"].annotation.model_fields
+        assert "b" in Reflected.model_fields["inner"].annotation.model_fields

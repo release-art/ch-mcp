@@ -42,22 +42,30 @@ def _annotation_contains_type(annotation: typing.Any, excluded: tuple[type, ...]
 def reflect_ch_api_t(
     model_cls: typing.Type[ModelT],
     exclude_types: tuple[type, ...] = (ch_api.types.shared.LinksSection,),
+    exclude_names: tuple[str, ...] = ("etag",),
 ) -> typing.Type[ReflectedChApiModel]:
     """Dynamically create a Pydantic model mirroring ``model_cls``.
 
-    Fields whose annotation is (or includes) a type in ``exclude_types`` are
-    omitted. Nested ``pydantic.BaseModel`` field types are recursively
-    reflected with the same exclusion policy. By default this drops any
-    ``shared.LinksSection`` field \u2014 those hold internal API resource URLs
-    that are not useful to MCP clients.
+    Fields are omitted when either:
+
+    - their annotation is (or includes) a type in ``exclude_types`` — default
+      drops ``shared.LinksSection`` HATEOAS blocks, which carry internal API
+      resource URLs of no use to MCP clients; or
+    - their name appears in ``exclude_names`` — default drops ``etag``, the
+      optimistic-concurrency token used only by write endpoints.
+
+    Nested ``pydantic.BaseModel`` field types are recursively reflected with
+    the same exclusion policy, so the filters apply at every depth.
     """
     fields: dict[str, typing.Any] = {}
     for name, field in model_cls.model_fields.items():
+        if name in exclude_names:
+            continue
         if _annotation_contains_type(field.annotation, exclude_types):
             continue
         field_t: typing.Any = field.annotation
         if isinstance(field_t, type) and issubclass(field_t, pydantic.BaseModel):
-            field_t = reflect_ch_api_t(field_t, exclude_types)
+            field_t = reflect_ch_api_t(field_t, exclude_types, exclude_names)
         if field.default is PydanticUndefined:
             fields[name] = (field_t, ...)
         else:
