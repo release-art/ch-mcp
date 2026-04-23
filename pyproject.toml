@@ -47,7 +47,7 @@ dependencies = [
     "opentelemetry-instrumentation-httpx>=0.62b0",
     "opentelemetry-instrumentation-logging>=0.62b0",
     "python-json-logger>=4.1.0",
-    "ch-api>=1.1.1",
+    "ch-api>=1.1.3",
 ]
 
 readme = "README.md"

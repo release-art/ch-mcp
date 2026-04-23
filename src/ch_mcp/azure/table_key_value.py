@@ -12,13 +12,24 @@ from key_value.aio._utils.sanitization import AlwaysHashStrategy
 from key_value.aio.stores.base import BaseContextManagerStore, BaseEnumerateKeysStore, BaseStore
 from typing_extensions import override
 
+# Azure Table Storage limits each string property to 32K UTF-16 characters
+# (64KB). Entities can hold up to ~1MB across ~252 user properties, so
+# splitting the serialised JSON across several ``v0``, ``v1``, … columns
+# lets us cache values well above the per-property cap while staying within
+# the per-entity budget.
+_CHUNK_CHARS = 30000
+_VALUE_CHUNK_PREFIX = "value_chunk_"
+_VALUE_CHUNK_COUNT = "n_chunks"
+
 
 class AzureTableStore(BaseContextManagerStore, BaseEnumerateKeysStore, BaseStore):
     """Azure Table Storage key-value store.
 
     Stores entries as table entities with PartitionKey=collection and RowKey=hashed_key.
-    The full ManagedEntry (value + TTL metadata) is serialized to JSON in the 'v' property.
-    TTL is enforced client-side on retrieval; Azure Table Storage has no native per-entity TTL.
+    The serialised ManagedEntry JSON is split into ``_CHUNK_CHARS``-sized
+    segments and written to ``value_chunk_0``, ``value_chunk_1``, … properties with the segment
+    count in ``n_chunks``. TTL is enforced client-side on retrieval; Azure Table
+    Storage has no native per-entity TTL.
 
     The TableServiceClient lifecycle is managed externally (via AzureAPI.lifespan()).
     Table creation is lazy — it happens on first use via BaseStore.setup(), not at construction.
@@ -65,6 +76,34 @@ class AzureTableStore(BaseContextManagerStore, BaseEnumerateKeysStore, BaseStore
     async def _close(self) -> None:
         pass  # TableServiceClient lifecycle is managed externally by AzureAPI
 
+    @staticmethod
+    def _split_value(json_value: str) -> dict[str, Any]:
+        """Split a JSON payload into per-property chunks plus a chunk count."""
+        if not json_value:
+            return {_VALUE_CHUNK_COUNT: 0}
+        chunks = [json_value[i : i + _CHUNK_CHARS] for i in range(0, len(json_value), _CHUNK_CHARS)]
+        payload: dict[str, Any] = {_VALUE_CHUNK_COUNT: len(chunks)}
+        for i, chunk in enumerate(chunks):
+            payload[f"{_VALUE_CHUNK_PREFIX}{i}"] = chunk
+        return payload
+
+    @staticmethod
+    def _join_value(entity: dict[str, Any]) -> str | None:
+        """Reassemble the JSON payload from an entity's chunked properties.
+
+        Returns ``None`` when the entity has no chunked payload.
+        """
+        count = entity.get(_VALUE_CHUNK_COUNT)
+        if not isinstance(count, int) or count <= 0:
+            return None
+        parts: list[str] = []
+        for i in range(count):
+            chunk = entity.get(f"{_VALUE_CHUNK_PREFIX}{i}")
+            if not isinstance(chunk, str):
+                return None
+            parts.append(chunk)
+        return "".join(parts)
+
     @override
     async def _get_managed_entry(self, *, collection: str, key: str) -> ManagedEntry | None:
         sanitized_collection, sanitized_key = self._sanitize_collection_and_key(collection=collection, key=key)
@@ -76,7 +115,7 @@ class AzureTableStore(BaseContextManagerStore, BaseEnumerateKeysStore, BaseStore
         except ResourceNotFoundError:
             return None
 
-        json_value: str | None = entity.get("v")
+        json_value = self._join_value(dict(entity))
         if not json_value:
             return None
 
@@ -96,7 +135,7 @@ class AzureTableStore(BaseContextManagerStore, BaseEnumerateKeysStore, BaseStore
         entity: dict[str, Any] = {
             "PartitionKey": sanitized_collection,
             "RowKey": sanitized_key,
-            "v": json_value,
+            **self._split_value(json_value),
         }
 
         await self._connected_client.upsert_entity(entity=entity, mode=UpdateMode.REPLACE)

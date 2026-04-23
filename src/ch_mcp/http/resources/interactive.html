@@ -147,7 +147,7 @@ async function initAuth0() {
     clientId: AUTH0_CLIENT_ID,
     authorizationParams: {
       audience: AUTH0_AUDIENCE,
-      scope: 'openid profile email ch-api:read',
+      scope: 'openid profile email companies-house-api:read',
       redirect_uri: window.location.origin + '/interactive/',
     },
     cacheLocation: 'localstorage',
