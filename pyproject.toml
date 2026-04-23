@@ -8,7 +8,7 @@
 #
 #     https://packaging.python.org/en/latest/tutorials/packaging-projects/
 #
-name = "ch-mcp"
+name = "companies-house-mcp"
 description = "MCP server for the UK Companies House RESTful API"
 
 authors = [
