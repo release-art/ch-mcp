@@ -23,8 +23,10 @@ def pytest_collection_modifyitems(config, items):
     for item in items:
         rel = pathlib.Path(str(item.fspath)).name
         module_cache = _MOCK_CACHE_DIR / rel
-        if not module_cache.exists() and item.fspath.basename.startswith("test_") and item.fspath.basename.endswith(
-            "_simple.py"
+        if (
+            not module_cache.exists()
+            and item.fspath.basename.startswith("test_")
+            and item.fspath.basename.endswith("_simple.py")
         ):
             item.add_marker(
                 pytest.mark.skip(

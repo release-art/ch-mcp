@@ -211,11 +211,13 @@ class _BaseAuth0Settings(BaseSettings):
         ),
     ]
 
+
 class NoneAuth0Settings(BaseSettings):
     """Auth0 settings for no authentication mode."""
 
     mode: Literal[AuthMode.NONE] = AuthMode.NONE
-    interactive_client_id: None = None # interactive_client_id is not applicable in none mode
+    interactive_client_id: None = None  # interactive_client_id is not applicable in none mode
+
 
 class RemoteAuth0Settings(_BaseAuth0Settings):
     """Auth0 settings for remote/JWT-only verification mode."""
@@ -226,7 +228,7 @@ class RemoteAuth0Settings(_BaseAuth0Settings):
 class ProxyAuth0Settings(_BaseAuth0Settings):
     """Auth0 settings for full OAuth proxy mode."""
 
-    mode: Literal[AuthMode.PROXY]  = AuthMode.PROXY
+    mode: Literal[AuthMode.PROXY] = AuthMode.PROXY
     client_id: Annotated[
         str,
         Field(
