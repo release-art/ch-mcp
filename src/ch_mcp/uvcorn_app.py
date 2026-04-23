@@ -21,7 +21,6 @@ MCP_ALIASES: tuple[str, ...] = ("/mcp",)
 
 def get_http_app() -> Starlette:
     """Compose the Starlette app: MCP plus any enabled HTTP side-routes."""
-    settings = ch_mcp.settings.get_settings()
     mcp = ch_mcp.server.get_server()
 
     # Each HTTP module owns its own ``mount_*_router`` that hangs routes off the
@@ -30,9 +29,6 @@ def get_http_app() -> Starlette:
     ch_mcp.http.mount_landing_router(mcp)
     ch_mcp.http.mount_health_router(mcp)
     ch_mcp.http.mount_documents_router(mcp)
-    if settings.auth0.interactive_client_id:
-        logger.info("Interactive client ID configured — mounting interactive UI routes")
-        ch_mcp.http.mount_interactive_router(mcp)
 
     app = mcp.http_app(
         path=MCP_PATH,

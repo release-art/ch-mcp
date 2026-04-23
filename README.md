@@ -220,7 +220,7 @@ The most important variables:
 | `AUTH0_MODE` | No (`remote` default) | `none`, `remote`, or `proxy` |
 | `AUTH0_DOMAIN` / `AUTH0_AUDIENCE` | `remote`/`proxy` only | Auth0 tenant identifiers |
 | `AUTH0_CLIENT_ID` / `AUTH0_CLIENT_SECRET` / `AUTH0_JWT_SIGNING_KEY` / `AUTH0_STORAGE_ENCRYPTION_KEY` | `proxy` mode only | OAuth proxy secrets |
-| `AUTH0_INTERACTIVE_CLIENT_ID` | No | When set, exposes the interactive `/interactive` web UI |
+| `SERVER_HTTP_RESOURCES_DIR` | No | Path for the HTML template(s) behind the `GET /` landing page. Defaults to the in-package directory. |
 | `AZURE_CREDENTIAL` | `proxy` mode | `none` (connection string / Azurite) or `default` (DefaultAzureCredential) |
 | `AZURE_STORAGE_CONNECTION_STRING` | When `AZURE_CREDENTIAL=none` | Connection string for Azurite or an Azure Storage account |
 | `AZURE_STORAGE_ACCOUNT` | When `AZURE_CREDENTIAL=default` | Storage account name |

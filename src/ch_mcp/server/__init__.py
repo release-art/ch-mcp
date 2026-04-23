@@ -69,10 +69,10 @@ def get_server() -> fastmcp.FastMCP:
     main = fastmcp.FastMCP(
         f"Release.art public MCP v{ch_mcp.__version__.__version__}",
         lifespan=mcp_lifespan,
-        website_url="https://www.release.art/",
+        website_url=str(settings.server.website_url),
         icons=[
             Icon(
-                src="https://static.release.art/assets/icons/brandmark_blue.svg",
+                src=str(settings.server.icon_url),
                 mimeType="image/svg+xml",
                 sizes=["any"],
             )

@@ -52,7 +52,6 @@ The `auth0` block is a tagged union discriminated by `mode`. Choose the mode by 
 | `AUTH0_MODE` | No (default `remote`) | `none`, `remote`, or `proxy`. |
 | `AUTH0_DOMAIN` | Required in `remote`/`proxy` modes | e.g. `tenant.auth0.com`. |
 | `AUTH0_AUDIENCE` | Required in `remote`/`proxy` modes | API identifier configured in Auth0. |
-| `AUTH0_INTERACTIVE_CLIENT_ID` | No | SPA client ID that enables the `/interactive` web UI. When unset, interactive routes are not mounted. |
 
 ### Proxy mode only
 

@@ -7,6 +7,7 @@ import enum
 import functools
 import logging
 import os
+import pathlib
 import re
 from typing import Annotated, Any, Literal, Union
 
@@ -228,20 +229,12 @@ class _BaseAuth0Settings(BaseSettings):
             description="Auth0 API audience identifier",
         ),
     ]
-    interactive_client_id: Annotated[
-        str | None,
-        Field(
-            default=None,
-            description="Auth0 SPA client ID for the interactive web UI",
-        ),
-    ]
 
 
 class NoneAuth0Settings(BaseSettings):
     """Auth0 settings for no authentication mode."""
 
     mode: Literal[AuthMode.NONE] = AuthMode.NONE
-    interactive_client_id: None = None  # interactive_client_id is not applicable in none mode
 
 
 class RemoteAuth0Settings(_BaseAuth0Settings):
@@ -333,6 +326,9 @@ class ChApiSettings(BaseSettings):
     ]
 
 
+_DEFAULT_HTTP_RESOURCES_DIR = pathlib.Path(__file__).parent / "http" / "resources"
+
+
 class ServerSettings(BaseSettings):
     """Server configuration settings."""
 
@@ -376,6 +372,39 @@ class ServerSettings(BaseSettings):
         str,
         Field(
             description="Secret key for signing JWTs (if applicable)",
+        ),
+    ]
+    http_resources_dir: Annotated[
+        pathlib.Path,
+        Field(
+            default_factory=lambda: _DEFAULT_HTTP_RESOURCES_DIR,
+            description=(
+                "Filesystem path for HTML/Jinja templates served by the HTTP side-routes"
+                " (landing page, etc.). Defaults to the in-package ``ch_mcp/http/resources``"
+                " directory. Override via ``SERVER_HTTP_RESOURCES_DIR`` to serve a custom"
+                " branded landing page without forking the package."
+            ),
+        ),
+    ]
+    website_url: Annotated[
+        HttpUrl,
+        Field(
+            default=HttpUrl("https://www.release.art/"),
+            description=(
+                "Homepage URL for the operator hosting this MCP server. Passed to"
+                " ``fastmcp.FastMCP(website_url=...)`` and linked from the landing page."
+            ),
+        ),
+    ]
+    icon_url: Annotated[
+        HttpUrl,
+        Field(
+            default=HttpUrl("https://static.release.art/assets/icons/brandmark_blue.svg"),
+            description=(
+                "Public URL for an SVG brand icon. Published in MCP ``Icon`` metadata"
+                " and rendered on the landing page. Must be externally reachable —"
+                " MCP clients fetch it directly."
+            ),
         ),
     ]
 
