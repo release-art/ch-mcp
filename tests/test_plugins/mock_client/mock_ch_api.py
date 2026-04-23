@@ -39,8 +39,8 @@ class MockChApi:
         """Generate a cache filename based on the request parameters."""
         return self.cache_dir / cache_filename.make(method_name, args=args)
 
-    def __getattr__(self, method_name):
-        async def mock_api_method(*args, **kwargs):
+    def __getattr__(self, method_name):  # noqa: C901 — test helper; branchy on purpose
+        async def mock_api_method(*args, **kwargs):  # noqa: C901
             cache_filename = self._get_cache_filename(method_name, args)
             if cache_filename.exists():
                 with cache_filename.open("r") as f:
@@ -53,6 +53,8 @@ class MockChApi:
                         out = mock_data.PydanticModel.from_dict(cached_data)
                     elif cached_data.get("type") == "MultipageList":
                         out = mock_data.MockMultipageListReadOnly(cached_data)
+                    elif cached_data.get("type") == "str":
+                        out = cached_data["value"]
                     else:
                         raise NotImplementedError(f"Unexpected cached data type: {cached_data.get('type')}")
                 return out
@@ -70,6 +72,8 @@ class MockChApi:
                         cached_value = out.get_state()
                     elif isinstance(out, pydantic.BaseModel):
                         cached_value = mock_data.PydanticModel.to_dict(out)
+                    elif isinstance(out, str):
+                        cached_value = {"type": "str", "value": out}
                     elif out is None:
                         cached_value = out
                     else:

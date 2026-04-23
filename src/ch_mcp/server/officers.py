@@ -19,8 +19,8 @@ OfficerIdParam = Annotated[
     pydantic.Field(
         description=(
             "Opaque Companies House officer identifier (a URL-safe base64 string)."
-            " Obtain from the ``officer_id`` field of ``search_officers`` results or"
-            " from the officer list of a specific company."
+            " Copy from the ``refs.officer_id`` field of a ``search_officers`` hit,"
+            " a ``get_officer_list`` item, or a ``search_disqualified_officers`` hit."
         ),
         min_length=1,
     ),

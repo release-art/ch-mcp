@@ -7,6 +7,7 @@ import ch_api.types.shared
 import pydantic
 
 import ch_mcp.server.types.base as server_type_base
+from ch_mcp.server.types import refs as server_refs
 
 
 class TestReflect:
@@ -93,3 +94,34 @@ class TestReflect:
         assert "inner" in Reflected.model_fields
         assert "etag" not in Reflected.model_fields["inner"].annotation.model_fields
         assert "b" in Reflected.model_fields["inner"].annotation.model_fields
+
+    def test_refs_type_populated_from_links(self):
+        """Reflection with refs_type extracts IDs from the source ``links`` block."""
+
+        class Source(pydantic.BaseModel):
+            x: int
+            # Minimal stand-in for a ch_api model with a links block. LinksSection
+            # has extra="allow", so arbitrary string URLs stored as extras survive
+            # model_dump and are visible to the refs extractor.
+            links: ch_api.types.shared.LinksSection
+
+        Reflected = server_type_base.reflect_ch_api_t(
+            Source, refs_type=server_refs.FilingHistoryItemRefs
+        )
+
+        assert "refs" in Reflected.model_fields
+        assert "links" not in Reflected.model_fields  # still stripped
+
+        src = Source(
+            x=7,
+            links=ch_api.types.shared.LinksSection.model_validate(
+                {
+                    "self": "/company/09370755/filing-history/txn-42",
+                    "document_metadata": "/document/DOC_ID",
+                }
+            ),
+        )
+        reflected = Reflected.from_api_t(src)
+        assert reflected.refs.company_number == "09370755"  # type: ignore[attr-defined]
+        assert reflected.refs.transaction_id == "txn-42"  # type: ignore[attr-defined]
+        assert reflected.refs.document_id == "DOC_ID"  # type: ignore[attr-defined]

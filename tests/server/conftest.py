@@ -16,23 +16,32 @@ _MOCK_CACHE_DIR = pathlib.Path(__file__).parent.parent / "mock_ch_api_cache"
 
 
 def pytest_collection_modifyitems(config, items):
-    """Skip tool-call tests when no CH_API_API_KEY is set and no cached fixture exists for this module."""
+    """Skip tool-call tests when no CH_API_API_KEY is set and no cached fixtures exist for the test.
+
+    Granularity is per-test-function: a new test added to a module that
+    already has cache data for other tests still skips until the new test's
+    own fixture directory exists.
+    """
     has_key = bool(os.environ.get("CH_API_API_KEY") and os.environ["CH_API_API_KEY"] != "placeholder-no-live-calls")
     if has_key:
         return
     for item in items:
-        rel = pathlib.Path(str(item.fspath)).name
-        module_cache = _MOCK_CACHE_DIR / rel
-        if (
-            not module_cache.exists()
-            and item.fspath.basename.startswith("test_")
-            and item.fspath.basename.endswith("_simple.py")
-        ):
+        basename = item.fspath.basename
+        if not (basename.startswith("test_") and basename.endswith("_simple.py")):
+            continue
+        # `test_tools` only enumerates MCP tool metadata — no API call — so
+        # never needs a cache fixture.
+        if item.name == "test_tools":
+            continue
+        # MockChApi stores fixtures at mock_ch_api_cache/<module>.py/<test_name>/*.json
+        per_test_cache = _MOCK_CACHE_DIR / basename / item.name
+        if not per_test_cache.exists():
             item.add_marker(
                 pytest.mark.skip(
                     reason=(
-                        "No CH_API_API_KEY set and no cached fixtures for this module — "
-                        "set CH_API_API_KEY on first run to populate tests/mock_ch_api_cache/."
+                        f"No CH_API_API_KEY set and no cached fixtures under"
+                        f" tests/mock_ch_api_cache/{basename}/{item.name}/ —"
+                        f" set CH_API_API_KEY on first run to populate."
                     )
                 )
             )

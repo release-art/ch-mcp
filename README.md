@@ -4,14 +4,14 @@ A [Model Context Protocol](https://modelcontextprotocol.io/) server that exposes
 
 ## Overview
 
-- **20 read-only tools** across five domains: search, companies, officers, PSCs (persons with significant control), and filings.
+- **22 read-only tools** across five domains: search, companies, officers, PSCs (persons with significant control), and filings.
 - **Two transports**: HTTP (Starlette/uvicorn) for remote MCP clients, and stdio for local integrations.
 - **OAuth2 via Auth0**, with three modes:
   - `none` — no authentication (local dev / trusted-ingress only).
   - `remote` — JWT verification only (the MCP server trusts an upstream Auth0 tenant).
   - `proxy` — full OAuth proxy with dynamic client registration; tokens are persisted to Azure Blob Storage, encrypted with Fernet.
 - **Scope-based authorization**: tools tagged `ch_api:read` require the `ch-api:read` scope in the access token. Enforcement is per-tool, so `initialize` and `tools/list` remain reachable by unauthenticated clients.
-- **Structured responses**: Pydantic models synthesised by reflection from `ch-api` types; internal HATEOAS `links` sections are stripped.
+- **Structured responses**: Pydantic models synthesised by reflection from `ch-api` types. Every response carries a typed `refs` sub-object holding the resource IDs (company number, charge id, document id, …) extracted from the upstream `links` block — chain tool calls by feeding those IDs straight into the next tool's input.
 
 ## Tools
 
@@ -21,7 +21,7 @@ A [Model Context Protocol](https://modelcontextprotocol.io/) server that exposes
 | [`companies.py`](src/ch_mcp/server/companies.py) | `get_company_profile`, `get_company_registers`, `get_company_uk_establishments` |
 | [`officers.py`](src/ch_mcp/server/officers.py) | `get_officer_list`, `get_officer_appointments`, `get_officer_disqualification` |
 | [`psc.py`](src/ch_mcp/server/psc.py) | `get_company_psc_list`, `get_company_psc_statements`, `get_company_psc` |
-| [`filings.py`](src/ch_mcp/server/filings.py) | `get_company_charges`, `get_company_charge_details`, `get_company_filing_history`, `get_company_insolvency`, `get_company_exemptions` |
+| [`filings.py`](src/ch_mcp/server/filings.py) | `get_company_charges`, `get_company_charge_details`, `get_company_filing_history`, `get_company_insolvency`, `get_company_exemptions`, `get_document_metadata`, `get_document_url` |
 
 All tools are decorated with `ToolAnnotations(readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=True)`.
 
@@ -41,6 +41,35 @@ required ``kind`` parameter:
 Both return a pydantic discriminated union keyed on the same ``kind`` field so
 MCP clients can statically narrow the response to the correct variant.
 
+### Response `refs` — chaining tool calls
+
+Every reflected response carries a typed `refs` sub-object with the IDs that
+`ch_api`'s `links` block encodes as URL path segments. The contents depend on
+the response type:
+
+- `CompanyProfile.refs.company_number`
+- `FilingHistoryItem.refs.transaction_id`, `refs.document_id` (when the
+  filing has a downloadable document)
+- `ChargeDetails.refs.charge_id`
+- PSC list/record items carry `refs.psc_id`
+- Disqualification records carry `refs.officer_id`
+- `DocumentMetadata.refs.document_id`
+
+Copy those IDs directly into the matching `*Param` on the next tool call —
+they are the exact string shape the tool accepts. The raw `links` URLs are
+stripped from the response to keep it compact and to make the chain
+explicit.
+
+### Document downloads
+
+`get_company_filing_history` items may carry `refs.document_id`. Pass it to
+`get_document_metadata` to see which content types are available (PDF,
+JSON, XML, XHTML, ZIP, CSV), then to `get_document_url` to obtain a
+pre-signed download URL. **The URL is valid for only ~60 seconds** — fetch
+it immediately with any HTTP client rather than storing or passing it
+around. `ch-mcp` caches `get_document_url` output for 50 seconds (10-second
+safety margin) and caches every other tool for the default 24 hours.
+
 ### Intentionally omitted endpoints
 
 Three Companies House endpoints are deliberately **not** surfaced as MCP tools
@@ -50,9 +79,10 @@ accuracy) without losing any retrievable field.
 
 | Upstream endpoint | Supplied by instead | Notes |
 |---|---|---|
-| `GET /company/{number}/registered-office-address` | `get_company_profile` | The profile's `registered_office_address` sub-field is a **superset**: it additionally exposes `care_of` and `po_box`. The standalone endpoint's unique fields are `etag`, `kind`, `links` (pure metadata — `links` is stripped anyway by the LinksSection exclusion) and `accept_appropriate_office_address_statement` (a write-only PUT flag irrelevant to a read-only client). |
+| `GET /company/{number}/registered-office-address` | `get_company_profile` | The profile's `registered_office_address` sub-field is a **superset**: it additionally exposes `care_of` and `po_box`. The standalone endpoint's unique fields are `etag`, `kind`, `links` (stripped by the LinksSection exclusion) and `accept_appropriate_office_address_statement` (a write-only PUT flag irrelevant to a read-only client). |
 | `GET /company/{number}/filing-history/{id}` | `get_company_filing_history` | Both endpoints deserialise into the same `FilingHistoryItem` pydantic class — field set is identical. |
 | `GET /company/{number}/appointments/{appointment_id}` | `get_officer_list` | Both endpoints deserialise into the same `OfficerSummary` pydantic class — field set is identical. |
+| `GET /document/{id}/content` (stream) | `get_document_url` | The Document API redirects content requests to a pre-signed S3 URL. Streaming binary payloads through an MCP tool is unhelpful — returning the URL lets the client fetch directly. |
 
 If a new CH API version ever changes these endpoints so the single-item call
 returns richer data than the collection item, these tools should be restored.
@@ -152,7 +182,7 @@ The client is constructed once in the server lifespan and reused across requests
 
 ### Type reflection
 
-Response types are synthesised from `ch-api` types by `reflect_ch_api_t()` in [`server/types/base.py`](src/ch_mcp/server/types/base.py). Fields whose annotation resolves to `ch_api.types.shared.LinksSection` are stripped (those HATEOAS link sections are not useful to MCP clients). Tools convert raw results with `Model.from_api_t(api_result)`.
+Response types are synthesised from `ch-api` types by `reflect_ch_api_t()` in [`server/types/base.py`](src/ch_mcp/server/types/base.py). The raw `links` HATEOAS block is replaced with a typed `refs` sub-object (see [`server/types/refs.py`](src/ch_mcp/server/types/refs.py)) whose fields hold the IDs extracted from the link URLs — `company_number`, `charge_id`, `document_id`, etc. — in exactly the string shape the corresponding `*Param` inputs expect. `etag` fields (optimistic-concurrency tokens used only by write endpoints) are also stripped. Tools convert raw results with `Model.from_api_t(api_result)`.
 
 ### Auth: scopes vs tags
 

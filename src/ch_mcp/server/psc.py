@@ -33,9 +33,8 @@ PscIdParam = Annotated[
     str,
     pydantic.Field(
         description=(
-            "Opaque PSC notification identifier. Extract from the ``notification_id``"
-            " field of ``get_company_psc_list`` items, or from the trailing path"
-            " segment of the item's ``self`` link."
+            "Opaque PSC notification identifier. Copy from the ``refs.psc_id``"
+            " field of the matching ``get_company_psc_list`` item."
         ),
         min_length=1,
     ),

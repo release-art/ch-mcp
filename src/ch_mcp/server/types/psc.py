@@ -5,46 +5,54 @@ from typing import Annotated, Union
 import ch_api.types.public_data.psc as _psc
 import pydantic
 
-from . import base
+from . import base, refs
 
 
-class ListSummary(base.reflect_ch_api_t(_psc.ListSummary)):
+class ListSummary(base.reflect_ch_api_t(_psc.ListSummary, refs_type=refs.PscListItemRefs)):
     """Entry in the PSC list for a company."""
 
 
-class Statement(base.reflect_ch_api_t(_psc.Statement)):
+class Statement(base.reflect_ch_api_t(_psc.Statement, refs_type=refs.PscStatementRefs)):
     """PSC statement recorded against a company."""
 
 
-class Individual(base.reflect_ch_api_t(_psc.Individual)):
+class Individual(base.reflect_ch_api_t(_psc.Individual, refs_type=refs.PscRecordRefs)):
     """Individual person with significant control."""
 
 
-class IndividualBeneficialOwner(base.reflect_ch_api_t(_psc.IndividualBeneficialOwner)):
+class IndividualBeneficialOwner(
+    base.reflect_ch_api_t(_psc.IndividualBeneficialOwner, refs_type=refs.PscRecordRefs)
+):
     """Individual registrable beneficial owner."""
 
 
-class CorporateEntity(base.reflect_ch_api_t(_psc.CorporateEntity)):
+class CorporateEntity(base.reflect_ch_api_t(_psc.CorporateEntity, refs_type=refs.PscRecordRefs)):
     """Corporate entity with significant control."""
 
 
-class CorporateEntityBeneficialOwner(base.reflect_ch_api_t(_psc.CorporateEntityBeneficialOwner)):
+class CorporateEntityBeneficialOwner(
+    base.reflect_ch_api_t(_psc.CorporateEntityBeneficialOwner, refs_type=refs.PscRecordRefs)
+):
     """Corporate registrable beneficial owner."""
 
 
-class LegalPerson(base.reflect_ch_api_t(_psc.LegalPerson)):
+class LegalPerson(base.reflect_ch_api_t(_psc.LegalPerson, refs_type=refs.PscRecordRefs)):
     """Legal person with significant control."""
 
 
-class LegalPersonBeneficialOwner(base.reflect_ch_api_t(_psc.LegalPersonBeneficialOwner)):
+class LegalPersonBeneficialOwner(
+    base.reflect_ch_api_t(_psc.LegalPersonBeneficialOwner, refs_type=refs.PscRecordRefs)
+):
     """Legal person registrable beneficial owner."""
 
 
-class SuperSecure(base.reflect_ch_api_t(_psc.SuperSecure)):
+class SuperSecure(base.reflect_ch_api_t(_psc.SuperSecure, refs_type=refs.PscRecordRefs)):
     """Super-secure person with significant control."""
 
 
-class SuperSecureBeneficialOwner(base.reflect_ch_api_t(_psc.SuperSecureBeneficialOwner)):
+class SuperSecureBeneficialOwner(
+    base.reflect_ch_api_t(_psc.SuperSecureBeneficialOwner, refs_type=refs.PscRecordRefs)
+):
     """Super-secure registrable beneficial owner."""
 
 

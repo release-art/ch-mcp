@@ -19,8 +19,10 @@ CompanyNumberParam = Annotated[
             "UK company number assigned by Companies House. 1-10 alphanumeric"
             " characters, typically 8 digits, possibly with an alpha prefix"
             " (e.g. 'SC' for Scotland, 'NI' for Northern Ireland, 'OC' for an LLP)."
-            " Obtain via ``search_companies`` if you do not already have it."
-            " Examples: '09370755', 'SC123456', 'OC301550'."
+            " Copy from the ``refs.company_number`` field of any search-hit or"
+            " response that references a company, or call ``search_companies``"
+            " first if you only have a name. Examples: '09370755', 'SC123456',"
+            " 'OC301550'."
         ),
         min_length=1,
         max_length=10,
