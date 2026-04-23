@@ -5,7 +5,7 @@
 groups = ["default", "build", "dev", "docs", "lint", "user"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:8b2a5c499777641ef44e45254debfd455836365b8cc12b366894ae85e60e9d17"
+content_hash = "sha256:3b52320d9b8670361492ab320f6eb0521ab80073c35cab3f731d7066ecd84301"
 
 [[metadata.targets]]
 requires_python = ">=3.13"
@@ -453,7 +453,7 @@ files = [
 
 [[package]]
 name = "ch-api"
-version = "1.2.0"
+version = "1.2.1"
 requires_python = ">=3.11"
 summary = "UK Companies House API"
 groups = ["default"]
@@ -462,8 +462,8 @@ dependencies = [
     "pydantic>=2.12.5",
 ]
 files = [
-    {file = "ch_api-1.2.0-py3-none-any.whl", hash = "sha256:e4c6912d79147df1cdcafde83691b9ff8d9d7d4cc1ef0154b659c3a3d7aba8a0"},
-    {file = "ch_api-1.2.0.tar.gz", hash = "sha256:5b222df862424880beb5682b298713098400d9b7a40f1689647777617367e363"},
+    {file = "ch_api-1.2.1-py3-none-any.whl", hash = "sha256:f62d9ad8ce1c7c2d981e690dff64b801d2b41df7127282ce9147d9c9e046c34c"},
+    {file = "ch_api-1.2.1.tar.gz", hash = "sha256:d6e4ee2a4eeb21ddeb73783f5cfc15db9cce7e6718dd78b7d92b2c9687195dd0"},
 ]
 
 [[package]]
@@ -2188,7 +2188,7 @@ files = [
 
 [[package]]
 name = "pyright"
-version = "1.1.408"
+version = "1.1.409"
 requires_python = ">=3.7"
 summary = "Command line wrapper for pyright"
 groups = ["dev"]
@@ -2197,8 +2197,8 @@ dependencies = [
     "typing-extensions>=4.1",
 ]
 files = [
-    {file = "pyright-1.1.408-py3-none-any.whl", hash = "sha256:090b32865f4fdb1e0e6cd82bf5618480d48eecd2eb2e70f960982a3d9a4c17c1"},
-    {file = "pyright-1.1.408.tar.gz", hash = "sha256:f28f2321f96852fa50b5829ea492f6adb0e6954568d1caa3f3af3a5f555eb684"},
+    {file = "pyright-1.1.409-py3-none-any.whl", hash = "sha256:aa3ea228cab90c845c7a60d28db7a844c04315356392aa09fafcee98c8c22fb3"},
+    {file = "pyright-1.1.409.tar.gz", hash = "sha256:986ee05beca9e077c165758ad123667c679e050059a2546aa02473930394bc93"},
 ]
 
 [[package]]
