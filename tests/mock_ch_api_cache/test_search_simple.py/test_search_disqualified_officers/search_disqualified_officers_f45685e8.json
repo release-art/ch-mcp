@@ -1,0 +1,2182 @@
+{
+  "data": [
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "26 Seaforth Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Golspie",
+          "postal_code": "KW10 6TJ",
+          "premises": null,
+          "region": "Sutherland"
+        },
+        "address_snippet": "26 Seaforth Road, Golspie, Sutherland, United Kingdom, KW10 6TJ",
+        "date_of_birth": "1987-10-18",
+        "description": "Born on 18 October 1987 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/b0FM3wgkYJ_p3TGirZotCfndF7c"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Aaron Donald SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "St. Christophers Gardens",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Ascot",
+          "postal_code": "SL5 8LZ",
+          "premises": "40",
+          "region": "Berkshire"
+        },
+        "address_snippet": "40 St. Christophers Gardens, Ascot, Berkshire, United Kingdom, SL5 8LZ",
+        "date_of_birth": "1984-06-03",
+        "description": "Born on 3 June 1984 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/J_z-pik2uOonjPy8yNY4wHpn4WE"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Adam John SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Barn Croft Drive",
+          "address_line_2": "Lower Earley",
+          "country": "United Kingdom",
+          "locality": "Reading",
+          "postal_code": "RG6 3WE",
+          "premises": "10",
+          "region": null
+        },
+        "address_snippet": "10 Barn Croft Drive, Lower Earley, Reading, United Kingdom, RG6 3WE",
+        "date_of_birth": "1974-03-20",
+        "description": "Born on 20 March 1974 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/b9kFokaoiN4WU4aOe7P5Vw-iFgg"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Alister Edward SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "93 Middle Lane",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "N8 8NX",
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "93 Middle Lane, London, United Kingdom, N8 8NX",
+        "date_of_birth": "1976-03-05",
+        "description": "Born on 5 March 1976 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/JfJdbO5sombCcZMKStthHfu6arQ"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Andrea Ashleigh SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "3 Harrogate House",
+          "address_line_2": "29 Sloane Square",
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "SW1W 8AE",
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "3 Harrogate House, 29 Sloane Square, London, United Kingdom, SW1W 8AE",
+        "date_of_birth": "1949-08-14",
+        "description": "Born on 14 August 1949 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/6gbeCH_t6duk0JSWlSEorcp81t4"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Andrew James SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Holmes Road",
+          "address_line_2": null,
+          "country": null,
+          "locality": "Sowerby Bridge",
+          "postal_code": "HX6 3LF",
+          "premises": null,
+          "region": "West Yorkshire"
+        },
+        "address_snippet": "Holmes Road, Sowerby Bridge, West Yorkshire, HX6 3LF",
+        "date_of_birth": "1968-10-05",
+        "description": "Born on 5 October 1968 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/VUOzBv2rPS-KgbKLCrfA8qupJPM"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Andrew Peter SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Reins Croft",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Neston",
+          "postal_code": "CH64 3TR",
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "Reins Croft, Neston, United Kingdom, CH64 3TR",
+        "date_of_birth": "1982-03-02",
+        "description": "Born on 2 March 1982 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/WMueAItKVhAQjtcg6D8iIZkguPw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Andrew Stephen SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Old Road",
+          "address_line_2": "East Peckham",
+          "country": "United Kingdom",
+          "locality": "Tonbridge",
+          "postal_code": "TN12 5EX",
+          "premises": "128",
+          "region": "Kent"
+        },
+        "address_snippet": "128 Old Road, East Peckham, Tonbridge, Kent, United Kingdom, TN12 5EX",
+        "date_of_birth": "1982-08-26",
+        "description": "Born on 26 August 1982 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/uNARQtu03Jcb6_H3h3q8Qf9NC2w"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Billy Aaron SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "87a West Street",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Ryde",
+          "postal_code": "PO33 2NN",
+          "premises": null,
+          "region": "Isle Of Wight"
+        },
+        "address_snippet": "87a West Street, Ryde, Isle Of Wight, United Kingdom, PO33 2NN",
+        "date_of_birth": null,
+        "description": "Disqualified",
+        "description_identifiers": null,
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/MBPgb7O9LVV9VRMbW26UXK__JKM"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Brandon Paul SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "The Crescent",
+          "address_line_2": "Colchester Business Park",
+          "country": null,
+          "locality": "Colchester",
+          "postal_code": "CO4 9YQ",
+          "premises": "340",
+          "region": "Essex"
+        },
+        "address_snippet": "340 The Crescent, Colchester Business Park, Colchester, Essex, CO4 9YQ",
+        "date_of_birth": "1986-05-04",
+        "description": "Born on 4 May 1986 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/0JkrJoVT0yrWqIiJHJ4VTCLI7oE"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Carl Darren SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Wren Way",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Rochdale",
+          "postal_code": "OL16 4FY",
+          "premises": "58",
+          "region": null
+        },
+        "address_snippet": "58 Wren Way, Rochdale, United Kingdom, OL16 4FY",
+        "date_of_birth": "1979-10-17",
+        "description": "Born on 17 October 1979 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/wnrlhz88eGKM4bDEf2HWBQPr2C0"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Cheryl SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Cowbrook Avenue",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Glossop",
+          "postal_code": "SK13 8QT",
+          "premises": "20",
+          "region": null
+        },
+        "address_snippet": "20 Cowbrook Avenue, Glossop, United Kingdom, SK13 8QT",
+        "date_of_birth": "1979-02-07",
+        "description": "Born on 7 February 1979 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/kHkv9Tq1mUZOhibPF5FTXmBWhso"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Craig Anthony SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Address Unknown",
+          "address_line_2": null,
+          "country": null,
+          "locality": "Address Unknown",
+          "postal_code": null,
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "Address Unknown, Address Unknown",
+        "date_of_birth": "1988-04-25",
+        "description": "Born on 25 April 1988 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/LxdLM5OxHX39GlIaeFZ-LhByLOI"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Daniel SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "110 Walderslade Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Chatham",
+          "postal_code": "ME5 0LL",
+          "premises": null,
+          "region": "Kent"
+        },
+        "address_snippet": "110 Walderslade Road, Chatham, Kent, United Kingdom, ME5 0LL",
+        "date_of_birth": "1967-10-26",
+        "description": "Born on 26 October 1967 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/qCwvyL6w1wsfI16LslbIXTagBbw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Darren SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Airyhillock Cottage",
+          "address_line_2": "Kirkton Of Bourtie",
+          "country": "United Kingdom",
+          "locality": "Inverurie",
+          "postal_code": "AB51 0JS",
+          "premises": null,
+          "region": "Aberdeenshire"
+        },
+        "address_snippet": "Airyhillock Cottage, Kirkton Of Bourtie, Inverurie, Aberdeenshire, United Kingdom, AB51 0JS",
+        "date_of_birth": "1964-05-17",
+        "description": "Born on 17 May 1964 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/U_CILGoOcpJHyKWjWPJsOMi-Vxs"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David Alexander SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Sedgley Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Wolverhampton",
+          "postal_code": "WV4 5LD",
+          "premises": "31",
+          "region": "West Midlands"
+        },
+        "address_snippet": "31 Sedgley Road, Wolverhampton, West Midlands, United Kingdom, WV4 5LD",
+        "date_of_birth": "1975-03-17",
+        "description": "Born on 17 March 1975 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/YV0U1guCtxg_rThMTIj6YWo8xSE"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David Allan SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Duck End Lane",
+          "address_line_2": "Maulden",
+          "country": "United Kingdom",
+          "locality": "Bedford",
+          "postal_code": "MK45 2DL",
+          "premises": "18",
+          "region": null
+        },
+        "address_snippet": "18 Duck End Lane, Maulden, Bedford, United Kingdom, MK45 2DL",
+        "date_of_birth": "1963-06-29",
+        "description": "Born on 29 June 1963 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/WOiRr2UHuUyLCOIuj7MttOdLbnc"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David John SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Buick Drive",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Arbroath",
+          "postal_code": "DD11 5LF",
+          "premises": "7",
+          "region": null
+        },
+        "address_snippet": "7 Buick Drive, Arbroath, United Kingdom, DD11 5LF",
+        "date_of_birth": "1960-03-21",
+        "description": "Born on 21 March 1960 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/JiSrx5lpmMvtZPqhtIOLnfErveA"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David Pattinson SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Buick Drive",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Arbroath",
+          "postal_code": "DD11 5LF",
+          "premises": "7",
+          "region": null
+        },
+        "address_snippet": "7 Buick Drive, Arbroath, United Kingdom, DD11 5LF",
+        "date_of_birth": "1960-03-21",
+        "description": "Born on 21 March 1960 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/V1CQLg0rtaMQ5M-68G7m952fsMQ"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David Pattison SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Crossfield Street",
+          "address_line_2": null,
+          "country": "England",
+          "locality": "London",
+          "postal_code": "N17 6AY",
+          "premises": "16",
+          "region": null
+        },
+        "address_snippet": "16 Crossfield Street, London, England, N17 6AY",
+        "date_of_birth": "1953-05-10",
+        "description": "Born on 10 May 1953 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/TtsGoIXmn4JrNz1HjWDiamO1yR4"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David Thomas SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Sherbourne Way",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Bedford",
+          "postal_code": "MK41 8RJ",
+          "premises": "6",
+          "region": "Bedfordshire"
+        },
+        "address_snippet": "6 Sherbourne Way, Bedford, Bedfordshire, United Kingdom, MK41 8RJ",
+        "date_of_birth": "1966-09-22",
+        "description": "Born on 22 September 1966 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/Ss-JsyA6dBN0ucJs1yLr6ccHhqI"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David William SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "North Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Glossop",
+          "postal_code": "SK13 7AX",
+          "premises": "Kelwick House 98",
+          "region": null
+        },
+        "address_snippet": "Kelwick House 98 North Road, Glossop, United Kingdom, SK13 7AX",
+        "date_of_birth": "1977-05-12",
+        "description": "Born on 12 May 1977 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/u2M0A02tkAUDhtEWBw_VhtW0Ia4"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "David SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Roman Pavement",
+          "address_line_2": null,
+          "country": null,
+          "locality": "Lincoln",
+          "postal_code": "LN2 5RD",
+          "premises": null,
+          "region": "Lincolnshire"
+        },
+        "address_snippet": "Roman Pavement, Lincoln, Lincolnshire, LN2 5RD",
+        "date_of_birth": "1971-03-18",
+        "description": "Born on 18 March 1971 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/jVS-ftR3WXX5u6zMp--YXNG5vt8"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Dean SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Cooks Hill",
+          "address_line_2": "Rudgwick",
+          "country": null,
+          "locality": "Horsham",
+          "postal_code": "RH12 3BB",
+          "premises": "Lynwick Forge",
+          "region": null
+        },
+        "address_snippet": "Lynwick Forge, Cooks Hill, Rudgwick, Horsham, RH12 3BB",
+        "date_of_birth": "1992-05-09",
+        "description": "Born on 9 May 1992 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/NbgpLzI4CEQnfgvztTSydbw82Kw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Georgia SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Eastwell Close",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Beckenham",
+          "postal_code": "BR3 1TY",
+          "premises": "18",
+          "region": null
+        },
+        "address_snippet": "18 Eastwell Close, Beckenham, United Kingdom, BR3 1TY",
+        "date_of_birth": "1979-04-03",
+        "description": "Born on 3 April 1979 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/LqNvGGoNgIFa_ghXfWGQgiv3LIw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Guy SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Yarm Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Darlington",
+          "postal_code": "DL1 1EE",
+          "premises": "189",
+          "region": null
+        },
+        "address_snippet": "189 Yarm Road, Darlington, United Kingdom, DL1 1EE",
+        "date_of_birth": "1964-01-15",
+        "description": "Born on 15 January 1964 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/bJAMy7vLTvai72PmCS4FNbEZHDw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Henry SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Tunnel Road",
+          "address_line_2": "Wrawby",
+          "country": "United Kingdom",
+          "locality": "Brigg",
+          "postal_code": "DN20 8SF",
+          "premises": "Cherry Tree House",
+          "region": null
+        },
+        "address_snippet": "Cherry Tree House, Tunnel Road, Wrawby, Brigg, United Kingdom, DN20 8SF",
+        "date_of_birth": "1966-07-20",
+        "description": "Born on 20 July 1966 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/Pl7BxrYHccWI3c7t7r_X6mFqPwA"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "James Stuart SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Lydia Park",
+          "address_line_2": "Stovolds Hill",
+          "country": null,
+          "locality": "Cranleigh",
+          "postal_code": "GU6 8LE",
+          "premises": "Plot 6,",
+          "region": "Surrey"
+        },
+        "address_snippet": "Plot 6, Lydia Park, Stovolds Hill, Cranleigh, Surrey, GU6 8LE",
+        "date_of_birth": "1992-10-20",
+        "description": "Born on 20 October 1992 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/ZXu16JDsv431GBlIVvSnwfGHTjY"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "James SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Omrod Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Heywood",
+          "postal_code": "OL10 1FQ",
+          "premises": "50",
+          "region": null
+        },
+        "address_snippet": "50 Omrod Road, Heywood, United Kingdom, OL10 1FQ",
+        "date_of_birth": "1978-01-14",
+        "description": "Born on 14 January 1978 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/7P7NP5hqmyLU6bHuRL7Tn-6He-M"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Jonathan SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Moor Lane",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Sherburn In Elmet",
+          "postal_code": "LS25 6DX",
+          "premises": "117a",
+          "region": "Leeds"
+        },
+        "address_snippet": "117a Moor Lane, Sherburn In Elmet, Leeds, United Kingdom, LS25 6DX",
+        "date_of_birth": "1997-04-03",
+        "description": "Born on 3 April 1997 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/oWYfD8QOA4VvOX9AmjSuMwkltg8"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Joshua SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Moss Lane",
+          "address_line_2": null,
+          "country": null,
+          "locality": "Ormskirk",
+          "postal_code": "L39 0EX",
+          "premises": "26",
+          "region": null
+        },
+        "address_snippet": "26 Moss Lane, Ormskirk, L39 0EX",
+        "date_of_birth": "1987-06-03",
+        "description": "Born on 3 June 1987 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/7O59ciwFAoP9OI7nEmbKM2cz3Zc"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Lee Henry SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Station Industrial Estate",
+          "address_line_2": "Oxford Road",
+          "country": "United Kingdom",
+          "locality": "Wokingham",
+          "postal_code": "RG41 2YQ",
+          "premises": "Unit 7,",
+          "region": null
+        },
+        "address_snippet": "Unit 7, Station Industrial Estate, Oxford Road, Wokingham, United Kingdom, RG41 2YQ",
+        "date_of_birth": "1983-10-25",
+        "description": "Born on 25 October 1983 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/Yt9yiJVQB4mZB2Z3rwO1JahX280"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Luke Kieran SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "15 Neville Drive",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Thornton-Cleveleys",
+          "postal_code": "FY5 5EY",
+          "premises": null,
+          "region": "Lancashire"
+        },
+        "address_snippet": "15 Neville Drive, Thornton-Cleveleys, Lancashire, United Kingdom, FY5 5EY",
+        "date_of_birth": "1989-11-01",
+        "description": "Born on 1 November 1989 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/FtLq_gnizA0RbJespSD0OB6aHp0"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Luke Thomas SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Croftlands Avenue",
+          "address_line_2": "Stubbington",
+          "country": null,
+          "locality": "Fareham",
+          "postal_code": "PO14 2JR",
+          "premises": "4",
+          "region": "Hampshire"
+        },
+        "address_snippet": "4 Croftlands Avenue, Stubbington, Fareham, Hampshire, PO14 2JR",
+        "date_of_birth": "1971-09-02",
+        "description": "Born on 2 September 1971 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/Kk5oThIBU3nG1EnYSU88crFhDOM"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Marc Ashton SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Station Road",
+          "address_line_2": "Quorn",
+          "country": "United Kingdom",
+          "locality": "Leicester",
+          "postal_code": "LE12 8BS",
+          "premises": "34",
+          "region": "Leicestershire"
+        },
+        "address_snippet": "34 Station Road, Quorn, Leicester, Leicestershire, United Kingdom, LE12 8BS",
+        "date_of_birth": "1965-02-17",
+        "description": "Born on 17 February 1965 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/qRvXeErO1OAb-vKNK6QABPpJrQI"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Mark Anthony SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "The Arcade",
+          "address_line_2": "Tynemouth",
+          "country": "United Kingdom",
+          "locality": "North Shields",
+          "postal_code": "NE30 4BS",
+          "premises": "3a",
+          "region": null
+        },
+        "address_snippet": "3a The Arcade, Tynemouth, North Shields, United Kingdom, NE30 4BS",
+        "date_of_birth": "1971-09-05",
+        "description": "Born on 5 September 1971 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/3BDaQatoD45-EzwPDH9eIqdHCrg"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Martin SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Meadow Street",
+          "address_line_2": "Great Harwood",
+          "country": null,
+          "locality": "Blackburn",
+          "postal_code": "BB6 7EJ",
+          "premises": "The Oakes",
+          "region": null
+        },
+        "address_snippet": "The Oakes, Meadow Street, Great Harwood, Blackburn, BB6 7EJ",
+        "date_of_birth": "1976-11-26",
+        "description": "Born on 26 November 1976 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/BYM6Z3AKZTGPtqLdpO4gKbFnnmY"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Mary Louise SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Manor Orchard, The Street",
+          "address_line_2": "Charmouth",
+          "country": "United Kingdom",
+          "locality": "Bridport",
+          "postal_code": "DT6 6PN",
+          "premises": "Greystones",
+          "region": null
+        },
+        "address_snippet": "Greystones, Manor Orchard, The Street, Charmouth, Bridport, United Kingdom, DT6 6PN",
+        "date_of_birth": "1969-06-26",
+        "description": "Born on 26 June 1969 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/EHJ8SkRaX-HjrI3roNPGLhGmKPU"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Matthew James SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Grosvenor Way",
+          "address_line_2": "Horwich",
+          "country": "United Kingdom",
+          "locality": "Bolton",
+          "postal_code": "BL6 6DJ",
+          "premises": "62",
+          "region": null
+        },
+        "address_snippet": "62 Grosvenor Way, Horwich, Bolton, United Kingdom, BL6 6DJ",
+        "date_of_birth": "1985-10-14",
+        "description": "Born on 14 October 1985 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/F7c7xfgTWmQu-7oYgz93HTU9kGE"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Michael Andrew SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Standedge",
+          "address_line_2": "Wilnecote",
+          "country": "United Kingdom",
+          "locality": "Tamworth",
+          "postal_code": "B77 4LB",
+          "premises": "24",
+          "region": null
+        },
+        "address_snippet": "24 Standedge, Wilnecote, Tamworth, United Kingdom, B77 4LB",
+        "date_of_birth": "1961-01-14",
+        "description": "Born on 14 January 1961 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/V-Y8OWYIFF-9sCk0gDR3t5-stZM"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Michael John SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Border Close",
+          "address_line_2": "Clowne",
+          "country": "United Kingdom",
+          "locality": "Chesterfield",
+          "postal_code": "S43 4DS",
+          "premises": "2",
+          "region": null
+        },
+        "address_snippet": "2 Border Close, Clowne, Chesterfield, United Kingdom, S43 4DS",
+        "date_of_birth": "1977-02-23",
+        "description": "Born on 23 February 1977 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/pmwslCg3-u2PK5jp803vwGBInis"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Michael Philip SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Westbourne Drive",
+          "address_line_2": "Rhostyllen",
+          "country": "United Kingdom",
+          "locality": "Wrexham",
+          "postal_code": "LL14 4BU",
+          "premises": "1",
+          "region": null
+        },
+        "address_snippet": "1 Westbourne Drive, Rhostyllen, Wrexham, United Kingdom, LL14 4BU",
+        "date_of_birth": "1959-01-15",
+        "description": "Born on 15 January 1959 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/w60nub2oiPhL9F5owCtSwqLkAZg"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Michael Terrence SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Old Park Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Dudley",
+          "postal_code": "DY1 3NB",
+          "premises": "78",
+          "region": null
+        },
+        "address_snippet": "78 Old Park Road, Dudley, United Kingdom, DY1 3NB",
+        "date_of_birth": "1981-10-23",
+        "description": "Born on 23 October 1981 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/PFDXrJURwOUEPX9E63dFpL08EW4"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Mitchell James SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Cardiff Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Newport",
+          "postal_code": "NP20 3AB",
+          "premises": "96",
+          "region": "Gwent"
+        },
+        "address_snippet": "96 Cardiff Road, Newport, Gwent, United Kingdom, NP20 3AB",
+        "date_of_birth": "1979-06-25",
+        "description": "Born on 25 June 1979 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/_CkeuE6pEPvr1qBqXlQXpqtsHmo"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Nicholas SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Nutbourne Road",
+          "address_line_2": null,
+          "country": "England",
+          "locality": "Portsmouth",
+          "postal_code": "PO6 1NP",
+          "premises": "33",
+          "region": null
+        },
+        "address_snippet": "33 Nutbourne Road, Portsmouth, England, PO6 1NP",
+        "date_of_birth": null,
+        "description": "Disqualified",
+        "description_identifiers": null,
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/f_Zqcq7dFxVzN5lqk-NM4LABgsM"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Paul Andrew SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Elm Place",
+          "address_line_2": null,
+          "country": null,
+          "locality": "Aldershot",
+          "postal_code": "GU11 3SU",
+          "premises": "4",
+          "region": null
+        },
+        "address_snippet": "4 Elm Place, Aldershot, GU11 3SU",
+        "date_of_birth": "1981-03-24",
+        "description": "Born on 24 March 1981 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/ksIY8KassCNWHyC1ZlzncW70duM"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Richard Darren SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Wellbrow Drive",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Longridge",
+          "postal_code": "PR3 3TB",
+          "premises": "11",
+          "region": "Preston"
+        },
+        "address_snippet": "11 Wellbrow Drive, Longridge, Preston, United Kingdom, PR3 3TB",
+        "date_of_birth": "1960-02-16",
+        "description": "Born on 16 February 1960 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/gJcuNFaSeUMJI76UzqfZlha8qPg"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Richard Paul SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Tudor Close",
+          "address_line_2": "Bramley",
+          "country": "United Kingdom",
+          "locality": "Tadley",
+          "postal_code": "RG26 5DB",
+          "premises": "7",
+          "region": null
+        },
+        "address_snippet": "7 Tudor Close, Bramley, Tadley, United Kingdom, RG26 5DB",
+        "date_of_birth": "1971-03-26",
+        "description": "Born on 26 March 1971 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/u_w6pls-5qHWzNIx2EE5b80BPiI"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Richard Stuart SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Heywood Manor, Hall Road",
+          "address_line_2": "Winfarthing",
+          "country": "United Kingdom",
+          "locality": "Diss",
+          "postal_code": "IP22 2ES",
+          "premises": null,
+          "region": "Norfolk"
+        },
+        "address_snippet": "Heywood Manor, Hall Road, Winfarthing, Diss, Norfolk, United Kingdom, IP22 2ES",
+        "date_of_birth": null,
+        "description": "Disqualified",
+        "description_identifiers": null,
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/zYdqwJMhOpPy06J6P5qcYUGYRcU"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Richard SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Sunrise Meadow",
+          "address_line_2": "Needingworth Road",
+          "country": null,
+          "locality": "Cambridgeshire",
+          "postal_code": "PE28 3FP",
+          "premises": "10",
+          "region": null
+        },
+        "address_snippet": "10 Sunrise Meadow, Needingworth Road, Cambridgeshire, PE28 3FP",
+        "date_of_birth": "1976-03-15",
+        "description": "Born on 15 March 1976 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/cuXv-iZSVjP9K8P0NuZq4FSwmwU"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Riley SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Silverdale Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "E4 9PN",
+          "premises": "14",
+          "region": null
+        },
+        "address_snippet": "14 Silverdale Road, London, United Kingdom, E4 9PN",
+        "date_of_birth": "1967-12-20",
+        "description": "Born on 20 December 1967 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/ph--vMJMH28BrWEHXZvn1YvdK_8"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Robert James SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Oxcliffe Avenue",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Morecambe",
+          "postal_code": "LA3 1PT",
+          "premises": "10",
+          "region": "Lancashire"
+        },
+        "address_snippet": "10 Oxcliffe Avenue, Morecambe, Lancashire, United Kingdom, LA3 1PT",
+        "date_of_birth": "1980-06-10",
+        "description": "Born on 10 June 1980 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/K--h6vZXtEJO1Vl18NVMLQIFSeI"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Samuel SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Silverlands Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "St. Leonards-On-Sea",
+          "postal_code": "TN37 7DE",
+          "premises": "18",
+          "region": null
+        },
+        "address_snippet": "18 Silverlands Road, St. Leonards-On-Sea, United Kingdom, TN37 7DE",
+        "date_of_birth": "1987-09-30",
+        "description": "Born on 30 September 1987 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/8cc_lY1Xs5ir1jqexUdwHUhHAiE"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Shane David SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Tabor Court",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Peterborough",
+          "postal_code": "PE7 8GF",
+          "premises": "6",
+          "region": "Cambridgeshire"
+        },
+        "address_snippet": "6 Tabor Court, Peterborough, Cambridgeshire, United Kingdom, PE7 8GF",
+        "date_of_birth": "1977-12-18",
+        "description": "Born on 18 December 1977 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/JhRvIMht1FTtXHZrDIRnVmaVtzs"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Stacey SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "38 Vance Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Blackpool",
+          "postal_code": "FY1 4QD",
+          "premises": "Flat 1",
+          "region": null
+        },
+        "address_snippet": "Flat 1 38 Vance Road, Blackpool, United Kingdom, FY1 4QD",
+        "date_of_birth": "1957-02-11",
+        "description": "Born on 11 February 1957 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/XyL4tFhGEm1-ER1ZwqPWGEa1dhw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Stephen Brian SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "93 Middle Lane",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "postal_code": "N8 8NX",
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "93 Middle Lane, London, United Kingdom, N8 8NX",
+        "date_of_birth": "1966-10-07",
+        "description": "Born on 7 October 1966 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/XkhgBnRNMd3jJvEdnNqpZXmR48w"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Stewart Christopher SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Meadow Street",
+          "address_line_2": "Great Harwood",
+          "country": null,
+          "locality": "Blackburn",
+          "postal_code": "BB6 7EJ",
+          "premises": "The Oakes",
+          "region": null
+        },
+        "address_snippet": "The Oakes, Meadow Street, Great Harwood, Blackburn, BB6 7EJ",
+        "date_of_birth": "1977-05-02",
+        "description": "Born on 2 May 1977 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/hlt-Gn7UcCsy3bS7yj7Yv17jC5Y"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Thomas Henry SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Chertsey Lane",
+          "address_line_2": null,
+          "country": null,
+          "locality": "Staines-Upon-Thames",
+          "postal_code": "TW18 3NF",
+          "premises": "226",
+          "region": null
+        },
+        "address_snippet": "226 Chertsey Lane, Staines-Upon-Thames, TW18 3NF",
+        "date_of_birth": "1969-08-27",
+        "description": "Born on 27 August 1969 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/Xyd5Q8oO7feAFOKAKSo0AwPajFo"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Timothy Draper SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Upper Bridge Road",
+          "address_line_2": null,
+          "country": "United Kingdom",
+          "locality": "Chelmsford",
+          "postal_code": "CM2 0RU",
+          "premises": "192",
+          "region": null
+        },
+        "address_snippet": "192 Upper Bridge Road, Chelmsford, United Kingdom, CM2 0RU",
+        "date_of_birth": "1987-08-31",
+        "description": "Born on 31 August 1987 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/pozDh43eTcKBsodmrnJG3tkJ3gE"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Toby James SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Flat 2",
+          "address_line_2": "2 Tweedie Lane",
+          "country": "United Kingdom",
+          "locality": "Currie",
+          "postal_code": "EH14 5NJ",
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "Flat 2, 2 Tweedie Lane, Currie, United Kingdom, EH14 5NJ",
+        "date_of_birth": "1985-01-18",
+        "description": "Born on 18 January 1985 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/C8gT2Bz7yYlXZnOQNAmzB1uV-zA"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Tracy SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Gorse Lane",
+          "address_line_2": "South Milford",
+          "country": "United Kingdom",
+          "locality": "Leeds",
+          "postal_code": "LS25 6JR",
+          "premises": "Gorse Cottage",
+          "region": "West Yorkshire"
+        },
+        "address_snippet": "Gorse Cottage, Gorse Lane, South Milford, Leeds, West Yorkshire, United Kingdom, LS25 6JR",
+        "date_of_birth": "1960-06-29",
+        "description": "Born on 29 June 1960 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/HffPGxb_IWcOf9TGwacnmhGmUis"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Warren SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Monument Drive",
+          "address_line_2": "Brierley",
+          "country": null,
+          "locality": "Barnsley",
+          "postal_code": "S72 9LU",
+          "premises": "59",
+          "region": "South Yorkshire"
+        },
+        "address_snippet": "59 Monument Drive, Brierley, Barnsley, South Yorkshire, S72 9LU",
+        "date_of_birth": "1969-02-08",
+        "description": "Born on 8 February 1969 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/LltHAa-zOW3N5ltJ3CE6E0TdJ9I"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Wayne Mark SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "27 Lime Tree Avenue",
+          "address_line_2": "Thurcroft",
+          "country": "England",
+          "locality": "Rotherham",
+          "postal_code": "S66 9DY",
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "27 Lime Tree Avenue, Thurcroft, Rotherham, England, S66 9DY",
+        "date_of_birth": "1970-09-21",
+        "description": "Born on 21 September 1970 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/n6dyi9PC0UXRWYHBjRq8dGa-77M"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Wesley Bryn SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Gainsborough Road",
+          "address_line_2": "Winthorpe",
+          "country": "United Kingdom",
+          "locality": "Newark",
+          "postal_code": "NG24 2NN",
+          "premises": "Winthorpe House",
+          "region": null
+        },
+        "address_snippet": "Winthorpe House, Gainsborough Road, Winthorpe, Newark, United Kingdom, NG24 2NN",
+        "date_of_birth": "1958-06-11",
+        "description": "Born on 11 June 1958 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/hPaMRLrhE0eNDlEWyxgdcsVrnBw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Wesley Grainger SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Station Walk",
+          "address_line_2": null,
+          "country": "Ireland",
+          "locality": "Newbridge",
+          "postal_code": "W12 K448",
+          "premises": "91",
+          "region": "Kildare"
+        },
+        "address_snippet": "91 Station Walk, Newbridge, Kildare, Ireland, W12 K448",
+        "date_of_birth": "1977-01-25",
+        "description": "Born on 25 January 1977 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/4713lRfysDplb_g5rjQMkX38YCw"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "William SMITH"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "DisqualifiedOfficerSearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "27 Magnolia Way",
+          "address_line_2": "Costessey",
+          "country": "United Kingdom",
+          "locality": "Norwich",
+          "postal_code": "NR8 5EH",
+          "premises": null,
+          "region": null
+        },
+        "address_snippet": "27 Magnolia Way, Costessey, Norwich, United Kingdom, NR8 5EH",
+        "date_of_birth": "1976-11-17",
+        "description": "Born on 17 November 1976 - Disqualified",
+        "description_identifiers": [
+          "born-on"
+        ],
+        "kind": "searchresults#disqualified-officer",
+        "links": {
+          "self": "/disqualified-officers/natural/tjLJprmv3uTP3caBp2Yeni5wz4U"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "Smith Emmanuel HONDORA"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    }
+  ],
+  "pagination": {
+    "has_next": false,
+    "next_page": null,
+    "size": 66
+  },
+  "type": "MultipageList"
+}

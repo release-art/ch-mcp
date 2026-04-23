@@ -1,0 +1,66 @@
+{
+  "data": [
+    {
+      "class": "ListSummary",
+      "data": {
+        "address": {
+          "address_line_1": "High Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "England",
+          "locality": "Manchester",
+          "po_box": null,
+          "postal_code": "M4 1BF",
+          "premises": "Apt 222, 87 High Street, Manchester",
+          "region": null
+        },
+        "ceased": false,
+        "ceased_on": null,
+        "country_of_residence": "Italy",
+        "date_of_birth": {
+          "month": 2,
+          "year": 1976
+        },
+        "description": null,
+        "etag": "a1a489f4a2d12373fd1ca0ec1e13aa653c5c39d8",
+        "identification": null,
+        "identity_verification_details": {
+          "anti_money_laundering_supervisory_bodies": null,
+          "appointment_verification_end_on": null,
+          "appointment_verification_start_on": null,
+          "appointment_verification_statement_date": "2026-01-01",
+          "appointment_verification_statement_due_on": "2026-01-14",
+          "authorised_corporate_service_provider_name": null,
+          "identity_verified_on": null,
+          "preferred_name": null
+        },
+        "is_sanctioned": null,
+        "kind": "individual-person-with-significant-control",
+        "links": {
+          "self": "/company/09370755/persons-with-significant-control/individual/5SHK0O3ADg84od9zsSEMBrKKino"
+        },
+        "name": "Mr Uriel Perugia",
+        "name_elements": {
+          "forename": "Uriel",
+          "middle_name": null,
+          "surname": "Perugia",
+          "title": "Mr"
+        },
+        "nationality": "Italian",
+        "natures_of_control": [
+          "ownership-of-shares-75-to-100-percent"
+        ],
+        "notified_on": "2016-04-06",
+        "principal_office_address": null
+      },
+      "module": "ch_api.types.public_data.psc",
+      "type": "PydanticModel"
+    }
+  ],
+  "pagination": {
+    "has_next": false,
+    "next_page": null,
+    "size": 1
+  },
+  "type": "MultipageList"
+}

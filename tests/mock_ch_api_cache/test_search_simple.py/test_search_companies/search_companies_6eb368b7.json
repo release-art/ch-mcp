@@ -1,0 +1,3814 @@
+{
+  "data": [
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "00445790",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "1947-11-27",
+        "description": "00445790 - Incorporated on 27 November 1947",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/00445790"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "TESCO STORES (HOLDINGS)",
+        "title": "TESCO PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "20 Chapel Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "England",
+          "locality": "Liverpool",
+          "po_box": null,
+          "postal_code": "L3 9AG",
+          "region": null
+        },
+        "address_snippet": "Unity Building, 20 Chapel Street, Liverpool, England, L3 9AG",
+        "company_number": "15680114",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-11-11",
+        "date_of_creation": "2024-04-25",
+        "description": "15680114 - Dissolved on 11 November 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15680114"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "TESCO INTERNATIONAL LTD",
+        "title": "15680114 LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "More London Place",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "SE1 2AF",
+          "region": null
+        },
+        "address_snippet": "1 More London Place, London, SE1 2AF",
+        "company_number": "05888957",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-11-12",
+        "date_of_creation": "2006-07-27",
+        "description": "05888957 - Dissolved on 12 November 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05888957"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO AQUA (FINCO2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR008975",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-09",
+        "description": "BR008975 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR008975"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO AQUA (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06969533",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2009-07-22",
+        "description": "06969533 - Incorporated on 22 July 2009",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06969533"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO ATRATO DEPOT PROPCO LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06969536",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2009-07-22",
+        "description": "06969536 - Incorporated on 22 July 2009",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06969536"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO ATRATO (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06969528",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2009-07-22",
+        "description": "06969528 - Incorporated on 22 July 2009",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06969528"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO ATRATO (NOMINEE HOLDCO) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06969531",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2009-07-22",
+        "description": "06969531 - Incorporated on 22 July 2009",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06969531"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO ATRATO (NOMINEE 1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06969540",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2009-07-22",
+        "description": "06969540 - Incorporated on 22 July 2009",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06969540"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO ATRATO (NOMINEE 2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06969529",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2009-07-22",
+        "description": "06969529 - Incorporated on 22 July 2009",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06969529"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO ATRATO (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05721650",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-02-24",
+        "description": "05721650 - Incorporated on 24 February 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05721650"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BLUE (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05888990",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-07-27",
+        "description": "05888990 - Incorporated on 27 July 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05888990"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BLUE (NOMINEE HOLDCO) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05888920",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-07-27",
+        "description": "05888920 - Incorporated on 27 July 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05888920"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BLUE (NOMINEE 1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05888921",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-07-27",
+        "description": "05888921 - Incorporated on 27 July 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05888921"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BLUE (NOMINEE 2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR008976",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-09",
+        "description": "BR008976 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR008976"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BLUE (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "10127682",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2016-04-15",
+        "description": "10127682 - Incorporated on 15 April 2016",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/10127682"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BLUE (3LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "More London Place",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "SE1 2AF",
+          "region": null
+        },
+        "address_snippet": "1 More London Place, London, SE1 2AF",
+        "company_number": "10701640",
+        "company_status": "liquidation",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2017-03-31",
+        "description": "10701640 - Incorporated on 31 March 2017 - Liquidation",
+        "description_identifier": [
+          "incorporated-on",
+          "liquidation"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/10701640"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BRISLINGTON LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "More London Place",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "SE1 2AF",
+          "region": null
+        },
+        "address_snippet": "1 More London Place, London, SE1 2AF",
+        "company_number": "03854371",
+        "company_status": "liquidation",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1999-10-06",
+        "description": "03854371 - Incorporated on 6 October 1999 - Liquidation",
+        "description_identifier": [
+          "incorporated-on",
+          "liquidation"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/03854371"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO BURY LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Ifc 1",
+          "address_line_2": "Esplanade",
+          "care_of": null,
+          "country": "Jersey",
+          "locality": "St Helier",
+          "po_box": null,
+          "postal_code": "JE2 3BX",
+          "region": null
+        },
+        "address_snippet": "Level 1 Ifc 1, Esplanade, St Helier, Jersey, JE2 3BX",
+        "company_number": "FC015640",
+        "company_status": "active",
+        "company_type": "oversea-company",
+        "date_of_cessation": null,
+        "date_of_creation": "1990-06-12",
+        "description": "FC015640 - First UK establishment opened on 12 June 1990",
+        "description_identifier": [
+          "first-uk-establishment-opened-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/FC015640"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO CAPITAL NO. 1 LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": "Kestrel Way"
+        },
+        "address_snippet": "Tesco House Shire Park, Welwyn Garden City, Kestrel Way, AL7 1GA",
+        "company_number": "BR001709",
+        "company_status": "open",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "1990-06-12",
+        "description": "BR001709 - Opened on 12 June 1990",
+        "description_identifier": [
+          "opened-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR001709"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO CAPITAL NO. 1 LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": "Kestrel Way"
+        },
+        "address_snippet": "Tesco House Shire Park, Welwyn Garden City, Kestrel Way, AL7 1GA",
+        "company_number": "BR006961",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-02-05",
+        "description": "BR006961 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR006961"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO CAPITAL NO.2 LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06640968",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2008-07-08",
+        "description": "06640968 - Incorporated on 8 July 2008",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06640968"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO CORAL (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06640901",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2008-07-08",
+        "description": "06640901 - Incorporated on 8 July 2008",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06640901"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO CORAL (NOMINEE) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08629715",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "2013-07-30",
+        "description": "08629715 - Incorporated on 30 July 2013",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08629715"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO CORPORATE TREASURY SERVICES PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Queen's Road",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Aberdeen",
+          "po_box": null,
+          "postal_code": "AB15 4YL",
+          "region": null
+        },
+        "address_snippet": "13 Queen's Road, Aberdeen, AB15 4YL",
+        "company_number": "SC208935",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-05-20",
+        "date_of_creation": "2000-07-10",
+        "description": "SC208935 - Dissolved on 20 May 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SC208935"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "TESCO DRILLING TECHNOLOGY (UK) \u00b7 TESCO DRILLING TECHNOLOGY",
+        "title": "TESCO CORPORATION (UK) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06769537",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2008-12-09",
+        "description": "06769537 - Incorporated on 9 December 2008",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06769537"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DEPOT PROPCO LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "02972724",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1994-09-30",
+        "description": "02972724 - Incorporated on 30 September 1994",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/02972724"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DISTRIBUTION LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "03193655",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1996-05-02",
+        "description": "03193655 - Incorporated on 2 May 1996",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/03193655"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DISTRIBUTION HOLDINGS LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08255493",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2012-10-16",
+        "description": "08255493 - Incorporated on 16 October 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08255493"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DORNEY (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08255503",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2012-10-16",
+        "description": "08255503 - Incorporated on 16 October 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08255503"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DORNEY (NOMINEE HOLDCO) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08255640",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2012-10-16",
+        "description": "08255640 - Incorporated on 16 October 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08255640"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DORNEY (NOMINEE 1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08255645",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2012-10-16",
+        "description": "08255645 - Incorporated on 16 October 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08255645"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DORNEY (NOMINEE 2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08255488",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2012-10-16",
+        "description": "08255488 - Incorporated on 16 October 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08255488"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO DORNEY (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "02846605",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1993-08-20",
+        "description": "02846605 - Incorporated on 20 August 1993",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/02846605"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO EMPLOYEES' SHARE SCHEME TRUSTEES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08514605",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2013-05-02",
+        "description": "08514605 - Incorporated on 2 May 2013",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08514605"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO FAMILY DINING LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "More London Place",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "SE1 2AF",
+          "region": null
+        },
+        "address_snippet": "1 More London Place, London, SE1 2AF",
+        "company_number": "07502096",
+        "company_status": "liquidation",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-01-21",
+        "description": "07502096 - Incorporated on 21 January 2011 - Liquidation",
+        "description_identifier": [
+          "incorporated-on",
+          "liquidation"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07502096"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO FOOD SOURCING LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "04345023",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2001-12-24",
+        "description": "04345023 - Incorporated on 24 December 2001",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04345023"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO FREETIME LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR008977",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-09",
+        "description": "BR008977 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR008977"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO FUCHSIA (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "10127851",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2016-04-15",
+        "description": "10127851 - Incorporated on 15 April 2016",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/10127851"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO FUCHSIA (3LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR008978",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-09",
+        "description": "BR008978 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR008978"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO FUCHSIA (2LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08312532",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2012-11-29",
+        "description": "08312532 - Incorporated on 29 November 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08312532"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO GATESHEAD PROPERTY LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR009121",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-11-10",
+        "description": "BR009121 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR009121"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO GREY (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR009119",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-11-10",
+        "description": "BR009119 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR009119"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO GREY (2LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "00243011",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1929-10-16",
+        "description": "00243011 - Incorporated on 16 October 1929",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/00243011"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO HOLDINGS LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "03176368",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1996-03-21",
+        "description": "03176368 - Incorporated on 21 March 1996",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/03176368"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO INTERNATIONAL SERVICES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "144 Morrison Street",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Edinburgh",
+          "po_box": null,
+          "postal_code": "EH3 8EX",
+          "region": null
+        },
+        "address_snippet": "Atria One, 144 Morrison Street, Edinburgh, EH3 8EX",
+        "company_number": "SC373285",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-11-06",
+        "date_of_creation": "2010-02-18",
+        "description": "SC373285 - Dissolved on 6 November 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SC373285"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO LAGOON GP LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Broadway Parade",
+          "address_line_2": "Station Road",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "West Drayton Ub7 7de",
+          "po_box": null,
+          "postal_code": "UB7 9BT",
+          "region": "Middlesex"
+        },
+        "address_snippet": "4 Broadway Parade, Station Road, West Drayton Ub7 7de, Middlesex, United Kingdom, UB7 9BT",
+        "company_number": "15457428",
+        "company_status": "dissolved",
+        "company_type": "ltd",
+        "date_of_cessation": "2025-07-08",
+        "date_of_creation": "2024-01-31",
+        "description": "15457428 - Dissolved on 8 July 2025",
+        "description_identifier": [
+          "dissolved-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/15457428"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO LONDON LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "06003554",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-11-20",
+        "description": "06003554 - Incorporated on 20 November 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/06003554"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO MAINTENANCE LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Shire Park, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "04780736",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-05-29",
+        "description": "04780736 - Incorporated on 29 May 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04780736"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "TESCO MOBILE COMMUNICATIONS LIMITED",
+        "title": "TESCO MOBILE LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "04780729",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-05-29",
+        "description": "04780729 - Incorporated on 29 May 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04780729"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO MOBILE COMMUNICATIONS LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "04780734",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-05-29",
+        "description": "04780734 - Incorporated on 29 May 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04780734"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO MOBILE SERVICES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07457915",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-12-02",
+        "description": "07457915 - Incorporated on 2 December 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07457915"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NAVONA (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07459662",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-12-03",
+        "description": "07459662 - Incorporated on 3 December 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07459662"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NAVONA (NOMINEE HOLDCO) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07459762",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-12-03",
+        "description": "07459762 - Incorporated on 3 December 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07459762"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NAVONA (NOMINEE 1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07459765",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-12-03",
+        "description": "07459765 - Incorporated on 3 December 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07459765"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NAVONA (NOMINEE 2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07459436",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-12-03",
+        "description": "07459436 - Incorporated on 3 December 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07459436"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NAVONA (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07458609",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-12-02",
+        "description": "07458609 - Incorporated on 2 December 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07458609"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NAVONA PL PROPCO LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Shire Park, Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "12605279",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2020-05-15",
+        "description": "12605279 - Incorporated on 15 May 2020",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/12605279"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NEWMARKET LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "11185610",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2018-02-05",
+        "description": "11185610 - Incorporated on 5 February 2018",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/11185610"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO NEWRY LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "More London Place",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "SE1 2AF",
+          "region": null
+        },
+        "address_snippet": "1 More London Place, London, SE1 2AF",
+        "company_number": "01611684",
+        "company_status": "liquidation",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1982-02-05",
+        "description": "01611684 - Incorporated on 5 February 1982 - Liquidation",
+        "description_identifier": [
+          "incorporated-on",
+          "liquidation"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/01611684"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "TESCO (COMPUTER SERVICES) INTERNATIONAL LIMITED",
+        "title": "TESCO (OVERSEAS) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "03193632",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1996-05-02",
+        "description": "03193632 - Incorporated on 2 May 1996",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/03193632"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO OVERSEAS INVESTMENTS LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "07120496",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-01-08",
+        "description": "07120496 - Incorporated on 8 January 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07120496"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PASSAIC (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "07121480",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-01-11",
+        "description": "07121480 - Incorporated on 11 January 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07121480"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PASSAIC (NOMINEE HOLDCO) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "07121666",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-01-11",
+        "description": "07121666 - Incorporated on 11 January 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07121666"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PASSAIC (NOMINEE 1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "07121664",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-01-11",
+        "description": "07121664 - Incorporated on 11 January 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07121664"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PASSAIC (NOMINEE 2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "07121667",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-01-11",
+        "description": "07121667 - Incorporated on 11 January 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07121667"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PASSAIC (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, AL7 1GA",
+        "company_number": "07121506",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-01-11",
+        "description": "07121506 - Incorporated on 11 January 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07121506"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PASSAIC PL PROPCO LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07754822",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-08-26",
+        "description": "07754822 - Incorporated on 26 August 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07754822"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PENSION INVESTMENT LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "01118945",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1973-06-19",
+        "description": "01118945 - Incorporated on 19 June 1973",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/01118945"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PENSION TRUSTEES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "South Gyle Crescent",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Edinburgh",
+          "po_box": null,
+          "postal_code": "EH12 9FQ",
+          "region": null
+        },
+        "address_snippet": "2 South Gyle Crescent, Edinburgh, United Kingdom, EH12 9FQ",
+        "company_number": "SC173199",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1997-03-05",
+        "description": "SC173199 - Incorporated on 5 March 1997",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SC173199"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PERSONAL FINANCE LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "South Gyle Crescent",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Edinburgh",
+          "po_box": null,
+          "postal_code": "EH12 9FQ",
+          "region": null
+        },
+        "address_snippet": "2 South Gyle Crescent, Edinburgh, United Kingdom, EH12 9FQ",
+        "company_number": "SC173198",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1997-03-05",
+        "description": "SC173198 - Incorporated on 5 March 1997",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SC173198"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PERSONAL FINANCE GROUP LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": null,
+          "po_box": null,
+          "postal_code": null,
+          "region": null
+        },
+        "address_snippet": null,
+        "company_number": "SA000044",
+        "company_status": "active",
+        "company_type": "assurance-company",
+        "date_of_cessation": null,
+        "date_of_creation": null,
+        "description": "SA000044",
+        "description_identifier": [
+          "registered-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/SA000044"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PERSONAL FINANCE LIFE LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR008980",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-09",
+        "description": "BR008980 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR008980"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PINK (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR008974",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-09",
+        "description": "BR008974 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR008974"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PINK (2LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "07848593",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-11-15",
+        "description": "07848593 - Incorporated on 15 November 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07848593"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY FINANCE 5 PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "07455552",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-11-30",
+        "description": "07455552 - Incorporated on 30 November 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07455552"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY FINANCE 4 PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05888925",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-07-27",
+        "description": "05888925 - Incorporated on 27 July 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05888925"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "TESCO BLUE (FINCO1)",
+        "title": "TESCO PROPERTY FINANCE 1 PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05721633",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-02-24",
+        "description": "05721633 - Incorporated on 24 February 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05721633"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "TESCO FINCO HOLDCO \u00b7 TESCO WHITE (GP)",
+        "title": "TESCO PROPERTY FINANCE 1 HOLDCO LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "08228386",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "2012-09-25",
+        "description": "08228386 - Incorporated on 25 September 2012",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08228386"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY FINANCE 6 PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "07251526",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "2010-05-12",
+        "description": "07251526 - Incorporated on 12 May 2010",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07251526"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY FINANCE 3 PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "07004310",
+        "company_status": "active",
+        "company_type": "plc",
+        "date_of_cessation": null,
+        "date_of_creation": "2009-08-28",
+        "description": "07004310 - Incorporated on 28 August 2009",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07004310"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY FINANCE 2 PLC"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "02353133",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "1989-02-28",
+        "description": "02353133 - Incorporated on 28 February 1989",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/02353133"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY HOLDINGS LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05888922",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-07-27",
+        "description": "05888922 - Incorporated on 27 July 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05888922"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY HOLDINGS (NO.2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "04945975",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-10-28",
+        "description": "04945975 - Incorporated on 28 October 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04945975"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY (NOMINEES) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05888952",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-07-27",
+        "description": "05888952 - Incorporated on 27 July 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05888952"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY NOMINEES (NO.5) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "04966637",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-11-17",
+        "description": "04966637 - Incorporated on 17 November 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04966637"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY (NOMINEES) (NO.1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "05902418",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-10",
+        "description": "05902418 - Incorporated on 10 August 2006",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/05902418"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY NOMINEES (NO.6) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Churchill Place",
+          "address_line_2": "10th Floor",
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "London",
+          "po_box": null,
+          "postal_code": "E14 5HU",
+          "region": null
+        },
+        "address_snippet": "5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU",
+        "company_number": "04966635",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-11-17",
+        "description": "04966635 - Incorporated on 17 November 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04966635"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY (NOMINEES) (NO.2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "04945955",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-10-28",
+        "description": "04945955 - Incorporated on 28 October 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04945955"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY PARTNER (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "04945945",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2003-10-28",
+        "description": "04945945 - Incorporated on 28 October 2003",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04945945"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PROPERTY PARTNER (NO.1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR009041",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-09-18",
+        "description": "BR009041 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR009041"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PURPLE (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR009040",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-09-18",
+        "description": "BR009040 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR009040"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO PURPLE (2LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": null,
+          "address_line_2": null,
+          "care_of": null,
+          "country": null,
+          "locality": "Cheshunt",
+          "po_box": null,
+          "postal_code": "EN8 9SL",
+          "region": "Delamare Road"
+        },
+        "address_snippet": "New Tesco House, Cheshunt, Delamare Road, EN8 9SL",
+        "company_number": "BR008979",
+        "company_status": "closed",
+        "company_type": "uk-establishment",
+        "date_of_cessation": null,
+        "date_of_creation": "2006-08-09",
+        "description": "BR008979 - Closed",
+        "description_identifier": [
+          "closed"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/BR008979"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO RED (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07849882",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-11-16",
+        "description": "07849882 - Incorporated on 16 November 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07849882"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO SARUM (GP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07851190",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-11-17",
+        "description": "07851190 - Incorporated on 17 November 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07851190"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO SARUM (NOMINEE HOLDCO) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07851854",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-11-17",
+        "description": "07851854 - Incorporated on 17 November 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07851854"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO SARUM (NOMINEE 1) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07851858",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-11-17",
+        "description": "07851858 - Incorporated on 17 November 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07851858"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO SARUM (NOMINEE 2) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "07849948",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2011-11-16",
+        "description": "07849948 - Incorporated on 16 November 2011",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/07849948"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO SARUM (1LP) LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "04253605",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2001-07-17",
+        "description": "04253605 - Incorporated on 17 July 2001",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/04253605"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO SEACROFT LTD"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    },
+    {
+      "class": "CompanySearchItem",
+      "data": {
+        "address": {
+          "address_line_1": "Kestrel Way",
+          "address_line_2": null,
+          "care_of": null,
+          "country": "United Kingdom",
+          "locality": "Welwyn Garden City",
+          "po_box": null,
+          "postal_code": "AL7 1GA",
+          "region": null
+        },
+        "address_snippet": "Tesco House, Shire Park, Kestrel Way, Welwyn Garden City, United Kingdom, AL7 1GA",
+        "company_number": "08730224",
+        "company_status": "active",
+        "company_type": "ltd",
+        "date_of_cessation": null,
+        "date_of_creation": "2013-10-14",
+        "description": "08730224 - Incorporated on 14 October 2013",
+        "description_identifier": [
+          "incorporated-on"
+        ],
+        "kind": "searchresults#company",
+        "links": {
+          "self": "/company/08730224"
+        },
+        "matches": {
+          "address_snippet": null,
+          "snippet": [],
+          "title": null
+        },
+        "snippet": "",
+        "title": "TESCO SECRETARIES LIMITED"
+      },
+      "module": "ch_api.types.public_data.search",
+      "type": "PydanticModel"
+    }
+  ],
+  "pagination": {
+    "has_next": true,
+    "next_page": "{\"start_index\": 100}",
+    "size": 356
+  },
+  "type": "MultipageList"
+}

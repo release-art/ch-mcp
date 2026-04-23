@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "ch-mcp": {
+            "command": "./bin/run.sh",
+            "args": [
+                "ch-mcp",
+                "stdio"
+            ]
+        }
+    }
+}

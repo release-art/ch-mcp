@@ -1,0 +1,9 @@
+{
+  "data": [],
+  "pagination": {
+    "has_next": false,
+    "next_page": null,
+    "size": null
+  },
+  "type": "MultipageList"
+}

@@ -1,0 +1,13 @@
+{
+  "class": "ChargeList",
+  "data": {
+    "etag": "f4001329053bc52a7fb08d41c9eb0650257f4bdc",
+    "items": [],
+    "part_satisfied_count": 0,
+    "satisfied_count": 0,
+    "total_count": 0,
+    "unfiletered_count": null
+  },
+  "module": "ch_api.types.public_data.charges",
+  "type": "PydanticModel"
+}
