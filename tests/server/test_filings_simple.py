@@ -62,23 +62,22 @@ async def test_get_document_metadata(mcp_client: Client[FastMCPTransport]):
     assert metadata.data.refs.document_id == document_id  # type: ignore[union-attr]
 
 
-@pytest.mark.asyncio
-async def test_get_document_url(mcp_client: Client[FastMCPTransport]):
-    filing_history = await mcp_client.call_tool(
-        name="get_company_filing_history",
-        arguments={"company_number": "09370755"},
-    )
-    items = filing_history.data.items  # type: ignore[union-attr]
-    document_id = next(
-        (item.refs.document_id for item in items if getattr(item.refs, "document_id", None)),
-        None,
-    )
-    assert document_id
+_SAMPLE_DOCUMENT_ID = "QbSample_Document_ID_AAAAAAAAAAAAAAAAAA"
 
-    url_result = await mcp_client.call_tool(
-        name="get_document_url",
-        arguments={"document_id": document_id, "content_type": "application/pdf"},
+
+@pytest.mark.asyncio
+async def test_get_document_content(mcp_client: Client[FastMCPTransport]):
+    # In HTTP transport mode (the default / test mode), the tool mints a
+    # signed URL pointing at this server's own /documents/{token} route.
+    # No bytes are fetched yet — that happens when the URL is hit.
+    result = await mcp_client.call_tool(
+        name="get_document_content",
+        arguments={"document_id": _SAMPLE_DOCUMENT_ID, "content_type": "application/pdf"},
     )
-    assert url_result is not None
-    assert isinstance(url_result.data, str)
-    assert url_result.data.startswith("http")
+    assert result is not None
+    data = result.data
+    assert data.document_id == _SAMPLE_DOCUMENT_ID
+    assert data.content_type == "application/pdf"
+    assert data.expires_in_seconds == 600
+    assert data.url.startswith("http")
+    assert "/documents/" in data.url

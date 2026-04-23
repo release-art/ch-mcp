@@ -1,46 +1,41 @@
+"""HTTP app factory for the uvicorn entrypoint."""
+
 from __future__ import annotations
 
 import logging
-import time
-from datetime import datetime
 
 from starlette.applications import Starlette
 from starlette.middleware import Middleware as StarletteMiddleware
 from starlette.middleware.cors import CORSMiddleware as StarletteCORSMiddleware
-from starlette.requests import Request
-from starlette.responses import JSONResponse
+from starlette.routing import Route
 
 import ch_mcp
 
 logger = logging.getLogger(__name__)
-START_T = time.monotonic()
 
-
-async def health(request: Request) -> JSONResponse:
-    """Health check endpoint."""
-    return JSONResponse(
-        {
-            "status": "healthy",
-            "service": "FCA MCP Server",
-            "version": ch_mcp.__version__.__version__,
-            "timestamp": datetime.now().isoformat(),
-            "uptime_seconds": time.monotonic() - START_T,
-        }
-    )
+# Canonical MCP endpoint path, plus any aliases that point at the same ASGI
+# handler. Clients that hard-code one path or the other both work.
+MCP_PATH = "/"
+MCP_ALIASES: tuple[str, ...] = ("/mcp",)
 
 
 def get_http_app() -> Starlette:
-    """Get the FastAPI application instance."""
+    """Compose the Starlette app: MCP plus any enabled HTTP side-routes."""
     settings = ch_mcp.settings.get_settings()
-    logger.info("Creating FastAPI application...")
     mcp = ch_mcp.server.get_server()
-    mcp.custom_route("/.container/health", methods=["GET"], include_in_schema=False)(health)
+
+    # Each HTTP module owns its own ``mount_*_router`` that hangs routes off the
+    # MCP instance via ``mcp.custom_route``. Keep this block a straight list of
+    # "which HTTP features are wired on".
+    ch_mcp.http.mount_landing_router(mcp)
+    ch_mcp.http.mount_health_router(mcp)
+    ch_mcp.http.mount_documents_router(mcp)
     if settings.auth0.interactive_client_id:
-        logger.info("Interactive client ID configured, including interactive UI routes")
+        logger.info("Interactive client ID configured — mounting interactive UI routes")
         ch_mcp.http.mount_interactive_router(mcp)
 
-    mcp_app = mcp.http_app(
-        path="/",
+    app = mcp.http_app(
+        path=MCP_PATH,
         middleware=[
             StarletteMiddleware(
                 StarletteCORSMiddleware,
@@ -57,4 +52,32 @@ def get_http_app() -> Starlette:
         ],
         stateless_http=True,
     )
-    return mcp_app
+    _install_mcp_aliases(app, canonical=MCP_PATH, aliases=MCP_ALIASES)
+    return app
+
+
+def _install_mcp_aliases(app: Starlette, *, canonical: str, aliases: tuple[str, ...]) -> None:
+    """Expose the MCP endpoint at multiple paths simultaneously.
+
+    FastMCP's ``http_app(path=...)`` only accepts a single canonical path,
+    but returns a stock Starlette app. We locate the canonical MCP route
+    and append a fresh ``Route`` for each alias that reuses the same ASGI
+    endpoint and HTTP-method set — no redirects, both paths serve the MCP
+    session manager directly.
+    """
+    canonical_route: Route | None = next(
+        (r for r in app.routes if isinstance(r, Route) and r.path == canonical),
+        None,
+    )
+    if canonical_route is None:
+        raise RuntimeError(f"Canonical MCP route {canonical!r} not found on Starlette app")
+
+    for alias in aliases:
+        app.routes.append(
+            Route(
+                alias,
+                endpoint=canonical_route.endpoint,
+                methods=list(canonical_route.methods or []),
+            )
+        )
+        logger.info("Mounted MCP endpoint alias %s → %s", alias, canonical)

@@ -21,7 +21,7 @@ A [Model Context Protocol](https://modelcontextprotocol.io/) server that exposes
 | [`companies.py`](src/ch_mcp/server/companies.py) | `get_company_profile`, `get_company_registers`, `get_company_uk_establishments` |
 | [`officers.py`](src/ch_mcp/server/officers.py) | `get_officer_list`, `get_officer_appointments`, `get_officer_disqualification` |
 | [`psc.py`](src/ch_mcp/server/psc.py) | `get_company_psc_list`, `get_company_psc_statements`, `get_company_psc` |
-| [`filings.py`](src/ch_mcp/server/filings.py) | `get_company_charges`, `get_company_charge_details`, `get_company_filing_history`, `get_company_insolvency`, `get_company_exemptions`, `get_document_metadata`, `get_document_url` |
+| [`filings.py`](src/ch_mcp/server/filings.py) | `get_company_charges`, `get_company_charge_details`, `get_company_filing_history`, `get_company_insolvency`, `get_company_exemptions`, `get_document_metadata`, `get_document_content` |
 
 All tools are decorated with `ToolAnnotations(readOnlyHint=True, destructiveHint=False, idempotentHint=True, openWorldHint=True)`.
 
@@ -64,11 +64,26 @@ explicit.
 
 `get_company_filing_history` items may carry `refs.document_id`. Pass it to
 `get_document_metadata` to see which content types are available (PDF,
-JSON, XML, XHTML, ZIP, CSV), then to `get_document_url` to obtain a
-pre-signed download URL. **The URL is valid for only ~60 seconds** — fetch
-it immediately with any HTTP client rather than storing or passing it
-around. `ch-mcp` caches `get_document_url` output for 50 seconds (10-second
-safety margin) and caches every other tool for the default 24 hours.
+JSON, XML, XHTML, ZIP, CSV), then to `get_document_content` to receive a
+**download URL** — the tool doesn't transfer bytes through MCP, it hands
+back a short-lived HTTP link that, when fetched, streams the raw document
+with the correct `Content-Type`. No base64 inflation, no MCP-client binary-
+rendering dependency, no 10 MiB response cap.
+
+The URL's backend depends on the transport:
+
+- **HTTP transport** (default deployment): the URL points at this server's
+  own `/documents/{signed_token}` route, signed with
+  `SERVER_JWT_SECRET_KEY`, valid for ~10 minutes. The route streams from a
+  permanent Azure Blob cache (container name
+  `BLOB_STORE_NAME_DOCUMENT_CONTENT`, default `document-content`), fetching
+  from Companies House on cache miss. Because documents are immutable,
+  entries never expire — re-minting a URL on TTL expiry is free.
+- **stdio transport**: the URL is the Companies House-issued pre-signed
+  S3 link, valid for ~60 seconds. Fetch immediately.
+
+Size guardrail (`CACHE_MAX_DOCUMENT_BYTES`, default 10 MiB) is enforced by
+the HTTP route; a 413 is returned for oversize filings.
 
 ### Intentionally omitted endpoints
 
@@ -82,7 +97,6 @@ accuracy) without losing any retrievable field.
 | `GET /company/{number}/registered-office-address` | `get_company_profile` | The profile's `registered_office_address` sub-field is a **superset**: it additionally exposes `care_of` and `po_box`. The standalone endpoint's unique fields are `etag`, `kind`, `links` (stripped by the LinksSection exclusion) and `accept_appropriate_office_address_statement` (a write-only PUT flag irrelevant to a read-only client). |
 | `GET /company/{number}/filing-history/{id}` | `get_company_filing_history` | Both endpoints deserialise into the same `FilingHistoryItem` pydantic class — field set is identical. |
 | `GET /company/{number}/appointments/{appointment_id}` | `get_officer_list` | Both endpoints deserialise into the same `OfficerSummary` pydantic class — field set is identical. |
-| `GET /document/{id}/content` (stream) | `get_document_url` | The Document API redirects content requests to a pre-signed S3 URL. Streaming binary payloads through an MCP tool is unhelpful — returning the URL lets the client fetch directly. |
 
 If a new CH API version ever changes these endpoints so the single-item call
 returns richer data than the collection item, these tools should be restored.

@@ -20,9 +20,7 @@ class OfficerAppointmentSummary(
     """Single officer appointment as returned by the officer appointments list."""
 
 
-class NaturalDisqualification(
-    base.reflect_ch_api_t(_dq.NaturalDisqualification, refs_type=refs.DisqualificationRefs)
-):
+class NaturalDisqualification(base.reflect_ch_api_t(_dq.NaturalDisqualification, refs_type=refs.DisqualificationRefs)):
     """Disqualification record for a natural-person officer."""
 
 

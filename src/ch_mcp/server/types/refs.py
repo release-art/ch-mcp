@@ -47,9 +47,7 @@ _URL_PATTERNS: tuple[re.Pattern[str], ...] = (
         r"(?P<psc_url_kind>[^/]+)/(?P<psc_id>[^/?]+)"
     ),
     # PSC statement: /company/{cn}/persons-with-significant-control-statements/{statement_id}
-    re.compile(
-        r"/persons-with-significant-control-statements/(?P<psc_statement_id>[^/?]+)"
-    ),
+    re.compile(r"/persons-with-significant-control-statements/(?P<psc_statement_id>[^/?]+)"),
     # Officer's global appointments list: /officers/{officer_id}/appointments
     # or the disqualified officer form: /disqualified-officers/(natural|corporate)/{officer_id}
     re.compile(r"/officers/(?P<officer_id>[^/?]+)(?:/|$)"),

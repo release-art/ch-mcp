@@ -1,6 +1,7 @@
 """Companies House filings tools (charges, filing history, insolvency, exemptions, documents)."""
 
 import logging
+import os
 from typing import Annotated
 
 import ch_api
@@ -9,8 +10,16 @@ import fastmcp
 import pydantic
 from mcp.types import ToolAnnotations
 
-from . import auth, deps, types
+import ch_mcp
+
+from . import auth, deps, document_url, types
 from .companies import CompanyNumberParam
+
+# Signed-URL TTL for the ch-mcp HTTP document-proxy route. The URL points at
+# an endpoint we own, so the TTL only limits the link-leak window — the
+# underlying bytes remain cached permanently in Azure Blob Storage, so
+# regenerating the URL is always cheap.
+_PROXY_URL_TTL_SECONDS = 600
 
 logger = logging.getLogger(__name__)
 
@@ -142,7 +151,7 @@ async def get_company_filing_history(
     address changes, share capital changes, resolutions, and more. Each entry's
     ``refs`` carries a ``transaction_id`` and, when a downloadable document is
     attached, a ``document_id`` that can be fed into ``get_document_metadata``
-    and ``get_document_url``.
+    and ``get_document_content``.
     """
     out = await ch_client.get_company_filing_history(company_number, next_page=next_page_token)
     return types.pagination.MultipageList[types.filings.FilingHistoryItem](
@@ -197,11 +206,11 @@ async def get_document_metadata(
     Returns the document's identifiers, page count, filename, filing category,
     and a ``resources`` map keyed by MIME type showing the content-length and
     timestamps for each representation the API can serve. Use the map to decide
-    which ``content_type`` to request from ``get_document_url``. Returns
+    which ``content_type`` to request from ``get_document_content``. Returns
     ``None`` when the document is unknown.
 
     Typical chain: ``get_company_filing_history → refs.document_id →
-    get_document_metadata → get_document_url``.
+    get_document_metadata → get_document_content``.
     """
     result = await ch_client.get_document_metadata(document_id)
     if result is None:
@@ -210,30 +219,64 @@ async def get_document_metadata(
 
 
 @filings_mcp.tool(**_TOOL_KW)
-async def get_document_url(
+async def get_document_content(
     document_id: DocumentIdParam,
     content_type: DocumentContentTypeParam = "application/pdf",
-    ch_client: ch_api.Client = deps.ChApiDep,
-) -> str | None:
-    """Return a pre-signed download URL for a single filed document.
+) -> types.filings.DocumentDownload:
+    """Return a downloadable URL for a single filed Companies House document.
 
-    The URL is a short-lived redirect target issued by the Companies House
-    Document API. **It expires after ~60 seconds** — fetch it immediately
-    rather than persisting or passing it around. Returns ``None`` when the
-    document is unknown. A 406 upstream response (the requested
-    ``content_type`` is not available for this document) surfaces as an
-    exception — call ``get_document_metadata`` first to see which types are
-    actually available.
+    The tool itself does not transfer bytes — it returns a short-lived HTTP
+    URL (~10 minutes) pointing at this server's own
+    ``/documents/{signed_token}`` route. Fetching the URL streams the raw
+    document with the correct ``Content-Type``. This keeps responses
+    lightweight and avoids base64 inflation through MCP. Typical chain:
+    ``get_company_filing_history → refs.document_id → get_document_content →
+    fetch url``.
+
+    Behind the scenes the route reads bytes from a permanent Azure Blob
+    cache (fetching from Companies House on the first miss, then serving
+    every subsequent request for the same ``(document_id, content_type)``
+    from cache). Because the bytes are cached permanently, regenerating an
+    expired URL is always free.
+
+    **Transport**: this tool only works in HTTP mode — it relies on this
+    server exposing the ``/documents/{token}`` route. Calling it under
+    stdio raises immediately with a clear error.
+
+    **Errors.** Document-not-found and content-type-unavailable (HTTP 406)
+    errors surface only when the URL is fetched, not when this tool is
+    called. Call ``get_document_metadata`` first to check which content
+    types a document actually publishes.
     """
+    if os.environ.get("CH_MCP_TRANSPORT") == "stdio":
+        raise RuntimeError(
+            "get_document_content requires the HTTP transport. This server is running"
+            " under stdio, where the /documents/{token} route is not mounted."
+        )
+
     if content_type not in _ADVERTISED_DOCUMENT_CONTENT_TYPES:
         logger.warning(
-            "get_document_url called with non-advertised content_type %r (document_id=%s). "
+            "get_document_content called with non-advertised content_type %r (document_id=%s). "
             "Passing through to the API; update _ADVERTISED_DOCUMENT_CONTENT_TYPES if this "
             "turns out to be a valid new type.",
             content_type,
             document_id,
         )
-    return await ch_client.get_document_url(document_id, content_type=content_type)
+
+    settings = ch_mcp.settings.get_settings()
+    token = document_url.mint_document_token(
+        secret=settings.server.jwt_secret_key,
+        document_id=document_id,
+        content_type=content_type,
+        ttl_seconds=_PROXY_URL_TTL_SECONDS,
+    )
+    base_url = str(settings.server.base_url).rstrip("/")
+    return types.filings.DocumentDownload(
+        document_id=document_id,
+        content_type=content_type,
+        url=f"{base_url}/documents/{token}",
+        expires_in_seconds=_PROXY_URL_TTL_SECONDS,
+    )
 
 
 def get_server() -> fastmcp.FastMCP:

@@ -1,0 +1,125 @@
+"""Static HTML landing page served on ``GET /``.
+
+The MCP ``streamable-http`` endpoint also lives at ``/`` but only accepts
+``POST``/``DELETE``. Starlette's router treats path and method
+independently, so a ``GET`` ``Route`` at the same path coexists cleanly —
+``POST`` flows to the MCP session manager, ``GET`` flows to this landing
+handler.
+
+Kept deliberately small and dependency-free: no templating, no static
+assets, no external fetches. Meant as a "yes, this is a ch-mcp server"
+signal for humans who land on the base URL.
+"""
+
+from __future__ import annotations
+
+import html
+
+import fastmcp
+from starlette.requests import Request
+from starlette.responses import HTMLResponse
+
+import ch_mcp
+
+_LANDING_TEMPLATE = """\
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<style>
+  :root {{
+    color-scheme: light dark;
+  }}
+  html, body {{
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, "Helvetica Neue", Arial, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+  }}
+  main {{
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }}
+  h1 {{
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+    letter-spacing: -0.01em;
+  }}
+  p {{
+    line-height: 1.55;
+    margin: 0 0 1rem;
+    color: #9da7b3;
+  }}
+  code {{
+    background: #161b22;
+    color: #e6edf3;
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+  }}
+  ul {{
+    line-height: 1.9;
+    padding-left: 1.25rem;
+    color: #9da7b3;
+  }}
+  a {{
+    color: #58a6ff;
+    text-decoration: none;
+  }}
+  a:hover {{
+    text-decoration: underline;
+  }}
+  footer {{
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: #6e7681;
+  }}
+</style>
+</head>
+<body>
+<main>
+  <h1>ch-mcp · UK Companies House MCP server</h1>
+  <p>
+    This is a <a href="https://modelcontextprotocol.io/">Model Context
+    Protocol</a> server exposing the UK
+    <a href="https://find-and-update.company-information.service.gov.uk/">Companies
+    House register</a> as read-only tools. Connect an MCP-capable client
+    (ChatGPT, Claude Desktop, Cursor…) to this host to use it.
+  </p>
+  <p>
+    The MCP streamable-HTTP endpoint accepts <code>POST</code> at
+    <code>/</code> and <code>/mcp</code>; this page is what you get when
+    you <code>GET</code> it from a browser.
+  </p>
+  <ul>
+    <li>Health: <a href="/.container/health">/.container/health</a></li>
+    {interactive_link}
+  </ul>
+  <footer>Version {version}</footer>
+</main>
+</body>
+</html>
+"""
+
+
+async def _landing(request: Request) -> HTMLResponse:
+    settings = ch_mcp.settings.get_settings()
+    interactive_link = ""
+    if settings.auth0.interactive_client_id:
+        interactive_link = '<li>Interactive explorer: <a href="/interactive">/interactive</a></li>'
+    body = _LANDING_TEMPLATE.format(
+        title=html.escape("ch-mcp"),
+        interactive_link=interactive_link,
+        version=html.escape(ch_mcp.__version__.__version__),
+    )
+    return HTMLResponse(body)
+
+
+def mount_landing_router(mcp: fastmcp.FastMCP) -> None:
+    """Attach ``GET /`` — a small human-readable landing page."""
+    mcp.custom_route("/", methods=["GET"], include_in_schema=False)(_landing)

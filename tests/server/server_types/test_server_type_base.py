@@ -105,9 +105,7 @@ class TestReflect:
             # model_dump and are visible to the refs extractor.
             links: ch_api.types.shared.LinksSection
 
-        Reflected = server_type_base.reflect_ch_api_t(
-            Source, refs_type=server_refs.FilingHistoryItemRefs
-        )
+        Reflected = server_type_base.reflect_ch_api_t(Source, refs_type=server_refs.FilingHistoryItemRefs)
 
         assert "refs" in Reflected.model_fields
         assert "links" not in Reflected.model_fields  # still stripped

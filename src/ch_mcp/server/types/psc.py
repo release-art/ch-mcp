@@ -20,9 +20,7 @@ class Individual(base.reflect_ch_api_t(_psc.Individual, refs_type=refs.PscRecord
     """Individual person with significant control."""
 
 
-class IndividualBeneficialOwner(
-    base.reflect_ch_api_t(_psc.IndividualBeneficialOwner, refs_type=refs.PscRecordRefs)
-):
+class IndividualBeneficialOwner(base.reflect_ch_api_t(_psc.IndividualBeneficialOwner, refs_type=refs.PscRecordRefs)):
     """Individual registrable beneficial owner."""
 
 
@@ -40,9 +38,7 @@ class LegalPerson(base.reflect_ch_api_t(_psc.LegalPerson, refs_type=refs.PscReco
     """Legal person with significant control."""
 
 
-class LegalPersonBeneficialOwner(
-    base.reflect_ch_api_t(_psc.LegalPersonBeneficialOwner, refs_type=refs.PscRecordRefs)
-):
+class LegalPersonBeneficialOwner(base.reflect_ch_api_t(_psc.LegalPersonBeneficialOwner, refs_type=refs.PscRecordRefs)):
     """Legal person registrable beneficial owner."""
 
 
@@ -50,9 +46,7 @@ class SuperSecure(base.reflect_ch_api_t(_psc.SuperSecure, refs_type=refs.PscReco
     """Super-secure person with significant control."""
 
 
-class SuperSecureBeneficialOwner(
-    base.reflect_ch_api_t(_psc.SuperSecureBeneficialOwner, refs_type=refs.PscRecordRefs)
-):
+class SuperSecureBeneficialOwner(base.reflect_ch_api_t(_psc.SuperSecureBeneficialOwner, refs_type=refs.PscRecordRefs)):
     """Super-secure registrable beneficial owner."""
 
 

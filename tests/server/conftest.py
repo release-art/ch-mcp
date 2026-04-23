@@ -54,18 +54,43 @@ def resources_dir() -> pathlib.Path:
     return out.resolve()
 
 
+class _MemoryDocumentBlobCache:
+    """In-memory stand-in for ``DocumentBlobCache`` used in tests.
+
+    The MCP tool for document downloads doesn't touch the cache itself (it
+    only mints a signed URL). The cache is only hit by the Starlette
+    ``/documents/{token}`` route, so in the tool-call tests here the cache
+    is an inert stand-in — present so the lifespan shape matches, but never
+    read from or written to.
+    """
+
+    def __init__(self) -> None:
+        self._data: dict[tuple[str, str], bytes] = {}
+
+    async def get(self, document_id: str, content_type: str) -> bytes | None:
+        return self._data.get((document_id, content_type))
+
+    async def put(self, document_id: str, content_type: str, data: bytes) -> None:
+        self._data[(document_id, content_type)] = data
+
+
 @pytest.fixture(autouse=True)
 def mock_azure_cache(mocker):
-    """Replace the Azure Table cache backend with an in-memory store.
+    """Replace the Azure cache backends with in-memory stand-ins.
 
-    Patches open_azure_cache so tests run without real Azure infrastructure.
+    Patches ``open_api_response_cache`` so tests run without real Azure
+    infrastructure. Returns a tuple of (``MemoryStore`` table cache,
+    in-memory ``DocumentBlobCache``).
     """
+
+    doc_cache = _MemoryDocumentBlobCache()
 
     @contextlib.asynccontextmanager
     async def _mock(_settings):
-        yield MemoryStore()
+        yield (MemoryStore(), doc_cache)
 
-    mocker.patch("ch_mcp.server.middleware.cache.open_azure_cache", _mock)
+    mocker.patch("ch_mcp.server.middleware.cache.open_api_response_cache", _mock)
+    return doc_cache
 
 
 @pytest.fixture(autouse=True)

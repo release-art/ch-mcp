@@ -11,6 +11,7 @@ Invoked as ``python -m ch_mcp <command>``.
 from __future__ import annotations
 
 import logging
+import os
 
 import typer
 import uvicorn
@@ -52,6 +53,10 @@ def serve(host: str = "0.0.0.0", port: int = 8000, reload: bool = False) -> None
 @app.command()
 def stdio() -> None:
     """Run the stdio transport for local MCP clients."""
+    # Tools branch on this to adapt their output for stdio (no HTTP server
+    # is running, so signed proxy URLs wouldn't resolve; fall back to raw
+    # upstream URLs where applicable).
+    os.environ["CH_MCP_TRANSPORT"] = "stdio"
     mcp = ch_mcp.server.get_server()
     mcp.run()
 

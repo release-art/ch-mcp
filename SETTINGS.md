@@ -85,6 +85,7 @@ Names of the Azure Blob Storage containers the application provisions/uses. Over
 | Env var | Type | Default | Description |
 |---------|------|---------|-------------|
 | `BLOB_STORE_NAME_AUTH0_CLIENTS` | `str` | `auth0-clients` | Container for OAuth client registrations in `AUTH0_MODE=proxy`. |
+| `BLOB_STORE_NAME_DOCUMENT_CONTENT` | `str` | `document-content` | Permanent binary cache for Companies House document payloads (documents are immutable, so entries never expire). |
 
 Local development with Azurite:
 
@@ -99,6 +100,13 @@ Production with managed identity:
 AZURE_CREDENTIAL=default
 AZURE_STORAGE_ACCOUNT=mycompanystorage
 ```
+
+## `cache` — response caching
+
+| Env var | Type | Default | Description |
+|---------|------|---------|-------------|
+| `CACHE_TTL_SECONDS` | `int > 0` | `86400` (24h) | TTL for the Azure Table Storage tool-response cache. |
+| `CACHE_MAX_DOCUMENT_BYTES` | `int > 0` | `10485760` (10 MiB) | Maximum raw payload size the `get_document_content` tool will accept. Base64 expansion plus JSON overhead makes larger responses impractical for MCP transports — oversize documents must be fetched out-of-band. |
 
 ## `ch_api` — Companies House API credentials
 

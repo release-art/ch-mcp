@@ -135,6 +135,17 @@ class BlobStoreNamesSettings(BaseSettings):
             description="Container name for the Auth0 OAuth client registration store (proxy mode).",
         ),
     ]
+    document_content: Annotated[
+        str,
+        Field(
+            default="document-content",
+            description=(
+                "Container name for the permanent Companies House document payload cache."
+                " Documents are immutable once filed, so this cache never expires entries"
+                " — it only grows."
+            ),
+        ),
+    ]
 
 
 class TableStoreNamesSettings(BaseSettings):
@@ -177,6 +188,20 @@ class CacheSettings(BaseSettings):
             default=86400,
             gt=0,
             description="API response cache TTL in seconds (default: 86400 = 24 hours).",
+        ),
+    ]
+    max_document_bytes: Annotated[
+        int,
+        Field(
+            default=10 * 1024 * 1024,
+            gt=0,
+            description=(
+                "Maximum size (in bytes) of a document payload the ``get_document_content``"
+                " tool will return. Base64-encoding expands the payload by ~33%% on the"
+                " wire; 10MiB keeps a single response under ~14MiB of JSON, which most"
+                " MCP clients handle. Larger documents are rejected — fetch them outside"
+                " of MCP."
+            ),
         ),
     ]
 

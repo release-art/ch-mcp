@@ -1,14 +1,26 @@
-"""HTTP-only routes layered on top of the MCP server (interactive OAuth UI)."""
+"""HTTP-only routes layered on top of the MCP server.
 
-import fastmcp
+Each route module exports a ``mount_<name>_router(mcp)`` function that owns
+its own ``custom_route`` registration. The HTTP app factory in
+:mod:`ch_mcp.uvcorn_app` just chains the mounts it wants — there is no
+shared imperative registration blob. Modules whose routes are conditional
+on config (e.g. the interactive OAuth UI) decide whether to mount
+themselves at call time.
+"""
 
-from . import interactive
+from . import documents, health, interactive, landing
+from .documents import mount_documents_router
+from .health import mount_health_router
+from .interactive import mount_interactive_router
+from .landing import mount_landing_router
 
-
-def mount_interactive_router(mcp: fastmcp.FastMCP) -> None:
-    """Mount the interactive web UI routes at ``/interactive``.
-
-    Only called when ``AUTH0_INTERACTIVE_CLIENT_ID`` is configured.
-    """
-    mcp.custom_route("/interactive/config", methods=["GET"], include_in_schema=False)(interactive.interactive_config)
-    mcp.custom_route("/interactive", methods=["GET"], include_in_schema=False)(interactive.interactive_ui)
+__all__ = [
+    "documents",
+    "health",
+    "interactive",
+    "landing",
+    "mount_documents_router",
+    "mount_health_router",
+    "mount_interactive_router",
+    "mount_landing_router",
+]

@@ -24,16 +24,21 @@ from . import auth, companies, deps, filings, middleware, officers, psc, search,
 async def mcp_lifespan(mcp_app: fastmcp.FastMCP):
     """Open shared resources for the server's lifetime.
 
-    Holds the Azure Table Storage API response cache. The ``ch_api.Client`` is
-    **not** opened here — it is created per-tool-call via ``deps.get_ch_api``
-    so that its httpx session lifecycle is bound to the MCP call scope rather
-    than the ref-counted server lifespan (which can tear down between requests
-    in stateless HTTP mode).
+    Holds the Azure Table Storage API response cache and the Azure Blob
+    document-content cache. The ``ch_api.Client`` is **not** opened here — it
+    is created per-tool-call via ``deps.get_ch_api`` so that its httpx session
+    lifecycle is bound to the MCP call scope rather than the ref-counted
+    server lifespan (which can tear down between requests in stateless HTTP
+    mode).
     """
     settings = ch_mcp.settings.get_settings()
-    async with middleware.cache.open_azure_cache(settings) as cache_store:
+    async with middleware.cache.open_api_response_cache(settings) as (cache_store, doc_cache):
         logger.info("Server %s initialized successfully", mcp_app)
-        yield {"_cache_store": cache_store}
+        yield {
+            "_cache_store": cache_store,
+            "_doc_cache": doc_cache,
+            "_max_document_bytes": settings.cache.max_document_bytes,
+        }
     logger.info("Server shutdown complete")
 
 

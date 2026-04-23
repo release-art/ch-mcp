@@ -25,9 +25,7 @@ class TestParseUrlIds:
         assert got == {"company_number": "09370755", "transaction_id": "txn-999"}
 
     def test_psc_individual(self):
-        got = refs.parse_url_ids(
-            "/company/09370755/persons-with-significant-control/individual/pscABC"
-        )
+        got = refs.parse_url_ids("/company/09370755/persons-with-significant-control/individual/pscABC")
         assert got == {
             "company_number": "09370755",
             "psc_url_kind": "individual",
@@ -35,9 +33,7 @@ class TestParseUrlIds:
         }
 
     def test_psc_statement(self):
-        got = refs.parse_url_ids(
-            "/company/09370755/persons-with-significant-control-statements/stmt42"
-        )
+        got = refs.parse_url_ids("/company/09370755/persons-with-significant-control-statements/stmt42")
         assert got == {"company_number": "09370755", "psc_statement_id": "stmt42"}
 
     def test_officer_appointments_list(self):
@@ -53,9 +49,7 @@ class TestParseUrlIds:
         assert got == {"officer_id": "DISQ2", "disqualification_kind": "corporate"}
 
     def test_document(self):
-        got = refs.parse_url_ids(
-            "https://document-api.company-information.service.gov.uk/document/L_X0y9bwYnkyEMwL"
-        )
+        got = refs.parse_url_ids("https://document-api.company-information.service.gov.uk/document/L_X0y9bwYnkyEMwL")
         assert got == {"document_id": "L_X0y9bwYnkyEMwL"}
 
     def test_empty(self):
