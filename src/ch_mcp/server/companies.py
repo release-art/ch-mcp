@@ -55,6 +55,9 @@ async def get_company_profile(
     This is usually the first call after you have a company_number — it gives the
     broadest single view of the company. Returns ``None`` if the number does not
     resolve to a known company.
+
+    If the company's SIC codes are in the financial-services range (64xxx, 65xxx, 66xxx),
+    it may also hold FCA authorisation — search the FCA register by name for the FRN.
     """
     result = await ch_client.get_company_profile(company_number)
     if result is None:
