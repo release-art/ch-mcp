@@ -5,7 +5,7 @@
 groups = ["default", "build", "dev", "docs", "lint", "user"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:9f68c3aeab1021c337bd03ed375cc199bcccf004fe3d4691721bacc2a36a4b14"
+content_hash = "sha256:8b2a5c499777641ef44e45254debfd455836365b8cc12b366894ae85e60e9d17"
 
 [[metadata.targets]]
 requires_python = ">=3.13"
@@ -453,7 +453,7 @@ files = [
 
 [[package]]
 name = "ch-api"
-version = "1.1.3"
+version = "1.2.0"
 requires_python = ">=3.11"
 summary = "UK Companies House API"
 groups = ["default"]
@@ -462,8 +462,8 @@ dependencies = [
     "pydantic>=2.12.5",
 ]
 files = [
-    {file = "ch_api-1.1.3-py3-none-any.whl", hash = "sha256:96c668f812b1ddf279efabe381a35cc62ef9feba99e5f2f48adeb5e8dd7b6523"},
-    {file = "ch_api-1.1.3.tar.gz", hash = "sha256:43cf428b18c76a265923d038c9c7ba089da6049d25396e9664b6897fdacbe937"},
+    {file = "ch_api-1.2.0-py3-none-any.whl", hash = "sha256:e4c6912d79147df1cdcafde83691b9ff8d9d7d4cc1ef0154b659c3a3d7aba8a0"},
+    {file = "ch_api-1.2.0.tar.gz", hash = "sha256:5b222df862424880beb5682b298713098400d9b7a40f1689647777617367e363"},
 ]
 
 [[package]]
@@ -756,7 +756,7 @@ files = [
 
 [[package]]
 name = "cyclopts"
-version = "4.10.2"
+version = "4.11.0"
 requires_python = ">=3.10"
 summary = "Intuitive, easy CLIs based on type hints."
 groups = ["default"]
@@ -769,8 +769,8 @@ dependencies = [
     "typing-extensions>=4.8.0; python_version < \"3.11\"",
 ]
 files = [
-    {file = "cyclopts-4.10.2-py3-none-any.whl", hash = "sha256:a1f2d6f8f7afac9456b48f75a40b36658778ddc9c6d406b520d017ae32c990fe"},
-    {file = "cyclopts-4.10.2.tar.gz", hash = "sha256:d7b950457ef2563596d56331f80cbbbf86a2772535fb8b315c4f03bc7e6127f1"},
+    {file = "cyclopts-4.11.0-py3-none-any.whl", hash = "sha256:34318e3823b44b5baa754a5e37ec70a5c17dc81c65e4295ed70e17bc1aeae50d"},
+    {file = "cyclopts-4.11.0.tar.gz", hash = "sha256:1ffcb9990dbd56b90da19980d31596de9e99019980a215a5d76cf88fe452e94d"},
 ]
 
 [[package]]
