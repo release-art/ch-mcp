@@ -76,7 +76,11 @@ def parse_url_ids(url: str) -> dict[str, str]:
         if m is None:
             continue
         for key, value in m.groupdict().items():
-            if value is not None:
+            if value is None:
+                continue
+            if key in found and found[key] != value:
+                raise ValueError(f"URL {url} matched multiple patterns with conflicting {key}: {found[key]} vs {value}")
+            else:
                 found[key] = value
     if "officer_id_disq" in found and "officer_id" not in found:
         found["officer_id"] = found.pop("officer_id_disq")
@@ -170,12 +174,15 @@ class OfficerListItemRefs(BaseRefs):
 class OfficerAppointmentItemRefs(BaseRefs):
     """Refs for an entry in an officer's global appointments list.
 
-    The item's ``self`` link gives back the company number and the
-    company-scoped appointment ID.
+    Only the company number is available — items on the
+    ``/officers/{id}/appointments`` endpoint carry a ``links.company`` URL
+    but no ``self`` link, so Companies House exposes no appointment ID
+    here. To obtain the company-scoped ``appointment_id`` for a specific
+    officer-at-company, call ``get_officer_list(company_number)`` and read
+    ``refs.appointment_id`` from the matching entry.
     """
 
     company_number: str
-    appointment_id: str
 
 
 class DisqualificationRefs(BaseRefs):

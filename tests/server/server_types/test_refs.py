@@ -96,6 +96,14 @@ class TestExtractRefs:
         # officer_id is Optional and the nested dict isn't walked, so it stays None.
         assert got.officer_id is None
 
+    def test_officer_appointment_item_company_only(self):
+        # Items on /officers/{id}/appointments carry only links.company — no
+        # self link, no appointment_id. Regression: earlier required
+        # appointment_id broke every get_officer_appointments call.
+        links = {"company": "/company/15913627"}
+        got = refs.extract_refs(refs.OfficerAppointmentItemRefs, links)
+        assert got.company_number == "15913627"
+
     def test_disqualification(self):
         links = {"self": "/disqualified-officers/natural/OFF1"}
         got = refs.extract_refs(refs.DisqualificationRefs, links)
