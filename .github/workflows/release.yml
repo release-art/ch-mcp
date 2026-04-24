@@ -21,6 +21,10 @@ jobs:
   publish-package:
     needs: start
     runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      id-token: write  # Required for OIDC authentication
+      contents: read
     steps:
       - uses: actions/checkout@v6
       - name: Set up Python
@@ -34,20 +38,16 @@ jobs:
         run: |
           pdm publish --no-build
         env:
-          PDM_PUBLISH_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
-          PDM_PUBLISH_USERNAME: '__token__'
           PDM_PUBLISH_REPO: 'https://test.pypi.org/legacy/'
       - name: Publish distribution to PRODUCTION PyPI
         # if: false
         run: |
           pdm publish --no-build
-        env:
-          PDM_PUBLISH_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-          PDM_PUBLISH_USERNAME: '__token__'
 
   publish-image:
     needs: start
     runs-on: ubuntu-latest
+    environment: release
     steps:
       - uses: actions/checkout@v4
       - name: Set up Docker Buildx
