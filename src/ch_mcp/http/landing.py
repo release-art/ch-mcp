@@ -59,3 +59,4 @@ async def _landing(request: Request) -> HTMLResponse:
 def mount_landing_router(mcp: fastmcp.FastMCP) -> None:
     """Attach ``GET /`` — a small human-readable landing page."""
     mcp.custom_route("/", methods=["GET"], include_in_schema=False)(_landing)
+    mcp.custom_route("/mcp", methods=["GET"], include_in_schema=False)(_landing)
