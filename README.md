@@ -1,3 +1,7 @@
+[![Release](https://github.com/release-art/ch-mcp/actions/workflows/release.yml/badge.svg)](https://github.com/release-art/ch-mcp/actions/workflows/release.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![PyPI version](https://img.shields.io/pypi/v/companies-house-mcp?logo=python&color=41bb13)](https://pypi.org/project/companies-house-mcp)
+
 # Companies House MCP Server
 
 A [Model Context Protocol](https://modelcontextprotocol.io/) server that exposes the UK [Companies House register](https://find-and-update.company-information.service.gov.uk/) to LLM clients as a set of read-only tools. Built on [FastMCP v3](https://gofastmcp.com/) and the [`ch-api`](https://github.com/release-art/ch-api) async client.
